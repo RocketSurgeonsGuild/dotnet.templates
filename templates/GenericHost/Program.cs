@@ -16,6 +16,7 @@ using Rocket.Surgery.Conventions.Scanners;
 using Rocket.Surgery.Extensions.CommandLine;
 using Rocket.Surgery.Extensions.Configuration;
 using Rocket.Surgery.Extensions.DependencyInjection;
+using Rocket.Surgery.Extensions.Logging;
 using Rocket.Surgery.Hosting;
 
 namespace Rocket.Surgery.GenericHost
@@ -24,29 +25,12 @@ namespace Rocket.Surgery.GenericHost
     {
         public static Task Main(string[] args)
         {
-            try
-            {
-                var diagnosticSource = new DiagnosticListener("GenericHost");
-                DiagnosticListenerExtensions.SubscribeWithAdapter(
-                    diagnosticSource,
-                    new DiagnosticListenerLoggingAdapter(
-                        new ServiceCollection()
-                            .AddLogging(x => x.AddConsole().SetMinimumLevel(LogLevel.Trace))
-                            .BuildServiceProvider()
-                            .GetRequiredService<ILoggerFactory>()
-                            .CreateLogger("GenericHost")
-                        )
-                    );
-                return Host.CreateDefaultBuilder(args)
-                    .LaunchWith(RocketBooster.For(DependencyContext.Default, diagnosticSource))
-                    .ConfigureRocketSurgey(x => {})
-                    .RunConsoleAsync();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.ToString());
-                return Task.CompletedTask;
-            }
+            return Host.CreateDefaultBuilder(args)
+                .LaunchWith(RocketBooster.For(DependencyContext.Default), builder => {
+
+                })
+                .Build()
+                .RunAsync();
         }
     }
 }

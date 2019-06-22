@@ -8,7 +8,7 @@
     <PackageReference Include="Rocket.Surgery.Hosting" />
     #endif -->
     <!--#if (!noVersion) -->
-    <PackageReference Include="Rocket.Surgery.Hosting" Version="3.0.1" />
+    <PackageReference Include="Rocket.Surgery.Hosting" Version="3.0.3" />
     <!--#endif -->
   </ItemGroup>
 </Project>
