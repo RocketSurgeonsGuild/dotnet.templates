@@ -4,7 +4,7 @@
     <OutputType>Exe</OutputType>
   </PropertyGroup>
   <ItemGroup>
-    <!--#if (noVersion)
+    <!--#if (no-version)
     <PackageReference Include="Rocket.Surgery.Hosting" />
     <PackageReference Include="Rocket.Surgery.Conventions" />
     <PackageReference Include="Rocket.Surgery.Extensions" />
@@ -13,7 +13,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" />
     <PackageReference Include="Rocket.Surgery.Extensions.Logging" />
     #endif -->
-    <!--#if (!noVersion) -->
+    <!--#if (!no-version) -->
     <PackageReference Include="Rocket.Surgery.Hosting" Version="3.0.4" />
     <PackageReference Include="Rocket.Surgery.Conventions" Version="5.0.2" />
     <PackageReference Include="Rocket.Surgery.Extensions" Version="1.0.0" />

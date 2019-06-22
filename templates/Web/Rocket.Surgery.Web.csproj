@@ -1,7 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
-    <OutputType>Exe</OutputType>
   </PropertyGroup>
   <ItemGroup>
     <!--#if (no-version)
@@ -23,4 +23,5 @@
     <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="5.1.1" />
     <!--#endif -->
   </ItemGroup>
+
 </Project>

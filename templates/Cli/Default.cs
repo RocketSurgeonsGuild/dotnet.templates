@@ -4,8 +4,6 @@ using Rocket.Surgery.Cli;
 using Rocket.Surgery.Conventions;
 using Rocket.Surgery.Extensions.CommandLine;
 
-[assembly: Convention(typeof(Program))]
-
 namespace Rocket.Surgery.Cli
 {
     public class Default : IDefaultCommand

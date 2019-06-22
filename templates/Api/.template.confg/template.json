@@ -5,10 +5,11 @@
     "identity": "Rocket.Surgery.Api",
     "name": "Rocket Surgery AspNetCore Api",
     "shortName": "rocketapi",
+    "sourceName": "Rocket.Surgery.Api",
     "symbols": {
-        "noVersion": {
+        "no-version": {
             "datatype": "bool",
-            "defaultValue": "true",
+            "defaultValue": "false",
             "type": "parameter",
             "isRequired": false,
             "description": "Do not include the version in the project file, versions will come from Directory.Build.targets or similar"
