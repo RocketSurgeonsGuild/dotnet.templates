@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "David Driscoll",
+    "classifications": [ "Common", "Console", "Rocket Surgery" ],
+    "identity": "Rocket.Surgery.Cli",
+    "name": "Rocket Surgery Command Line Application",
+    "shortName": "rocketcli",
+    "symbols": {
+        "noVersion": {
+            "datatype": "bool",
+            "defaultValue": "true",
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Do not include the version in the project file, versions will come from Directory.Build.targets or similar"
+        }
+    }
+}

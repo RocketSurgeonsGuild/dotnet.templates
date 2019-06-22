@@ -1,0 +1,20 @@
+image: Visual Studio 2017
+init:
+  - git config --global core.autocrlf input
+build_script:
+  - ps: .\build.ps1
+test: off
+after_build:
+  - "SET PATH=C:\\Python34;C:\\Python34\\Scripts;%PATH%"
+  - pip install codecov
+  - codecov -f "./coverage/solution.cobertura"
+artifacts:
+  - path: ./artifacts/nuget/*.nupkg
+cache:
+  - tools -> build.cake, tools/packages.config
+nuget:
+  project_feed: true
+notifications:
+  - provider: Slack
+    incoming_webhook:
+      secure: cErsDOKvAGCX+565j5eJH2sKFl4cghV4cDeIWj9a0rKD+sNmZlet0ubxvgofDtPgCRTLbsrf+IaNyZdkvQmhr4A08+e5S8GZSrjz+FXSXBU=

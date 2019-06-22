@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <!--#if (noVersion)
+    <PackageReference Include="Rocket.Surgery.Hosting" />
+    #endif -->
+    <!--#if (!noVersion) -->
+    <PackageReference Include="Rocket.Surgery.Hosting" Version="3.0.1" />
+    <!--#endif -->
+  </ItemGroup>
+</Project>
