@@ -26,9 +26,8 @@ namespace Rocket.Surgery.GenericHost
         public static Task Main(string[] args)
         {
             return Host.CreateDefaultBuilder(args)
-                .LaunchWith(RocketBooster.For(DependencyContext.Default), builder => {
-
-                })
+                .LaunchWith(RocketBooster.For(DependencyContext.Default))
+                .ConfigureRocketSurgey(builder => {})
                 .Build()
                 .RunAsync();
         }
