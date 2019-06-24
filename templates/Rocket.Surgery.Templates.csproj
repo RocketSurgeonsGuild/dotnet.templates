@@ -10,13 +10,16 @@
     <TargetFramework>netstandard2.0</TargetFramework>
 
     <IncludeContentInPack>true</IncludeContentInPack>
-    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <IncludeBuildOutput>False</IncludeBuildOutput>
+    <IncludeSymbols>false</IncludeSymbols>
     <ContentTargetFolders>content</ContentTargetFolders>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
-    <Compile Remove="**\*" />
+    <Content Include="**\*" Exclude="**\bin\**;**\obj\**;*.csproj" PackagePath="content\templates\" />
+    <Compile Remove="**\*.cs" />
   </ItemGroup>
 
 </Project>
