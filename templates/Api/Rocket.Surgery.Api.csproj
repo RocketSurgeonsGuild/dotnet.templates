@@ -5,6 +5,7 @@
   </PropertyGroup>
   <ItemGroup>
     <!--#if (no-version)
+    <PackageReference Include="Swashbuckle.AspNetCore" />
     <PackageReference Include="Rocket.Surgery.Hosting" />
     <PackageReference Include="Rocket.Surgery.Conventions" />
     <PackageReference Include="Rocket.Surgery.Extensions" />
@@ -14,6 +15,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.Logging" />
     #endif -->
     <!--#if (!no-version) -->
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc2-preview-0910" />
     <PackageReference Include="Rocket.Surgery.Hosting" Version="3.0.6" />
     <PackageReference Include="Rocket.Surgery.Conventions" Version="5.0.3" />
     <PackageReference Include="Rocket.Surgery.Extensions" Version="1.0.1" />

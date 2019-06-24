@@ -24,13 +24,12 @@ namespace Rocket.Surgery.Cli
 {
     public class Program : ICommandLineConvention
     {
-        public static Task Main(string[] args)
-        {
-            return Host.CreateDefaultBuilder(args)
+        public static Task<int> Main(string[] args) => CreateHostBuilder(args).RunCli();
+
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
                 .LaunchWith(RocketBooster.For(DependencyContext.Default))
-                .ConfigureRocketSurgey(builder => { })
-                .RunCli();
-        }
+                .ConfigureRocketSurgey(builder => { });
 
         public void Register(ICommandLineConventionContext context)
         {

@@ -8,7 +8,7 @@ using Microsoft.Extensions.DependencyModel;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Rocket.Surgery.Web
+namespace Rocket.Surgery.Api
 {
     public class Program
     {
