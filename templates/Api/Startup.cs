@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -21,9 +22,10 @@ namespace Rocket.Surgery.Api
                 .AddSwaggerGen(c => {
                     c.SwaggerDoc("v1", new OpenApiInfo { Title = "My Test v1" });
                     c.SwaggerDoc("v2", new OpenApiInfo { Title = "My Test v2" });
+                    c.GeneratePolymorphicSchemas();
                 })
                 .AddControllers()
-                // .AddNewtonsoftJson()
+                .AddNewtonsoftJson()
             ;
         }
 
