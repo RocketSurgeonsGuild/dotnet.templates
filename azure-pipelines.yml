@@ -15,7 +15,7 @@ resources:
     - repository: rsg
       type: github
       name: RocketSurgeonsGuild/AzureDevopsTemplates
-      ref: refs/tags/v0.5.9
+      ref: refs/tags/v0.5.10
       endpoint: github
 
 variables:
@@ -30,6 +30,7 @@ variables:
   Artifacts: $(Build.ArtifactStagingDirectory)
   VstsArtifacts: "$(Artifacts)"
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: "true"
+  CodeCovToken: 'b261d715-d42d-4221-acdc-77b28a6d159a'
 
 jobs:
   - template: pipeline/cake.yml@rsg
