@@ -28,6 +28,6 @@ namespace Rocket.Surgery.GenericHost
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .LaunchWith(RocketBooster.For(DependencyContext.Default))
-                .ConfigureRocketSurgey(builder => { });
+                .ConfigureRocketSurgery(builder => { });
     }
 }

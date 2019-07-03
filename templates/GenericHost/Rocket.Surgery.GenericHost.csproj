@@ -15,13 +15,13 @@
     <PackageReference Include="Rocket.Surgery.Extensions.Logging" />
     #endif -->
     <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Hosting" Version="3.0.6" />
-    <PackageReference Include="Rocket.Surgery.Conventions" Version="5.0.3" />
+    <PackageReference Include="Rocket.Surgery.Hosting" Version="4.0.0" />
+    <PackageReference Include="Rocket.Surgery.Conventions" Version="6.2.2" />
     <PackageReference Include="Rocket.Surgery.Extensions" Version="1.0.1" />
-    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="4.1.2" />
-    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="5.1.2" />
-    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="5.1.2" />
-    <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="5.1.2" />
+    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="5.0.4" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="6.0.3" />
+    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="6.0.3" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="6.0.3" />
     <!--#endif -->
   </ItemGroup>
 </Project>

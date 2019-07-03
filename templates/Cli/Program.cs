@@ -29,7 +29,7 @@ namespace Rocket.Surgery.Cli
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .LaunchWith(RocketBooster.For(DependencyContext.Default))
-                .ConfigureRocketSurgey(builder => { });
+                .ConfigureRocketSurgery(builder => { });
 
         public void Register(ICommandLineConventionContext context)
         {
