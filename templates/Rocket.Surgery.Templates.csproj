@@ -10,7 +10,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
 
     <IncludeContentInPack>true</IncludeContentInPack>
-    <IncludeBuildOutput>False</IncludeBuildOutput>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
     <IncludeSymbols>false</IncludeSymbols>
     <ContentTargetFolders>content</ContentTargetFolders>
     <EnableDefaultItems>false</EnableDefaultItems>
@@ -18,8 +18,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="**\*" Exclude="**\bin\**;**\obj\**;*.csproj" PackagePath="content\templates\" />
     <Compile Remove="**\*.cs" />
+    <Content Include="**\*" Exclude="**\bin\**;**\obj\**;*.csproj" PackagePath="content\templates\" />
   </ItemGroup>
 
 </Project>

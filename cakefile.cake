@@ -1,12 +1,12 @@
-#load "nuget:?package=Rocket.Surgery.Cake.Library&version=0.9.2";
+#load "nuget:?package=Rocket.Surgery.Cake.Library&version=0.10.0";
 
 Task("Default")
-    .IsDependentOn("dotnetcore");
+    .IsDependentOn("dotnetcore test");
 
 Task("template pack")
     .WithCriteria(() => Settings.Pack.Enabled)
     .IsDependeeOf("Default")
-    .DoesForEach(GetFiles("templates/*.csproj"), (solution) => {
+    .DoesForEach(GetFiles("*.sln"), (solution) => {
         DotNetCorePack(
             solution.FullPath,
             new DotNetCorePackSettings() {
@@ -14,8 +14,8 @@ Task("template pack")
                 Configuration = Settings.Configuration,
                 EnvironmentVariables = Settings.Environment,
                 OutputDirectory = ArtifactDirectoryPath("nuget").MakeAbsolute(Context.Environment).FullPath,
-                ArgumentCustomization = a => CreateBinLogger(a, "template-pacl"),
-                MSBuildSettings = CreateDotNetCoreMsBuildSettings("template-pacl")
+                ArgumentCustomization = a => CreateBinLogger(a, "template-pack"),
+                MSBuildSettings = CreateDotNetCoreMsBuildSettings("template-pack")
                     .WithProperty("RestoreNoCache", BuildSystem.IsLocalBuild.ToString()),
             }
         );
