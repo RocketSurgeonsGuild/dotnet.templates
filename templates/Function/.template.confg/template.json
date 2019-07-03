@@ -1,7 +1,7 @@
 {
     "$schema": "http://json.schemastore.org/template",
     "author": "David Driscoll",
-    "classifications": [ "Common", "Functions", "Rocket Surgery" ],
+    "classifications": [ "Common", "Function", "Rocket Surgery" ],
     "identity": "Rocket.Surgery.Functions",
     "name": "Rocket Surgery Azure Functions Application",
     "shortName": "rocketfunction",

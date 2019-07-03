@@ -8,7 +8,6 @@
     <!--#if (no-version)
     <PackageReference Include="Rocket.Surgery.Hosting" />
     <PackageReference Include="Rocket.Surgery.Conventions" />
-    <PackageReference Include="Rocket.Surgery.Extensions" />
     <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" />
     <PackageReference Include="Rocket.Surgery.Extensions.Configuration" />
     <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" />
@@ -17,7 +16,6 @@
     <!--#if (!no-version) -->
     <PackageReference Include="Rocket.Surgery.Hosting" Version="4.0.0" />
     <PackageReference Include="Rocket.Surgery.Conventions" Version="6.2.2" />
-    <PackageReference Include="Rocket.Surgery.Extensions" Version="1.0.1" />
     <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="5.0.4" />
     <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="6.0.3" />
     <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="6.0.3" />
