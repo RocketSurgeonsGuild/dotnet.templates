@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyModel;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Rocket.Surgery.Hosting;
 
 namespace Rocket.Surgery.Web
 {

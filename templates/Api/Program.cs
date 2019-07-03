@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyModel;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Rocket.Surgery.Hosting;
 
 namespace Rocket.Surgery.Api
 {
@@ -17,7 +18,7 @@ namespace Rocket.Surgery.Api
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .LaunchWith(RocketBooster.For(DependencyContext.Default))
-                .ConfigureRocketSurgey(builder => { })
+                .ConfigureRocketSurgery(builder => { })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
