@@ -1,19 +1,19 @@
 <Project>
     <ItemGroup>
-        <PackageReference Include="Microsoft.NET.Test.Sdk" />
-        <PackageReference Include="Rocket.Surgery.Extensions.Testing" />
-        <PackageReference Include="Autofac.Extras.FakeItEasy" />
-        <PackageReference Include="Bogus" />
-        <PackageReference Include="coverlet.collector" />
-        <PackageReference Include="coverlet.msbuild" />
-        <PackageReference Include="FakeItEasy" />
-        <PackageReference Include="FakeItEasy.Analyzer.CSharp" />
-        <PackageReference Include="FluentAssertions" />
-        <PackageReference Include="FluentAssertions.Analyzers" />
-        <PackageReference Include="xunit" />
-        <PackageReference Include="xunit.analyzers" />
-        <PackageReference Include="xunit.runner.visualstudio" />
-        <PackageReference Include="XunitXml.TestLogger" />
+        <PackageReference Include="Rocket.Surgery.Extensions.Testing" Version="1.1.10" />
+        <PackageReference Include="Autofac.Extras.FakeItEasy" Version="5.0.1" />
+        <PackageReference Include="Bogus" Version="28.0.1" />
+        <PackageReference Include="coverlet.collector" Version="1.0.1" />
+        <PackageReference Include="coverlet.msbuild" Version="2.6.3" />
+        <PackageReference Include="FakeItEasy" Version="5.1.1" />
+        <PackageReference Include="FakeItEasy.Analyzer.CSharp" Version="5.1.1" />
+        <PackageReference Include="FluentAssertions" Version="5.7.0" />
+        <PackageReference Include="FluentAssertions.Analyzers" Version="0.11.4" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+        <PackageReference Include="xunit" Version="2.4.1" />
+        <PackageReference Include="xunit.analyzers" Version="0.10.0" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
+        <PackageReference Include="XunitXml.TestLogger" Version="2.1.26" />
     </ItemGroup>
     <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.targets', '$(MSBuildThisFileDirectory)../'))" />
 </Project>
