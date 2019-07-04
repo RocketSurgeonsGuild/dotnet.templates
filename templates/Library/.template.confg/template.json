@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "David Driscoll",
+  "classifications": ["Common", "Library", "Rocket Surgery"],
+  "identity": "Rocket.Surgery.Library",
+  "name": "Rocket Surgery Library",
+  "shortName": "rocketlib",
+  "sourceName": "Rocket.Surgery.Library",
+  "symbols": {
+    "no-version": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Do not include the version in the project file, versions will come from Directory.Build.targets or similar"
+    },
+    "no-services": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Do not include Rocket.Surgery.Extensions.DependencyInjection as a package reference"
+    },
+    "no-configuration": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Do not include Rocket.Surgery.Extensions.Configuration as a package reference"
+    },
+    "commandline": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Do not include Rocket.Surgery.Extensions.CommandLine as a package reference"
+    },
+    "logging": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Include Rocket.Surgery.Extensions.Logging as a package reference"
+    },
+    "serilog": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Include Rocket.Surgery.Extensions.Serilog as a package reference"
+    },
+    "autofac": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Include Rocket.Surgery.Extensions.Autofac as a package reference"
+    },
+    "webjobs": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Include Rocket.Surgery.Extensions.WebJobs as a package reference"
+    }
+  },
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "condition": "(no-services)",
+          "exclude": ["LibraryConvention.Services.cs"]
+        },
+        {
+          "condition": "(no-configuration)",
+          "exclude": ["LibraryConvention.Configuration.cs"]
+        },
+        {
+          "condition": "(!commandline)",
+          "exclude": ["LibraryConvention.CommandLine.cs"]
+        },
+        {
+          "condition": "(!logging)",
+          "exclude": ["LibraryConvention.Logging.cs"]
+        },
+        {
+          "condition": "(!serilog)",
+          "exclude": ["LibraryConvention.Serilog.cs"]
+        },
+        {
+          "condition": "(!autofac)",
+          "exclude": ["LibraryConvention.Autofac.cs"]
+        },
+        {
+          "condition": "(!webjobs)",
+          "exclude": ["LibraryConvention.WebJobs.cs"]
+        }
+      ]
+    }
+  ]
+}

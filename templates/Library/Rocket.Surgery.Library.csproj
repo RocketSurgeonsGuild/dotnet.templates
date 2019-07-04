@@ -1,0 +1,71 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <!--#if (no-version)
+    <PackageReference Include="Rocket.Surgery.Conventions.Abstractions" />
+    #endif -->
+    <!--#if (!no-version) -->
+    <PackageReference Include="Rocket.Surgery.Conventions.Abstractions" Version="6.2.2" />
+    <!--#endif -->
+    <!--#if (commandline) -->
+    <!--#if (no-version)
+    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine.Abstractions" />
+    #endif -->
+    <!--#if (!no-version) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine.Abstractions" Version="5.0.4" />
+    <!--#endif -->
+    <!--#endif -->
+    <!--#if (!no-configuration) -->
+    <!--#if (no-version)
+    <PackageReference Include="Rocket.Surgery.Extensions.Configuration.Abstractions" />
+    #endif -->
+    <!--#if (!no-version) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.Configuration.Abstractions" Version="6.0.3" />
+    <!--#endif -->
+    <!--#endif -->
+    <!--#if (logging) -->
+    <!--#if (no-version)
+    <PackageReference Include="Rocket.Surgery.Extensions.Logging.Abstractions" />
+    #endif -->
+    <!--#if (!no-version) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.Logging.Abstractions" Version="6.0.3" />
+    <!--#endif -->
+    <!--#endif -->
+    <!--#if (serilog) -->
+    <!--#if (no-version)
+    <PackageReference Include="Rocket.Surgery.Extensions.Serilog.Abstractions" />
+    #endif -->
+    <!--#if (!no-version) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.Serilog.Abstractions" Version="6.0.1" />
+    <!--#endif -->
+    <!--#endif -->
+    <!--#if (!no-services) -->
+    <!--#if (no-version)
+    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection.Abstractions" />
+    #endif -->
+    <!--#if (!no-version) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection.Abstractions" Version="6.0.3" />
+    <!--#endif -->
+    <!--#endif -->
+    <!--#if (autofac) -->
+    <!--#if (no-version)
+    <PackageReference Include="Rocket.Surgery.Extensions.Autofac.Abstractions" />
+    #endif -->
+    <!--#if (!no-version) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.Autofac.Abstractions" Version="5.0.1" />
+    <!--#endif -->
+    <!--#endif -->
+    <!--#if (webjobs) -->
+    <!--#if (no-version)
+    <PackageReference Include="Rocket.Surgery.Extensions.Autofac.Abstractions" />
+    #endif -->
+    <!--#if (!no-version) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.WebJobs.Abstractions" Version="6.0.3" />
+    <!--#endif -->
+    <!--#endif -->
+  </ItemGroup>
+</Project>

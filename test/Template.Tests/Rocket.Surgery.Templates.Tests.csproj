@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFrameworks>netcoreapp3.0</TargetFrameworks>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\src\App.Metrics\Rocket.Surgery.Extensions.App.Metrics.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ItemsToCopy Include="..\..\template_feed\**\*.*" />
+    </ItemGroup>
+    <Target Name="CopyTarget" AfterTargets="Build">
+        <Copy SourceFiles="@(ItemsToCopy)" DestinationFolder="$(OutputPath)\template_feed\%(RecursiveDir)" />
+    </Target>
+</Project>
