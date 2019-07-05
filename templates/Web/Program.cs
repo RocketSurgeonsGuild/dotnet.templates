@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using JetBrains.Annotations;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyModel;
@@ -11,7 +12,8 @@ using Rocket.Surgery.Hosting;
 
 namespace Rocket.Surgery.Web
 {
-    public class Program
+    [PublicAPI]
+    public static class Program
     {
         public static Task<int> Main(string[] args) => CreateHostBuilder(args).RunCli();
 

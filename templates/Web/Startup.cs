@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using JetBrains.Annotations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -10,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 
 namespace Rocket.Surgery.Web
 {
+    [PublicAPI]
     public class Startup
     {
         // This method gets called by the runtime. Use this method to add services to the container.

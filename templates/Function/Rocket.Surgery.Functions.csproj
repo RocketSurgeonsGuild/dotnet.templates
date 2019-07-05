@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
@@ -14,6 +14,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.Logging" />
     #endif -->
     <!--#if (!no-version) -->
+    <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.3" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.29" />
     <PackageReference Include="Rocket.Surgery.Hosting.Functions" Version="4.0.0" />

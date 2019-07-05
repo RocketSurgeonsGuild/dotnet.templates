@@ -1,4 +1,5 @@
 using System;
+using JetBrains.Annotations;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Azure.WebJobs.Hosting;
@@ -11,6 +12,7 @@ using Rocket.Surgery.Hosting.Functions;
 
 namespace Rocket.Surgery.Functions
 {
+    [PublicAPI]
     public class Startup : IWebJobsStartup, IServiceConvention
     {
         public void Register(IServiceConventionContext context)

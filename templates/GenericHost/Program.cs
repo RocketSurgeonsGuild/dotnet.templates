@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 using System.Threading.Tasks;
+using JetBrains.Annotations;
 using McMaster.Extensions.CommandLineUtils;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,7 +22,8 @@ using Rocket.Surgery.Hosting;
 
 namespace Rocket.Surgery.GenericHost
 {
-    public class Program
+    [PublicAPI]
+    public static class Program
     {
         public static Task Main(string[] args) => CreateHostBuilder(args).Build().RunAsync();
 

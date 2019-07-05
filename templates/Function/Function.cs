@@ -1,4 +1,5 @@
 using System;
+using JetBrains.Annotations;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
@@ -7,6 +8,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Rocket.Surgery.Functions
 {
+    [PublicAPI]
     public class Function
     {
         private readonly ILogger _logger;
