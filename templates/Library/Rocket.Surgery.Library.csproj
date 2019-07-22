@@ -7,7 +7,7 @@
     <PackageReference Include="Rocket.Surgery.Conventions.Abstractions" />
     #endif -->
     <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.3" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
+    <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.6" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Rocket.Surgery.Conventions.Abstractions" Version="6.2.2" />
     <!--#endif -->
     <!--#if (commandline) -->

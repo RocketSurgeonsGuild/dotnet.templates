@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project>
   <ItemGroup>
-    <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.4" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
+    <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.6" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <!-- <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.3" IncludeAssets="Analyzers;Build" PrivateAssets="All" /> -->
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-19351-01" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-19367-01" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Roslynator.Analyzers" Version="2.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
   </ItemGroup>
 </Project>

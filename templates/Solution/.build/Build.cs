@@ -2,7 +2,7 @@ using System.Linq;
 using Nuke.Common;
 using Nuke.Common.Execution;
 using Nuke.Common.ProjectModel;
-using Rocket.Surgery.Nuke;
+using Rocket.Surgery.Nuke.DotNetCore;
 using static Nuke.Common.Logger;
 
 [CheckBuildProjectConfigurations]
@@ -19,5 +19,5 @@ class Program : DotNetCoreBuild
 
     public static int Main() => Execute<Program>(x => x.Default);
 
-    Target Default => _ => _.DependsOn(Core);
+    Target Default => _ => _.DependsOn(DotNetCore);
 }
