@@ -22,7 +22,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="6.0.3" />
     <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="6.0.3" />
     <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="6.0.3" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0-preview6.19307.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0-preview7.19365.7" />
     <!--#endif -->
   </ItemGroup>
 
