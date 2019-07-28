@@ -14,14 +14,14 @@
     <PackageReference Include="Rocket.Surgery.Extensions.Logging" />
     #endif -->
     <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.6" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
+    <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.7" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.29" />
-    <PackageReference Include="Rocket.Surgery.Hosting.Functions" Version="4.0.0" />
-    <PackageReference Include="Rocket.Surgery.Conventions" Version="6.2.2" />
-    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="6.0.3" />
-    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="6.0.3" />
-    <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="6.0.3" />
+    <PackageReference Include="Rocket.Surgery.Hosting.Functions" Version="4.0.1" />
+    <PackageReference Include="Rocket.Surgery.Conventions" Version="6.2.4" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="6.0.4" />
+    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="6.0.4" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="6.0.4" />
     <!--#endif -->
   </ItemGroup>
   <ItemGroup>
