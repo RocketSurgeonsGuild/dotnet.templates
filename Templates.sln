@@ -19,23 +19,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = ".build", ".build\.build.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{E3DCB78E-EE06-4EA3-88AC-762D8910387C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocket.Surgery.Templates", "templates\Rocket.Surgery.Templates.csproj", "{6C6361E8-1028-407F-A413-1024F74242F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rocket.Surgery.Templates", "templates\Rocket.Surgery.Templates.csproj", "{6C6361E8-1028-407F-A413-1024F74242F2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{86E1CCEF-4A30-402A-A6E9-3651179A281F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocket.Surgery.Api", "templates\Api\Rocket.Surgery.Api.csproj", "{4BC09E87-BC8C-4025-B591-9D4618FF4203}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rocket.Surgery.Api", "templates\Api\Rocket.Surgery.Api.csproj", "{4BC09E87-BC8C-4025-B591-9D4618FF4203}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocket.Surgery.Cli", "templates\Cli\Rocket.Surgery.Cli.csproj", "{93C9E836-DBF1-4AA4-AD9F-C30B66994DC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rocket.Surgery.Cli", "templates\Cli\Rocket.Surgery.Cli.csproj", "{93C9E836-DBF1-4AA4-AD9F-C30B66994DC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocket.Surgery.Functions", "templates\Function\Rocket.Surgery.Functions.csproj", "{C182A8E9-63D0-4ECD-941C-BF72D22C06E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rocket.Surgery.Functions", "templates\Function\Rocket.Surgery.Functions.csproj", "{C182A8E9-63D0-4ECD-941C-BF72D22C06E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocket.Surgery.GenericHost", "templates\GenericHost\Rocket.Surgery.GenericHost.csproj", "{FCCF6EB5-56E7-45EF-972F-8C49AADD4989}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rocket.Surgery.GenericHost", "templates\GenericHost\Rocket.Surgery.GenericHost.csproj", "{FCCF6EB5-56E7-45EF-972F-8C49AADD4989}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocket.Surgery.Web", "templates\Web\Rocket.Surgery.Web.csproj", "{CF8A1C3A-B68E-48DE-BCC7-2C18776E8C9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rocket.Surgery.Web", "templates\Web\Rocket.Surgery.Web.csproj", "{CF8A1C3A-B68E-48DE-BCC7-2C18776E8C9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocket.Surgery.Library", "templates\Library\Rocket.Surgery.Library.csproj", "{8199C9A1-12D4-4283-9303-33A58D3E7AAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rocket.Surgery.Library", "templates\Library\Rocket.Surgery.Library.csproj", "{8199C9A1-12D4-4283-9303-33A58D3E7AAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocket.Surgery.Templates.Tests", "test\Template.Tests\Rocket.Surgery.Templates.Tests.csproj", "{37C8A585-F799-4D0F-B5F0-5701D7F800A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rocket.Surgery.Templates.Tests", "test\Template.Tests\Rocket.Surgery.Templates.Tests.csproj", "{37C8A585-F799-4D0F-B5F0-5701D7F800A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

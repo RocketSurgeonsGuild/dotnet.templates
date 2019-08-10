@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
@@ -20,6 +20,16 @@
   <ItemGroup>
     <Compile Remove="**\*.cs" />
     <Content Include="**\*" Exclude="**\bin\**;**\obj\**;*.csproj" PackagePath="content\templates\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Api\obj\Debug\netcoreapp3.0\staticwebassets\" />
+    <Folder Include="Cli\obj\Debug\netcoreapp3.0\" />
+    <Folder Include="Function\obj\Debug\netcoreapp2.1\" />
+    <Folder Include="Library\obj\Debug\netstandard2.0\" />
+    <Folder Include="obj\Debug\" />
+    <Folder Include="obj\Debug\netstandard2.0\" />
+    <Folder Include="Web\obj\Debug\netcoreapp3.0\staticwebassets\" />
   </ItemGroup>
 
 </Project>

@@ -4,6 +4,7 @@
     <OutputType>Exe</OutputType>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
+
   <ItemGroup>
     <!--#if (no-version)
     <PackageReference Include="Rocket.Surgery.Hosting" />
@@ -14,7 +15,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.Logging" />
     #endif -->
     <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.9" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
+    <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.10" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Rocket.Surgery.Hosting" Version="4.1.0" />
     <PackageReference Include="Rocket.Surgery.Conventions" Version="6.3.1" />
     <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="5.0.6" />
