@@ -7,15 +7,15 @@
     <PackageReference Include="Rocket.Surgery.Conventions.Abstractions" />
     #endif -->
     <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.7" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
-    <PackageReference Include="Rocket.Surgery.Conventions.Abstractions" Version="6.2.4" />
+    <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.9" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
+    <PackageReference Include="Rocket.Surgery.Conventions.Abstractions" Version="6.3.0" />
     <!--#endif -->
     <!--#if (commandline) -->
     <!--#if (no-version)
     <PackageReference Include="Rocket.Surgery.Extensions.CommandLine.Abstractions" />
     #endif -->
     <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine.Abstractions" Version="5.0.4" />
+    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine.Abstractions" Version="5.0.5" />
     <!--#endif -->
     <!--#endif -->
     <!--#if (!no-configuration) -->
