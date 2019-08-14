@@ -8,14 +8,14 @@
     #endif -->
     <!--#if (!no-version) -->
     <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.10" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
-    <PackageReference Include="Rocket.Surgery.Conventions.Abstractions" Version="6.3.1" />
+    <PackageReference Include="Rocket.Surgery.Conventions.Abstractions" Version="7.0.1" />
     <!--#endif -->
     <!--#if (commandline) -->
     <!--#if (no-version)
     <PackageReference Include="Rocket.Surgery.Extensions.CommandLine.Abstractions" />
     #endif -->
     <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine.Abstractions" Version="5.0.6" />
+    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine.Abstractions" Version="7.0.1" />
     <!--#endif -->
     <!--#endif -->
     <!--#if (!no-configuration) -->
@@ -23,7 +23,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.Configuration.Abstractions" />
     #endif -->
     <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Configuration.Abstractions" Version="6.0.5" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Configuration.Abstractions" Version="7.0.1" />
     <!--#endif -->
     <!--#endif -->
     <!--#if (logging) -->
@@ -31,7 +31,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.Logging.Abstractions" />
     #endif -->
     <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Logging.Abstractions" Version="6.0.5" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Logging.Abstractions" Version="7.0.1" />
     <!--#endif -->
     <!--#endif -->
     <!--#if (serilog) -->
@@ -47,7 +47,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection.Abstractions" />
     #endif -->
     <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection.Abstractions" Version="6.0.5" />
+    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection.Abstractions" Version="7.0.1" />
     <!--#endif -->
     <!--#endif -->
     <!--#if (autofac) -->
@@ -63,7 +63,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.Autofac.Abstractions" />
     #endif -->
     <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.WebJobs.Abstractions" Version="6.0.5" />
+    <PackageReference Include="Rocket.Surgery.Extensions.WebJobs.Abstractions" Version="7.0.1" />
     <!--#endif -->
     <!--#endif -->
   </ItemGroup>
