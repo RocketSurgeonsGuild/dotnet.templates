@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <PackageReference Include="Nuke.Common" Version="0.21.2" />
-    <PackageReference Include="Rocket.Surgery.Nuke.DotNetCore" Version="0.3.5" />
+    <PackageReference Include="Rocket.Surgery.Nuke.DotNetCore" Version="0.3.8" />
     <PackageReference Include="GitVersion.CommandLine.DotNetCore" Version="5.0.1">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
