@@ -16,13 +16,13 @@
     <!--#if (!no-version) -->
     <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.10" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc2-preview-0910" />
-    <PackageReference Include="Rocket.Surgery.Hosting" Version="7.0.5" />
-    <PackageReference Include="Rocket.Surgery.Conventions" Version="7.0.5" />
-    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="7.0.5" />
-    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="7.0.5" />
-    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="7.0.5" />
-    <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="7.0.5" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0-preview8.19405.7" />
+    <PackageReference Include="Rocket.Surgery.Hosting" Version="7.2.1" />
+    <PackageReference Include="Rocket.Surgery.Conventions" Version="7.2.1" />
+    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="7.2.1" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="7.2.1" />
+    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="7.2.1" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="7.2.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0-rc1.19457.4" />
     <!--#endif -->
   </ItemGroup>
 
