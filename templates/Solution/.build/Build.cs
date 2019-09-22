@@ -1,13 +1,13 @@
 using System.Linq;
 using Nuke.Common;
 using Nuke.Common.Execution;
-using Nuke.Common.ProjectModel;
 using Rocket.Surgery.Nuke.DotNetCore;
-using static Nuke.Common.Logger;
+using Rocket.Surgery.Nuke;
 
 [CheckBuildProjectConfigurations]
 [UnsetVisualStudioEnvironmentVariables]
-class Program : DotNetCoreBuild
+[PackageIcon("https://raw.githubusercontent.com/RocketSurgeonsGuild/graphics/master/png/social-square-thrust-rounded.png")]
+class Build : DotNetCoreBuild
 {
     /// <summary>
     /// Support plugins are available for:
@@ -17,7 +17,7 @@ class Program : DotNetCoreBuild
     ///   - Microsoft VSCode           https://nuke.build/vscode
     /// </summary>
 
-    public static int Main() => Execute<Program>(x => x.Default);
+    public static int Main() => Execute<Build>(x => x.Default);
 
     Target Default => _ => _.DependsOn(DotNetCore);
 }
