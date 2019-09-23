@@ -4,7 +4,7 @@
     <PackageType>Template</PackageType>
     <PackageId>Rocket.Surgery.Templates</PackageId>
     <Title>Rocket Surgeon Guild Templates</Title>
-    <Authors>David Driscoll</Authors>
+    <Authors>David Driscoll,Rocket Surgeons Guild contributors</Authors>
     <Description>Templates to use when creating an application using Rocket Surgery!</Description>
     <Tags>dotnet-new;templates;rocket surgery;rocket;surgery</Tags>
     <TargetFramework>netstandard2.0</TargetFramework>
