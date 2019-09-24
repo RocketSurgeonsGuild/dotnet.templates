@@ -15,13 +15,13 @@
     <PackageReference Include="Rocket.Surgery.Extensions.Logging" />
     #endif -->
     <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.10" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
-    <PackageReference Include="Rocket.Surgery.Hosting" Version="8.0.0" />
-    <PackageReference Include="Rocket.Surgery.Conventions" Version="8.0.0" />
-    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="8.0.0" />
-    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="8.0.0" />
-    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="8.0.0" />
-    <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="8.0.0" />
+    <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.11" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
+    <PackageReference Include="Rocket.Surgery.Hosting" Version="8.0.1" />
+    <PackageReference Include="Rocket.Surgery.Conventions" Version="8.0.1" />
+    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="8.0.1" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="8.0.1" />
+    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="8.0.1" />
     <!--#endif -->
   </ItemGroup>
 
