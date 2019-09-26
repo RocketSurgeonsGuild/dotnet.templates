@@ -31,7 +31,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.Logging.Abstractions" />
     #endif -->
     <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Logging.Abstractions" Version="8.0.1" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Logging.Abstractions" Version="9.0.0" />
     <!--#endif -->
     <!--#endif -->
     <!--#if (serilog) -->
