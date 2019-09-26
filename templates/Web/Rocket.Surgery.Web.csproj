@@ -21,7 +21,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="8.0.1" />
     <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="8.0.1" />
     <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="8.0.1" />
-    <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="8.0.1" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="9.0.0" />
     <!--#endif -->
   </ItemGroup>
 
