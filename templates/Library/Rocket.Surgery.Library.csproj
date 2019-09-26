@@ -39,7 +39,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.Serilog.Abstractions" />
     #endif -->
     <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Serilog.Abstractions" Version="9.0.1" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Serilog.Abstractions" Version="10.0.0" />
     <!--#endif -->
     <!--#endif -->
     <!--#if (!no-services) -->
