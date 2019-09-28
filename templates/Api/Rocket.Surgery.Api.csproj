@@ -17,7 +17,7 @@
     <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.11" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc3" />
     <PackageReference Include="Rocket.Surgery.Hosting" Version="9.0.0" />
-    <PackageReference Include="Rocket.Surgery.Conventions" Version="9.0.0" />
+    <PackageReference Include="Rocket.Surgery.Conventions" Version="9.0.2" />
     <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="9.0.0" />
     <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="9.0.0" />
     <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="9.0.0" />
