@@ -15,7 +15,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.CommandLine.Abstractions" />
     #endif -->
     <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine.Abstractions" Version="9.0.0" />
+    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine.Abstractions" Version="9.0.3" />
     <!--#endif -->
     <!--#endif -->
     <!--#if (!no-configuration) -->
