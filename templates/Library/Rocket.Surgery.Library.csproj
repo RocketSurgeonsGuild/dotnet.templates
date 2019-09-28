@@ -23,7 +23,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.Configuration.Abstractions" />
     #endif -->
     <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Configuration.Abstractions" Version="9.0.0" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Configuration.Abstractions" Version="9.0.2" />
     <!--#endif -->
     <!--#endif -->
     <!--#if (logging) -->
