@@ -18,7 +18,7 @@
     <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.11" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Rocket.Surgery.Hosting" Version="9.0.3" />
     <PackageReference Include="Rocket.Surgery.Conventions" Version="9.0.4" />
-    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="9.0.3" />
+    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="9.0.4" />
     <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="9.0.4" />
     <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="9.0.3" />
     <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="9.0.4" />
