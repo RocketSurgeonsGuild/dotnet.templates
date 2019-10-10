@@ -47,7 +47,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection.Abstractions" />
     #endif -->
     <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection.Abstractions" Version="9.0.3" />
+    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection.Abstractions" Version="9.0.4" />
     <!--#endif -->
     <!--#endif -->
     <!--#if (autofac) -->
