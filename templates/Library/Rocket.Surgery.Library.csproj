@@ -55,7 +55,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.Autofac.Abstractions" />
     #endif -->
     <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Autofac.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Autofac.Abstractions" Version="7.0.1" />
     <!--#endif -->
     <!--#endif -->
     <!--#if (webjobs) -->
