@@ -3,7 +3,7 @@
   <ItemGroup>
     <PackageReference Include="Rocket.Surgery.Extensions.Testing" Version="2.2.0" />
     <PackageReference Include="Autofac.Extras.FakeItEasy" Version="5.0.1" />
-    <PackageReference Include="Bogus" Version="28.3.2" />
+    <PackageReference Include="Bogus" Version="28.4.1" />
     <PackageReference Include="coverlet.collector" Version="1.1.0" />
     <PackageReference Include="coverlet.msbuild" Version="2.7.0" />
     <PackageReference Include="FakeItEasy" Version="5.2.0" />
