@@ -1,70 +1,87 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <!--#if (no-version)
+    <IncludeRocketSurgery>true</IncludeRocketSurgery>
+    #endif -->
+    <!--#if (no-version) -->
+    <!--#if (autofac)
+    <EnableAutofac>true</EnableAutofac>
+    #endif -->
+    <!--#if (automapper)
+    <EnableAutoMapper>false</EnableAutoMapper>
+    #endif -->
+    <!--#if (commandline)
+    <EnableCommandLine>true</EnableCommandLine>
+    #endif -->
+    <!--#if (no-configuration)
+    <EnableConfiguration>false</EnableConfiguration>
+    #endif -->
+    <!--#if (no-extensions)
+    <EnableExtensions>false</EnableExtensions>
+    #endif -->
+    <!--#if (!fluentvalidation)
+    <EnableFluentValidation>false</EnableFluentValidation>
+    #endif -->
+    <!--#if (!mediatr)
+    <EnableMediatR>false</EnableMediatR>
+    #endif -->
+    <!--#if (no-services)
+    <EnableDependencyInjection>false</EnableDependencyInjection>
+    #endif -->
+    <!--#if (no-logging)
+    <EnableLogging>false</EnableLogging>
+    #endif -->
+    <!--#if (!serilog)
+    <EnableSerilog>false</EnableSerilog>
+    #endif -->
+    <!--#if (webjobs)
+    <EnableWebJobs>true</EnableWebJobs>
+    #endif -->
+    <!-- #endif -->
   </PropertyGroup>
   <ItemGroup>
-    <!--#if (no-version)
-    <PackageReference Include="Rocket.Surgery.Conventions.Abstractions" />
-    #endif -->
     <!--#if (!no-version) -->
     <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.11" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
-    <PackageReference Include="Rocket.Surgery.Conventions.Abstractions" Version="9.0.4" />
-    <!--#endif -->
-    <!--#if (commandline) -->
-    <!--#if (no-version)
-    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine.Abstractions" />
-    #endif -->
-    <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine.Abstractions" Version="9.0.4" />
-    <!--#endif -->
-    <!--#endif -->
-    <!--#if (!no-configuration) -->
-    <!--#if (no-version)
-    <PackageReference Include="Rocket.Surgery.Extensions.Configuration.Abstractions" />
-    #endif -->
-    <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Configuration.Abstractions" Version="9.0.3" />
-    <!--#endif -->
-    <!--#endif -->
-    <!--#if (logging) -->
-    <!--#if (no-version)
-    <PackageReference Include="Rocket.Surgery.Extensions.Logging.Abstractions" />
-    #endif -->
-    <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Logging.Abstractions" Version="9.0.3" />
-    <!--#endif -->
-    <!--#endif -->
-    <!--#if (serilog) -->
-    <!--#if (no-version)
-    <PackageReference Include="Rocket.Surgery.Extensions.Serilog.Abstractions" />
-    #endif -->
-    <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Serilog.Abstractions" Version="10.0.0" />
-    <!--#endif -->
-    <!--#endif -->
-    <!--#if (!no-services) -->
-    <!--#if (no-version)
-    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection.Abstractions" />
-    #endif -->
-    <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection.Abstractions" Version="9.0.3" />
-    <!--#endif -->
-    <!--#endif -->
     <!--#if (autofac) -->
-    <!--#if (no-version)
-    <PackageReference Include="Rocket.Surgery.Extensions.Autofac.Abstractions" />
-    #endif -->
-    <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Autofac.Abstractions" Version="7.0.0" />
-    <!--#endif -->
-    <!--#endif -->
+    <PackageReference Include="Rocket.Surgery.Extensions.Autofac" Version="7.0.1" />
+    <!-- #endif -->
+    <!--#if (!no-automapper) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.1" />
+    <!-- #endif -->
+    <!--#if (commandline) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="9.0.4" />
+    <!-- #endif -->
+    <!--#if (!no-configuration) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="9.0.4" />
+    <!-- #endif -->
+    <!--#if (!no-services) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="9.0.4" />
+    <!-- #endif -->
+    <!--#if (!no-logging) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="9.0.4" />
+    <!-- #endif -->
     <!--#if (webjobs) -->
-    <!--#if (no-version)
-    <PackageReference Include="Rocket.Surgery.Extensions.Autofac.Abstractions" />
-    #endif -->
-    <!--#if (!no-version) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.WebJobs.Abstractions" Version="9.0.3" />
-    <!--#endif -->
-    <!--#endif -->
+    <PackageReference Include="Rocket.Surgery.Extensions.WebJobs" Version="9.0.4" />
+    <!-- #endif -->
+    <!--#if (!no-fluentvalidation) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Version="6.1.1" />
+    <!--#if (!no-mediatr) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation.MediatR" Version="6.1.1" />
+    <!-- #endif -->
+    <!-- #endif -->
+    <!--#if (!no-mediatr) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Version="7.0.1" />
+    <!-- #endif -->
+    <!--#if (!no-serilog) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.Serilog" Version="10.0.1" />
+    <!-- #endif -->
+    <!--#if (!no-extensions) -->
+    <PackageReference Include="Rocket.Surgery.Extensions" Version="2.0.0" />
+    <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.0.0" />
+    <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.0.0" />
+    <PackageReference Include="Rocket.Surgery.Task.Extensions" Version="2.0.0" />
+    <!-- #endif -->
+    <!-- #endif -->
   </ItemGroup>
 </Project>

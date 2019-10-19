@@ -1,7 +1,11 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "David Driscoll",
-  "classifications": ["Common", "Library", "Rocket Surgery"],
+  "classifications": [
+    "Common",
+    "Library",
+    "Rocket Surgery"
+  ],
   "identity": "Rocket.Surgery.Library",
   "name": "Rocket Surgery Library",
   "shortName": "rocketlib",
@@ -14,12 +18,26 @@
       "isRequired": false,
       "description": "Do not include the version in the project file, versions will come from Directory.Build.targets or similar"
     },
-    "no-services": {
+    "autofac": {
       "datatype": "bool",
       "defaultValue": "false",
       "type": "parameter",
       "isRequired": false,
-      "description": "Do not include Rocket.Surgery.Extensions.DependencyInjection as a package reference"
+      "description": "Include Rocket.Surgery.Extensions.Autofac as a package reference"
+    },
+    "automapper": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Include AutoMapper in the dependencies"
+    },
+    "commandline": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Include Rocket.Surgery.Extensions.CommandLine as a package reference"
     },
     "no-configuration": {
       "datatype": "bool",
@@ -28,19 +46,40 @@
       "isRequired": false,
       "description": "Do not include Rocket.Surgery.Extensions.Configuration as a package reference"
     },
-    "commandline": {
+    "no-extensions": {
       "datatype": "bool",
       "defaultValue": "false",
       "type": "parameter",
       "isRequired": false,
-      "description": "Do not include Rocket.Surgery.Extensions.CommandLine as a package reference"
+      "description": "Do not include Rocket.Surgery.Extensions in the dependencies"
     },
-    "logging": {
+    "fluentvalidation": {
       "datatype": "bool",
       "defaultValue": "false",
       "type": "parameter",
       "isRequired": false,
-      "description": "Include Rocket.Surgery.Extensions.Logging as a package reference"
+      "description": "Do not include FluentValidation in the dependencies"
+    },
+    "mediatr": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Do not include MediatR in the dependencies"
+    },
+    "no-services": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Do not include Rocket.Surgery.Extensions.DependencyInjection as a package reference"
+    },
+    "no-logging": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Do not include Rocket.Surgery.Extensions.Logging as a package reference"
     },
     "serilog": {
       "datatype": "bool",
@@ -48,13 +87,6 @@
       "type": "parameter",
       "isRequired": false,
       "description": "Include Rocket.Surgery.Extensions.Serilog as a package reference"
-    },
-    "autofac": {
-      "datatype": "bool",
-      "defaultValue": "false",
-      "type": "parameter",
-      "isRequired": false,
-      "description": "Include Rocket.Surgery.Extensions.Autofac as a package reference"
     },
     "webjobs": {
       "datatype": "bool",
@@ -66,36 +98,7 @@
   },
   "sources": [
     {
-      "modifiers": [
-        {
-          "condition": "(no-services)",
-          "exclude": ["LibraryConvention.Services.cs"]
-        },
-        {
-          "condition": "(no-configuration)",
-          "exclude": ["LibraryConvention.Configuration.cs"]
-        },
-        {
-          "condition": "(!commandline)",
-          "exclude": ["LibraryConvention.CommandLine.cs"]
-        },
-        {
-          "condition": "(!logging)",
-          "exclude": ["LibraryConvention.Logging.cs"]
-        },
-        {
-          "condition": "(!serilog)",
-          "exclude": ["LibraryConvention.Serilog.cs"]
-        },
-        {
-          "condition": "(!autofac)",
-          "exclude": ["LibraryConvention.Autofac.cs"]
-        },
-        {
-          "condition": "(!webjobs)",
-          "exclude": ["LibraryConvention.WebJobs.cs"]
-        }
-      ]
+      "modifiers": []
     }
   ]
 }

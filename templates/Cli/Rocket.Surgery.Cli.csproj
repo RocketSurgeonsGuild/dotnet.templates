@@ -51,7 +51,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.Serilog" Version="10.0.1" />
     <!-- #endif -->
     <PackageReference Include="Rocket.Surgery.Hosting" Version="9.0.4" />
-    <!--#if (!autofac) -->
+    <!--#if (autofac) -->
     <PackageReference Include="Rocket.Surgery.Hosting.Autofac" Version="7.0.1" />
     <!-- #endif -->
     <!-- #endif -->
