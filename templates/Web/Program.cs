@@ -20,10 +20,9 @@ namespace Rocket.Surgery.Web
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .LaunchWith(RocketBooster.For(DependencyContext.Default))
-                .ConfigureRocketSurgery(builder => { })
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
+                //#if autofac
+                .ConfigureRocketSurgery(builder => builder.UseAutofac())
+                //#endif
+                .ConfigureWebHostDefaults(webBuilder => webBuilder.UseStartup<Startup>());
     }
 }

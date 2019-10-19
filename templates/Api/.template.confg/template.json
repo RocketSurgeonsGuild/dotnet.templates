@@ -1,18 +1,72 @@
 {
-    "$schema": "http://json.schemastore.org/template",
-    "author": "David Driscoll",
-    "classifications": [ "Common", "Api", "Web", "Rocket Surgery" ],
-    "identity": "Rocket.Surgery.Api",
-    "name": "Rocket Surgery AspNetCore Api",
-    "shortName": "rocketapi",
-    "sourceName": "Rocket.Surgery.Api",
-    "symbols": {
-        "no-version": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Do not include the version in the project file, versions will come from Directory.Build.targets or similar"
-        }
+  "$schema": "http://json.schemastore.org/template",
+  "author": "David Driscoll",
+  "classifications": [
+    "Common",
+    "Api",
+    "Web",
+    "Rocket Surgery"
+  ],
+  "identity": "Rocket.Surgery.Api",
+  "name": "Rocket Surgery AspNetCore Api",
+  "shortName": "rocketapi",
+  "sourceName": "Rocket.Surgery.Api",
+  "symbols": {
+    "no-version": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Do not include the version in the project file, versions will come from Directory.Build.targets or similar"
+    },
+    "autofac": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Include AutoMapper in the dependencies"
+    },
+    "no-automapper": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Do not include AutoMapper in the dependencies"
+    },
+    "no-extensions": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Do not include Rocket.Surgery.Extensions in the dependencies"
+    },
+    "no-fluentvalidation": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Do not include FluentValidation in the dependencies"
+    },
+    "newtonsoftjson": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Include ASP.NET Core NewtonsoftJson in the dependencies"
+    },
+    "no-mediatr": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Do not include MediatR in the dependencies"
+    },
+    "no-serilog": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Do not include Serilog in the dependencies"
     }
+  }
 }

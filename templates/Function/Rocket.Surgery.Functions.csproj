@@ -2,27 +2,54 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
+    <!--#if (no-version)
+    <IncludeRocketSurgeryFunctions>true</IncludeRocketSurgeryFunctions>
+    #endif -->
+    <!--#if (no-version) -->
+    <!--#if (no-automapper)
+    <EnableAutoMapper>false</EnableAutoMapper>
+    #endif -->
+    <!--#if (no-extensions)
+    <EnableExtensions>false</EnableExtensions>
+    #endif -->
+    <!--#if (no-fluentvalidation)
+    <EnableFluentValidation>false</EnableFluentValidation>
+    #endif -->
+    <!--#if (no-mediatr)
+    <EnableMediatR>false</EnableMediatR>
+    #endif -->
+    <!--#if (no-serilog)
+    <EnableSerilog>false</EnableSerilog>
+    #endif -->
+    <!-- #endif -->
   </PropertyGroup>
   <ItemGroup>
-    <!--#if (no-version)
-    <PackageReference Include="Newtonsoft.Json" />
-    <PackageReference Include="Microsoft.NET.Sdk.Functions" />
-    <PackageReference Include="Rocket.Surgery.Hosting.Functions" />
-    <PackageReference Include="Rocket.Surgery.Conventions" />
-    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" />
-    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" />
-    <PackageReference Include="Rocket.Surgery.Extensions.Logging" />
-    #endif -->
     <!--#if (!no-version) -->
     <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.11" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.29" />
     <PackageReference Include="Rocket.Surgery.Hosting.Functions" Version="9.0.4" />
-    <PackageReference Include="Rocket.Surgery.Conventions" Version="9.0.4" />
-    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="9.0.4" />
-    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="9.0.4" />
-    <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="9.0.4" />
-    <!--#endif -->
+    <!-- #endif -->
+    <!--#if (!no-automapper) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.1" />
+    <!-- #endif -->
+    <!--#if (!no-extensions) -->
+    <PackageReference Include="Rocket.Surgery.Extensions" Version="2.0.0" />
+    <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.0.0" />
+    <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.0.0" />
+    <PackageReference Include="Rocket.Surgery.Task.Extensions" Version="2.0.0" />
+    <!-- #endif -->
+    <!--#if (!no-fluentvalidation) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Version="6.1.1" />
+    <!--#if (!no-mediatr) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation.MediatR" Version="6.1.1" />
+    <!-- #endif -->
+    <!-- #endif -->
+    <!--#if (!no-mediatr) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Version="7.0.1" />
+    <!-- #endif -->
+    <!--#if (!no-serilog) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.Serilog" Version="10.0.1" />
+    <!-- #endif -->
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">
