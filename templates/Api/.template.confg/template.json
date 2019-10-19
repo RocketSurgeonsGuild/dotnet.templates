@@ -68,5 +68,18 @@
       "isRequired": false,
       "description": "Do not include Serilog in the dependencies"
     }
+  },
+  "specialCustomOperations": {
+    "*.yml": {
+      "operations": [
+        {
+          "type": "conditional",
+          "configuration": {
+            "style": "line",
+            "token": "#"
+          }
+        }
+      ]
+    }
   }
 }

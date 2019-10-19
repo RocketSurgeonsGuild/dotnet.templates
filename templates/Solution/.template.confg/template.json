@@ -1,13 +1,16 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "David Driscoll",
-  "classifications": ["Common", "Solution", "Rocket Surgery"],
+  "classifications": [
+    "Common",
+    "Solution",
+    "Rocket Surgery"
+  ],
   "identity": "Rocket.Surgery.Solution",
   "name": "Rocket Surgery Solution",
   "shortName": "rocketsln",
   "sourceName": "Rocket.Surgery.Solution",
-  "symbols": {
-  },
+  "symbols": {},
   "guids": [
     "2150E333-8FDC-42A3-9474-1A3956D46DE8",
     "9A19103F-16F7-4668-BE54-9A1E7A4F7556",
@@ -23,5 +26,18 @@
         "NotGitVersion.yml": "GitVersion.yml"
       }
     }
-  ]
+  ],
+  "specialCustomOperations": {
+    "*.yml": {
+      "operations": [
+        {
+          "type": "conditional",
+          "configuration": {
+            "style": "line",
+            "token": "#"
+          }
+        }
+      ]
+    }
+  }
 }

@@ -100,5 +100,18 @@
     {
       "modifiers": []
     }
-  ]
+  ],
+  "specialCustomOperations": {
+    "*.yml": {
+      "operations": [
+        {
+          "type": "conditional",
+          "configuration": {
+            "style": "line",
+            "token": "#"
+          }
+        }
+      ]
+    }
+  }
 }
