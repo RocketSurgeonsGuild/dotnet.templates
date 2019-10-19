@@ -74,7 +74,7 @@
       "isRequired": false,
       "description": "Do not include Rocket.Surgery.Extensions.DependencyInjection as a package reference"
     },
-    "no-logging": {
+    "logging": {
       "datatype": "bool",
       "defaultValue": "false",
       "type": "parameter",

@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Text;
 using System.Threading.Tasks;
 using Rocket.Surgery.Conventions;
-//#if (!no-services)
+//#if autofac
 using Rocket.Surgery.Extensions.Autofac;
 //#endif
 //#if commandline
@@ -13,7 +13,7 @@ using Rocket.Surgery.Extensions.CommandLine;
 //#if (!no-configuration)
 using Rocket.Surgery.Extensions.Configuration;
 //#endif
-//#if autofac
+//#if (!no-services)
 using Rocket.Surgery.Extensions.DependencyInjection;
 //#endif
 //#if logging
@@ -32,6 +32,15 @@ using Rocket.Surgery.Library;
 namespace Rocket.Surgery.Library
 {
     public partial class LibraryConvention { }
+    //#if autofac
+    public partial class LibraryConvention : IAutofacConvention
+    {
+        void IConvention<IAutofacConventionContext>.Register(IAutofacConventionContext context)
+        {
+            // Add stuff here
+        }
+    }
+    //#endif
     //#if (!no-configuration)
     public partial class LibraryConvention : IConfigurationConvention
     {
@@ -45,15 +54,6 @@ namespace Rocket.Surgery.Library
     public partial class LibraryConvention : IServiceConvention
     {
         void IConvention<IServiceConventionContext>.Register(IServiceConventionContext context)
-        {
-            // Add stuff here
-        }
-    }
-    //#endif
-    //#if autofac
-    public partial class LibraryConvention : IAutofacConvention
-    {
-        void IConvention<IAutofacConventionContext>.Register(IAutofacConventionContext context)
         {
             // Add stuff here
         }
