@@ -50,7 +50,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.1" />
     <!-- #endif -->
     <!--#if (commandline) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="9.0.4" />
+    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="9.0.5" />
     <!-- #endif -->
     <!--#if (!no-configuration) -->
     <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="9.0.5" />
