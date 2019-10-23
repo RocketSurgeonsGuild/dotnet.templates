@@ -27,7 +27,7 @@
     <!--#if (!no-version) -->
     <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.11" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.29" />
-    <PackageReference Include="Rocket.Surgery.Hosting.Functions" Version="9.0.4" />
+    <PackageReference Include="Rocket.Surgery.Hosting.Functions" Version="9.0.5" />
     <!-- #endif -->
     <!--#if (!no-automapper) -->
     <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.1" />
