@@ -1,11 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+  <!--#if (sdk) -->
+  <Sdk Name="Rocket.Surgery.Meta.Packages" Version="2.2.0" />
+  <!-- #endif -->
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
-    <!--#if (no-version)
+    <!--#if (!version)
     <IncludeRocketSurgeryFunctions>true</IncludeRocketSurgeryFunctions>
     #endif -->
-    <!--#if (no-version) -->
+    <!--#if (!version) -->
     <!--#if (no-automapper)
     <EnableAutoMapper>false</EnableAutoMapper>
     #endif -->
@@ -24,7 +27,7 @@
     <!-- #endif -->
   </PropertyGroup>
   <ItemGroup>
-    <!--#if (!no-version) -->
+    <!--#if (version) -->
     <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.11" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.29" />
     <PackageReference Include="Rocket.Surgery.Hosting.Functions" Version="9.0.4" />

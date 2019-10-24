@@ -11,12 +11,19 @@
   "shortName": "rocketlib",
   "sourceName": "Rocket.Surgery.Library",
   "symbols": {
-    "no-version": {
+    "sdk": {
       "datatype": "bool",
       "defaultValue": "false",
       "type": "parameter",
       "isRequired": false,
-      "description": "Do not include the version in the project file, versions will come from Directory.Build.targets or similar"
+      "description": "Include the rocket surgery sdk with the project"
+    },
+    "version": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Include the versions in the project file, typically these come from Directory.Build.targets or similar"
     },
     "autofac": {
       "datatype": "bool",

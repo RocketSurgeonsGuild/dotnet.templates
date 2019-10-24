@@ -1,12 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+  <!--#if (sdk) -->
+  <Sdk Name="Rocket.Surgery.Meta.Packages" Version="2.2.0" />
+  <!-- #endif -->
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <OutputType>Exe</OutputType>
     <IsPackable>false</IsPackable>
-    <!--#if (no-version)
+    <!--#if (!version)
     <IncludeRocketSurgeryHosting>true</IncludeRocketSurgeryHosting>
     #endif -->
-    <!--#if (no-version) -->
+    <!--#if (!version) -->
     <!--#if (autofac)
     <EnableAutofac>true</EnableAutofac>
     #endif -->
@@ -27,7 +30,7 @@
     #endif -->
   </PropertyGroup>
   <ItemGroup>
-    <!--#if (!no-version) -->
+    <!--#if (version) -->
     <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.11" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <!--#if (!no-automapper) -->
     <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.1" />

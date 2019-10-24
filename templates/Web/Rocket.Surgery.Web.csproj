@@ -1,12 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
-
+  <!--#if (sdk) -->
+  <Sdk Name="Rocket.Surgery.Meta.Packages" Version="2.2.0" />
+  <!-- #endif -->
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <IsPackable>false</IsPackable>
-    <!--#if (no-version)
+    <!--#if (!version)
     <IncludeRocketSurgeryAspNetCore>true</IncludeRocketSurgeryAspNetCore>
     #endif -->
-    <!--#if (no-version) -->
+    <!--#if (!version) -->
     <!--#if (autofac)
     <EnableAutofac>true</EnableAutofac>
     #endif -->
@@ -31,7 +33,7 @@
     <!-- #endif -->
   </PropertyGroup>
   <ItemGroup>
-    <!--#if (!no-version) -->
+    <!--#if (version) -->
     <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.11" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <!--#if (newtonsoftjson) -->
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0" />

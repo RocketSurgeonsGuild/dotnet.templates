@@ -1,10 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+  <!--#if (sdk) -->
+  <Sdk Name="Rocket.Surgery.Meta.Packages" Version="2.2.0" />
+  <!-- #endif -->
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <!--#if (no-version)
+    <TargetFrameworks>netstandard2.1;netstandard2.0</TargetFrameworks>
+    <!--#if (!version)
     <IncludeRocketSurgery>true</IncludeRocketSurgery>
     #endif -->
-    <!--#if (no-version) -->
+    <!--#if (!version) -->
     <!--#if (autofac)
     <EnableAutofac>true</EnableAutofac>
     #endif -->
@@ -41,7 +44,7 @@
     <!-- #endif -->
   </PropertyGroup>
   <ItemGroup>
-    <!--#if (!no-version) -->
+    <!--#if (version) -->
     <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.11" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <!--#if (autofac) -->
     <PackageReference Include="Rocket.Surgery.Extensions.Autofac" Version="7.0.1" />
