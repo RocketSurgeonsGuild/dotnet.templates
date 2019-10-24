@@ -53,19 +53,19 @@
     <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.1" />
     <!-- #endif -->
     <!--#if (commandline) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="9.0.4" />
+    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="9.0.5" />
     <!-- #endif -->
     <!--#if (!no-configuration) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="9.0.4" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="9.0.5" />
     <!-- #endif -->
     <!--#if (!no-services) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="9.0.4" />
+    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="9.0.5" />
     <!-- #endif -->
     <!--#if (logging) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="9.0.4" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="9.0.5" />
     <!-- #endif -->
     <!--#if (webjobs) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.WebJobs" Version="9.0.4" />
+    <PackageReference Include="Rocket.Surgery.Extensions.WebJobs" Version="9.0.5" />
     <!-- #endif -->
     <!--#if (!no-fluentvalidation) -->
     <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Version="6.1.1" />
