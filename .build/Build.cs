@@ -3,7 +3,7 @@ using Nuke.Common.Execution;
 using Rocket.Surgery.Nuke.DotNetCore;
 using Rocket.Surgery.Nuke;
 
-[CheckBuildProjectConfigurations]
+// [CheckBuildProjectConfigurations]
 [UnsetVisualStudioEnvironmentVariables]
 [PackageIcon("https://raw.githubusercontent.com/RocketSurgeonsGuild/graphics/master/png/social-square-thrust-rounded.png")]
 class Build : DotNetCoreBuild
