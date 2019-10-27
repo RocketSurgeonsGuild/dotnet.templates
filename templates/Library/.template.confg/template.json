@@ -6,10 +6,12 @@
     "Library",
     "Rocket Surgery"
   ],
-  "identity": "Rocket.Surgery.Library",
+  "identity": "Library",
   "name": "Rocket Surgery Library",
   "shortName": "rocketlib",
-  "sourceName": "Rocket.Surgery.Library",
+  "defaultName": "Library",
+  "preferNameDirectory": true,
+  "sourceName": "Library",
   "symbols": {
     "sdk": {
       "datatype": "bool",
@@ -58,35 +60,35 @@
       "defaultValue": "false",
       "type": "parameter",
       "isRequired": false,
-      "description": "Do not include Rocket.Surgery.Extensions in the dependencies"
+      "description": "Include Rocket.Surgery.Extensions in the dependencies"
     },
     "fluentvalidation": {
       "datatype": "bool",
       "defaultValue": "false",
       "type": "parameter",
       "isRequired": false,
-      "description": "Do not include FluentValidation in the dependencies"
+      "description": "Include FluentValidation in the dependencies"
     },
     "mediatr": {
       "datatype": "bool",
       "defaultValue": "false",
       "type": "parameter",
       "isRequired": false,
-      "description": "Do not include MediatR in the dependencies"
+      "description": "Include MediatR in the dependencies"
     },
     "no-services": {
       "datatype": "bool",
       "defaultValue": "false",
       "type": "parameter",
       "isRequired": false,
-      "description": "Do not include Rocket.Surgery.Extensions.DependencyInjection as a package reference"
+      "description": "Include Rocket.Surgery.Extensions.DependencyInjection as a package reference"
     },
     "logging": {
       "datatype": "bool",
       "defaultValue": "false",
       "type": "parameter",
       "isRequired": false,
-      "description": "Do not include Rocket.Surgery.Extensions.Logging as a package reference"
+      "description": "Include Rocket.Surgery.Extensions.Logging as a package reference"
     },
     "serilog": {
       "datatype": "bool",
@@ -103,9 +105,19 @@
       "description": "Include Rocket.Surgery.Extensions.WebJobs as a package reference"
     }
   },
-  "sources": [
+  "sources": [],
+  "primaryOutputs": [
     {
-      "modifiers": []
+      "path": "Library.csproj"
+    }
+  ],
+  "postActions": [
+    {
+      "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
+      "description": "Add project to solution file",
+      "args": {
+        "primaryOutputIndexes": "0"
+      }
     }
   ],
   "specialCustomOperations": {

@@ -9,6 +9,8 @@
   "identity": "Rocket.Surgery.Cli",
   "name": "Rocket Surgery Command Line Application",
   "shortName": "rocketcli",
+  "defaultName": "Tool",
+  "preferNameDirectory": true,
   "sourceName": "Rocket.Surgery.Cli",
   "symbols": {
     "sdk": {
@@ -61,6 +63,20 @@
       "description": "Do not include Serilog in the dependencies"
     }
   },
+  "primaryOutputs": [
+    {
+      "path": "Rocket.Surgery.Cli.csproj"
+    }
+  ],
+  "postActions": [
+    {
+      "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
+      "description": "Add project to solution file",
+      "args": {
+        "primaryOutputIndexes": "0"
+      }
+    }
+  ],
   "specialCustomOperations": {
     "*.yml": {
       "operations": [

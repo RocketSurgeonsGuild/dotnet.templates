@@ -10,6 +10,8 @@
   "identity": "Rocket.Surgery.Api",
   "name": "Rocket Surgery AspNetCore Api",
   "shortName": "rocketapi",
+  "defaultName": "Api",
+  "preferNameDirectory": true,
   "sourceName": "Rocket.Surgery.Api",
   "symbols": {
     "sdk": {
@@ -76,6 +78,20 @@
       "description": "Do not include Serilog in the dependencies"
     }
   },
+  "primaryOutputs": [
+    {
+      "path": "Rocket.Surgery.Api.csproj"
+    }
+  ],
+  "postActions": [
+    {
+      "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
+      "description": "Add project to solution file",
+      "args": {
+        "primaryOutputIndexes": "0"
+      }
+    }
+  ],
   "specialCustomOperations": {
     "*.yml": {
       "operations": [

@@ -9,6 +9,8 @@
   "identity": "Rocket.Surgery.Functions",
   "name": "Rocket Surgery Azure Functions Application",
   "shortName": "rocketfun",
+  "defaultName": "Functions",
+  "preferNameDirectory": true,
   "sourceName": "Rocket.Surgery.Functions",
   "symbols": {
     "sdk": {
@@ -61,6 +63,20 @@
       "description": "Do not include Serilog in the dependencies"
     }
   },
+  "primaryOutputs": [
+    {
+      "path": "Rocket.Surgery.Function.csproj"
+    }
+  ],
+  "postActions": [
+    {
+      "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
+      "description": "Add project to solution file",
+      "args": {
+        "primaryOutputIndexes": "0"
+      }
+    }
+  ],
   "specialCustomOperations": {
     "*.yml": {
       "operations": [

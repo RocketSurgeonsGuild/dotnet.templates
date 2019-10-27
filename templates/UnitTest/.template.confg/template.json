@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "David Driscoll",
+  "classifications": [
+    "Common",
+    "Unit Test",
+    "XUnit",
+    "Rocket Surgery"
+  ],
+  "identity": "UnitTest",
+  "name": "Rocket Surgery UnitTest",
+  "shortName": "rockettest",
+  "defaultName": "UnitTest",
+  "preferNameDirectory": true,
+  "sourceName": "UnitTest",
+  "symbols": {},
+  "sources": [],
+  "primaryOutputs": [
+    {
+      "path": "UnitTest.csproj"
+    }
+  ],
+  "postActions": [
+    {
+      "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
+      "description": "Add project to solution file",
+      "args": {
+        "primaryOutputIndexes": "0"
+      }
+    }
+  ],
+  "specialCustomOperations": {
+    "*.yml": {
+      "operations": [
+        {
+          "type": "conditional",
+          "configuration": {
+            "style": "line",
+            "token": "#"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -9,6 +9,8 @@
   "identity": "Rocket.Surgery.GenericHost",
   "name": "Rocket Surgery General Host",
   "shortName": "rockethost",
+  "defaultName": "GenericHost",
+  "preferNameDirectory": true,
   "sourceName": "Rocket.Surgery.GenericHost",
   "symbols": {
     "sdk": {
@@ -68,6 +70,20 @@
       "description": "Do not include Serilog in the dependencies"
     }
   },
+  "primaryOutputs": [
+    {
+      "path": "Rocket.Surgery.GenericHost.csproj"
+    }
+  ],
+  "postActions": [
+    {
+      "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
+      "description": "Add project to solution file",
+      "args": {
+        "primaryOutputIndexes": "0"
+      }
+    }
+  ],
   "specialCustomOperations": {
     "*.yml": {
       "operations": [

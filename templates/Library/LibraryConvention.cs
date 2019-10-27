@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Text;
-using System.Threading.Tasks;
-using Rocket.Surgery.Conventions;
+﻿using Rocket.Surgery.Conventions;
 //#if autofac
 using Rocket.Surgery.Extensions.Autofac;
 //#endif
@@ -25,74 +20,79 @@ using Rocket.Surgery.Extensions.Serilog;
 //#if webjobs
 using Rocket.Surgery.Extensions.WebJobs;
 //#endif
-using Rocket.Surgery.Library;
+using Library;
 
 [assembly: Convention(typeof(LibraryConvention))]
 
-namespace Rocket.Surgery.Library
+namespace Library
 {
-    public partial class LibraryConvention { }
-    //#if autofac
-    public partial class LibraryConvention : IAutofacConvention
+    public partial class LibraryConvention
     {
-        void IConvention<IAutofacConventionContext>.Register(IAutofacConventionContext context)
+        //#if autofac
+        public void Register(IAutofacConventionContext context)
         {
-            // Add stuff here
+
         }
+        //#endif
+        //#if (!no-configuration)
+        public void Register(IConfigurationConventionContext context)
+        {
+
+        }
+        //#endif
+        //#if (!no-services)
+        public void Register(IServiceConventionContext context)
+        {
+
+        }
+        //#endif
+        //#if logging
+        public void Register(ILoggingConventionContext context)
+        {
+
+        }
+        //#endif
+        //#if serilog
+        public void Register(ISerilogConventionContext context)
+        {
+
+        }
+        //#endif
+        //#if commandline
+        public void Register(ICommandLineConventionContext context)
+        {
+
+        }
+        //#endif
+        //#if webjobs
+        public void Register(IWebJobsConventionContext context)
+        {
+
+        }
+        //#endif
     }
+
+    #region Partial
+    //#if autofac
+    public partial class LibraryConvention : IAutofacConvention { }
     //#endif
     //#if (!no-configuration)
-    public partial class LibraryConvention : IConfigurationConvention
-    {
-        void IConvention<IConfigurationConventionContext>.Register(IConfigurationConventionContext context)
-        {
-            // Add stuff here
-        }
-    }
+    public partial class LibraryConvention : IConfigurationConvention { }
     //#endif
     //#if (!no-services)
-    public partial class LibraryConvention : IServiceConvention
-    {
-        void IConvention<IServiceConventionContext>.Register(IServiceConventionContext context)
-        {
-            // Add stuff here
-        }
-    }
+    public partial class LibraryConvention : IServiceConvention { }
     //#endif
     //#if logging
-    public partial class LibraryConvention : ILoggingConvention
-    {
-        void IConvention<ILoggingConventionContext>.Register(ILoggingConventionContext context)
-        {
-            // Add stuff here
-        }
-    }
+    public partial class LibraryConvention : ILoggingConvention { }
     //#endif
     //#if serilog
-    public partial class LibraryConvention : ISerilogConvention
-    {
-        void IConvention<ISerilogConventionContext>.Register(ISerilogConventionContext context)
-        {
-            // Add stuff here
-        }
-    }
+    public partial class LibraryConvention : ISerilogConvention { }
     //#endif
     //#if commandline
-    public partial class LibraryConvention : ICommandLineConvention
-    {
-        void IConvention<ICommandLineConventionContext>.Register(ICommandLineConventionContext context)
-        {
-            // Add stuff here
-        }
-    }
+    public partial class LibraryConvention : ICommandLineConvention { }
     //#endif
     //#if webjobs
-    public partial class LibraryConvention : IWebJobsConvention
-    {
-        void IConvention<IWebJobsConventionContext>.Register(IWebJobsConventionContext context)
-        {
-            // Add stuff here
-        }
-    }
+    public partial class LibraryConvention : IWebJobsConvention { }
     //#endif
+    #endregion
 }

@@ -9,6 +9,8 @@
   "identity": "Rocket.Surgery.Web",
   "name": "Rocket Surgery General Web Application",
   "shortName": "rocketweb",
+  "defaultName": "Web",
+  "preferNameDirectory": true,
   "sourceName": "Rocket.Surgery.Web",
   "symbols": {
     "sdk": {
@@ -75,6 +77,20 @@
       "description": "Do not include Serilog in the dependencies"
     }
   },
+  "primaryOutputs": [
+    {
+      "path": "Rocket.Surgery.Web.csproj"
+    }
+  ],
+  "postActions": [
+    {
+      "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
+      "description": "Add project to solution file",
+      "args": {
+        "primaryOutputIndexes": "0"
+      }
+    }
+  ],
   "specialCustomOperations": {
     "*.yml": {
       "operations": [
