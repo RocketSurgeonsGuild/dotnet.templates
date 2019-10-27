@@ -220,7 +220,6 @@ dotnet_naming_symbols.const_field.applicable_kinds = field
 dotnet_naming_symbols.const_field.applicable_accessibilities = *
 dotnet_naming_symbols.const_field.required_modifiers = const
 
-
 # Naming styles
 
 dotnet_naming_style.pascal_case.required_prefix =

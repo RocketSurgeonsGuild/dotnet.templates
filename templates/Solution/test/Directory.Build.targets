@@ -1,13 +1,24 @@
 <Project>
     <ItemGroup>
         <PackageReference Include="Microsoft.NET.Test.Sdk" />
+        <!--#if (fakeiteasy) -->
         <PackageReference Include="Rocket.Surgery.Extensions.Testing.FakeItEasy" />
-        <PackageReference Include="Autofac.Extras.FakeItEasy" />
+        <!--#endif -->
+        <!--#if (moq)
+        <PackageReference Include="Rocket.Surgery.Extensions.Testing.Moq" />
+        #endif -->
+        <!--#if (no-bogus) -->
         <PackageReference Include="Bogus" />
+        <!--#endif -->
         <PackageReference Include="coverlet.collector" />
         <PackageReference Include="coverlet.msbuild" />
+        <!--#if (fakeiteasy) -->
         <PackageReference Include="FakeItEasy" />
         <PackageReference Include="FakeItEasy.Analyzer.CSharp" />
+        <!--#endif -->
+        <!--#if (moq)
+        <PackageReference Include="Moq" />
+        #endif -->
         <PackageReference Include="FluentAssertions" />
         <PackageReference Include="FluentAssertions.Analyzers" />
         <PackageReference Include="xunit" />

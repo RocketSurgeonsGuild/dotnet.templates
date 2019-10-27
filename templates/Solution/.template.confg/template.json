@@ -10,7 +10,29 @@
   "name": "Rocket Surgery Solution",
   "shortName": "rocketsln",
   "sourceName": "Rocket.Surgery.Solution",
-  "symbols": {},
+  "symbols": {
+    "fakeiteasy": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Include Rocket.Surgery.Extensions.Testing.FakeItEasy as a testing package reference"
+    },
+    "moq": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Include Rocket.Surgery.Extensions.Testing.Moq as a testing package reference"
+    },
+    "no-bogus": {
+      "datatype": "bool",
+      "defaultValue": "false",
+      "type": "parameter",
+      "isRequired": false,
+      "description": "Do not include Bogus as a testing package reference"
+    }
+  },
   "guids": [
     "2150E333-8FDC-42A3-9474-1A3956D46DE8",
     "9A19103F-16F7-4668-BE54-9A1E7A4F7556",
@@ -27,6 +49,7 @@
       }
     }
   ],
+  "postActions": [],
   "specialCustomOperations": {
     "*.yml": {
       "operations": [
