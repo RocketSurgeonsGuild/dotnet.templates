@@ -6,7 +6,6 @@ using Rocket.Surgery.Nuke;
 
 [CheckBuildProjectConfigurations]
 [UnsetVisualStudioEnvironmentVariables]
-[PackageIcon("https://raw.githubusercontent.com/RocketSurgeonsGuild/graphics/master/png/social-square-thrust-rounded.png")]
 class Build : DotNetCoreBuild
 {
     /// <summary>
