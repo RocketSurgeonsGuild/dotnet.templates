@@ -58,7 +58,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions" Version="2.0.0" />
     <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.0.0" />
     <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.0.0" />
-    <PackageReference Include="Rocket.Surgery.Task.Extensions" Version="2.0.0" />
+    <PackageReference Include="Rocket.Surgery.Task.Extensions" Version="2.0.1" />
     <!-- #endif -->
     <!--#if (!no-mediatr) -->
     <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Version="7.0.1" />
