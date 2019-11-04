@@ -67,7 +67,7 @@
     <!--#if (!no-mediatr) -->
     <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Version="7.0.1" />
     <!-- #endif -->
-    <PackageReference Include="Rocket.Surgery.Hosting" Version="9.0.5" />
+    <PackageReference Include="Rocket.Surgery.Hosting" Version="9.0.6" />
     <!--#if (autofac) -->
     <PackageReference Include="Rocket.Surgery.Hosting.Autofac" Version="7.0.1" />
     <!-- #endif -->
