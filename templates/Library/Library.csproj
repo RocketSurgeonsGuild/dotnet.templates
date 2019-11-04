@@ -65,7 +65,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="9.0.5" />
     <!-- #endif -->
     <!--#if (webjobs) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.WebJobs" Version="9.0.5" />
+    <PackageReference Include="Rocket.Surgery.Extensions.WebJobs" Version="9.0.6" />
     <!-- #endif -->
     <!--#if (fluentvalidation) -->
     <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Version="6.1.1" />
