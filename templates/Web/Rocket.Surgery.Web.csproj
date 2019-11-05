@@ -1,6 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web">
   <!--#if (sdk) -->
-  <Sdk Name="Rocket.Surgery.Meta.Packages" Version="2.2.0" />
+  <Sdk Name="Rocket.Surgery.Meta.Packages" Version="3.0.0" />
   <!-- #endif -->
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
@@ -63,11 +64,10 @@
     <!--#if (!no-mediatr) -->
     <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Version="7.0.1" />
     <!-- #endif -->
-    <PackageReference Include="Rocket.Surgery.Hosting" Version="9.0.5" />
+    <PackageReference Include="Rocket.Surgery.Hosting" Version="9.0.6" />
     <!--#if (autofac) -->
     <PackageReference Include="Rocket.Surgery.Hosting.Autofac" Version="7.0.1" />
     <!-- #endif -->
     <!-- #endif -->
   </ItemGroup>
-
 </Project>

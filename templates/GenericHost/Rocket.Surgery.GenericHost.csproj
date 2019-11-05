@@ -1,6 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
   <!--#if (sdk) -->
-  <Sdk Name="Rocket.Surgery.Meta.Packages" Version="2.2.0" />
+  <Sdk Name="Rocket.Surgery.Meta.Packages" Version="3.0.0" />
   <!-- #endif -->
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
@@ -29,7 +30,6 @@
     <EnableSerilog>false</EnableSerilog>
     #endif -->
   </PropertyGroup>
-
   <ItemGroup>
     <!--#if (version) -->
     <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.11" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
@@ -54,7 +54,7 @@
     <!--#if (!no-serilog) -->
     <PackageReference Include="Rocket.Surgery.Extensions.Serilog" Version="10.0.1" />
     <!-- #endif -->
-    <PackageReference Include="Rocket.Surgery.Hosting" Version="9.0.5" />
+    <PackageReference Include="Rocket.Surgery.Hosting" Version="9.0.6" />
     <!--#if (autofac) -->
     <PackageReference Include="Rocket.Surgery.Hosting.Autofac" Version="7.0.1" />
     <!-- #endif -->

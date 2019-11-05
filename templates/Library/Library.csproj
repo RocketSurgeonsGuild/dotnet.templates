@@ -1,6 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
   <!--#if (sdk) -->
-  <Sdk Name="Rocket.Surgery.Meta.Packages" Version="2.2.0" />
+  <Sdk Name="Rocket.Surgery.Meta.Packages" Version="3.0.0" />
   <!-- #endif -->
   <PropertyGroup>
     <TargetFrameworks>netstandard2.1;netstandard2.0</TargetFrameworks>
@@ -53,19 +54,19 @@
     <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.1" />
     <!-- #endif -->
     <!--#if (commandline) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="9.0.5" />
+    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="9.0.6" />
     <!-- #endif -->
     <!--#if (!no-configuration) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="9.0.5" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="9.0.6" />
     <!-- #endif -->
     <!--#if (!no-services) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="9.0.5" />
+    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="9.0.6" />
     <!-- #endif -->
     <!--#if (logging) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="9.0.5" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="9.0.6" />
     <!-- #endif -->
     <!--#if (webjobs) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.WebJobs" Version="9.0.5" />
+    <PackageReference Include="Rocket.Surgery.Extensions.WebJobs" Version="9.0.6" />
     <!-- #endif -->
     <!--#if (fluentvalidation) -->
     <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Version="6.1.1" />

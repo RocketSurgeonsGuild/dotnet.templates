@@ -1,6 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
   <!--#if (sdk) -->
-  <Sdk Name="Rocket.Surgery.Meta.Packages" Version="2.2.0" />
+  <Sdk Name="Rocket.Surgery.Meta.Packages" Version="3.0.0" />
   <!-- #endif -->
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
@@ -30,7 +31,7 @@
     <!--#if (version) -->
     <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.11" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.29" />
-    <PackageReference Include="Rocket.Surgery.Hosting.Functions" Version="9.0.5" />
+    <PackageReference Include="Rocket.Surgery.Hosting.Functions" Version="9.0.6" />
     <!-- #endif -->
     <!--#if (!no-automapper) -->
     <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.1" />
