@@ -34,7 +34,7 @@
     <!--#if (version) -->
     <PackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.11" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <!--#if (!no-automapper) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.1" />
+    <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.3" />
     <!-- #endif -->
     <!--#if (!no-extensions) -->
     <PackageReference Include="Rocket.Surgery.Extensions" Version="2.0.1" />
