@@ -3,7 +3,7 @@
   <ItemGroup>
     <PackageReference Include="Rocket.Surgery.MSBuild.CI" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Rocket.Surgery.MSBuild.GitVersion" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
+    <PackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" Condition="'$(MSBuildProjectName)'!='.build'" />
     <PackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <!-- <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.3" IncludeAssets="Analyzers;Build" PrivateAssets="All" /> -->

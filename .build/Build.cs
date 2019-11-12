@@ -5,7 +5,7 @@ using Rocket.Surgery.Nuke;
 using JetBrains.Annotations;
 
 [PublicAPI]
-[CheckBuildProjectConfigurations]
+// [CheckBuildProjectConfigurations]
 [UnsetVisualStudioEnvironmentVariables]
 [PackageIcon("https://raw.githubusercontent.com/RocketSurgeonsGuild/graphics/master/png/social-square-thrust-rounded.png")]
 [EnsurePackageSourceHasCredentials("RocketSurgeonsGuild")]

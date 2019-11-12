@@ -10,10 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Nuke.Common" />
-    <PackageReference Include="GitVersion.Tool" ExcludeAssets="All" />
-    <PackageReference Include="ReportGenerator" ExcludeAssets="All" />
-    <PackageReference Include="Rocket.Surgery.Nuke.DotNetCore" />
+    <PackageReference Include="Nuke.Common" Version="0.23.3" />
+    <PackageReference Include="Rocket.Surgery.Nuke.DotNetCore" Version="0.8.2" />
+    <PackageReference Include="GitVersion.Tool" Version="5.1.1" ExcludeAssets="All" />
+    <PackageReference Include="ReportGenerator" Version="4.3.5" ExcludeAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
