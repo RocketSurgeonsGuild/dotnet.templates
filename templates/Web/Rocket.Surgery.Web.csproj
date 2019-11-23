@@ -50,7 +50,7 @@
     <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.MediatR" Version="6.1.2" />
     <!-- #endif -->
     <!--#if (newtonsoftjson) -->
-    <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.1.1" />
+    <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.1.2" />
     <!-- #endif -->
     <!-- #endif -->
     <!--#if (!no-serilog) -->
