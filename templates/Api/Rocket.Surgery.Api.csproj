@@ -64,15 +64,15 @@
     <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.3" />
     <!-- #endif -->
     <!--#if (!no-extensions) -->
-    <PackageReference Include="Rocket.Surgery.Extensions" Version="2.0.1" />
+    <PackageReference Include="Rocket.Surgery.Extensions" Version="2.1.0" />
     <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.1.0" />
     <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.1.0" />
     <PackageReference Include="Rocket.Surgery.Task.Extensions" Version="2.1.0" />
     <!-- #endif -->
     <!--#if (!no-mediatr) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Version="7.0.1" />
+    <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Version="7.0.2" />
     <!-- #endif -->
-    <PackageReference Include="Rocket.Surgery.Hosting" Version="9.0.6" />
+    <PackageReference Include="Rocket.Surgery.Hosting" Version="9.0.7" />
     <!--#if (autofac) -->
     <PackageReference Include="Rocket.Surgery.Hosting.Autofac" Version="7.0.1" />
     <!-- #endif -->
