@@ -1,13 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project>
+  <Sdk Name="Microsoft.Build.CentralPackageVersions" Version="2.0.52" />
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)\.editorconfig.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <!-- .editorconfig analyzer work around -->
+  <!--
+  <PropertyGroup>
+    SkipDefaultEditorConfigAsAdditionalFile>true</SkipDefaultEditorConfigAsAdditionalFile>
+  </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Rocket.Surgery.MSBuild.CI" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.GitVersion" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" Condition="'$(MSBuildProjectName)'!='.build'" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
-    <!-- <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.3" IncludeAssets="Analyzers;Build" PrivateAssets="All" /> -->
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-19554-01" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
-    <PackageReference Include="Roslynator.Analyzers" Version="2.2.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
+    <AdditionalFiles Condition="Exists('$(MSBuildThisFileDirectory)\.editorconfig')" Include="$(MSBuildThisFileDirectory)\.editorconfig" />
   </ItemGroup>
+  -->
 </Project>
