@@ -2,7 +2,7 @@
 <Project>
   <ItemGroup>
     <PackageReference Include="Rocket.Surgery.Extensions.Testing" Version="3.2.2" />
-    <PackageReference Include="Bogus" Version="28.4.1" />
+    <PackageReference Include="Bogus" Version="28.4.2" />
     <PackageReference Include="coverlet.collector" Version="1.1.0" />
     <PackageReference Include="FakeItEasy" Version="5.4.1" />
     <PackageReference Include="FakeItEasy.Analyzer.CSharp" Version="5.4.1" />
