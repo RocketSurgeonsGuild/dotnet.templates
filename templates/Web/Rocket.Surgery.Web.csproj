@@ -4,7 +4,7 @@
   <Sdk Name="Rocket.Surgery.Meta.Packages" Version="3.0.1" />
   <!-- #endif -->
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <IsPackable>false</IsPackable>
     <!--#if (!version)
     <IncludeRocketSurgeryAspNetCore>true</IncludeRocketSurgeryAspNetCore>
@@ -41,7 +41,7 @@
     <PackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <!--#if (newtonsoftjson) -->
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.0" />
     <!-- #endif -->
     <PackageReference Include="Rocket.Surgery.AspNetCore" Version="0.2.1" />
     <!--#if (!no-fluentvalidation) -->

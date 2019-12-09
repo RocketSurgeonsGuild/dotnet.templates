@@ -4,7 +4,7 @@
   <Sdk Name="Rocket.Surgery.Meta.Packages" Version="3.0.1" />
   <!-- #endif -->
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <OutputType>Exe</OutputType>
     <IsPackable>false</IsPackable>
     <!--#if (!version)

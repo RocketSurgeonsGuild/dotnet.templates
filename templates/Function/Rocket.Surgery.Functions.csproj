@@ -4,8 +4,8 @@
   <Sdk Name="Rocket.Surgery.Meta.Packages" Version="3.0.1" />
   <!-- #endif -->
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
-    <AzureFunctionsVersion>v2</AzureFunctionsVersion>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <AzureFunctionsVersion>v3</AzureFunctionsVersion>
     <!--#if (!version)
     <IncludeRocketSurgeryFunctions>true</IncludeRocketSurgeryFunctions>
     #endif -->
@@ -34,7 +34,7 @@
     <PackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.29" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.1" />
     <PackageReference Include="Rocket.Surgery.Hosting.Functions" Version="9.0.7" />
     <!-- #endif -->
     <!--#if (!no-automapper) -->
