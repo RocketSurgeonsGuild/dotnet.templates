@@ -52,7 +52,7 @@
     <PackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <!--#if (autofac) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Autofac" Version="7.0.1" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Autofac" Version="7.0.2" />
     <!-- #endif -->
     <!--#if (automapper) -->
     <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.3" />
