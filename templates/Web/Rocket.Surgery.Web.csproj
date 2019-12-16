@@ -54,7 +54,7 @@
     <!-- #endif -->
     <!-- #endif -->
     <!--#if (!no-serilog) -->
-    <PackageReference Include="Rocket.Surgery.AspNetCore.Serilog" Version="10.0.1" />
+    <PackageReference Include="Rocket.Surgery.AspNetCore.Serilog" Version="10.1.0" />
     <!-- #endif -->
     <!--#if (!no-automapper) -->
     <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.3" />
