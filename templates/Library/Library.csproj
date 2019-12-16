@@ -73,7 +73,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.WebJobs" Version="9.0.7" />
     <!-- #endif -->
     <!--#if (fluentvalidation) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Version="6.1.2" />
+    <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Version="6.2.2" />
     <!--#if (mediatr) -->
     <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation.MediatR" Version="6.1.2" />
     <!-- #endif -->
