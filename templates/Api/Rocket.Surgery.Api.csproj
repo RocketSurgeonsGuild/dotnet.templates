@@ -52,7 +52,7 @@
     <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation" Version="6.1.2" />
     <!-- #endif -->
     <!--#if (!no-fluentvalidation && !no-mediatr) -->
-    <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.MediatR" Version="6.1.2" />
+    <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.MediatR" Version="6.2.1" />
     <!-- #endif -->
     <!--#if (!no-fluentvalidation && newtonsoftjson) -->
     <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.1.2" />
