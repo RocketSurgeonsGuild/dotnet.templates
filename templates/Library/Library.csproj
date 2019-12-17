@@ -52,7 +52,7 @@
     <PackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <!--#if (autofac) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Autofac" Version="7.0.1" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Autofac" Version="7.0.2" />
     <!-- #endif -->
     <!--#if (automapper) -->
     <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.3" />
@@ -73,21 +73,21 @@
     <PackageReference Include="Rocket.Surgery.Extensions.WebJobs" Version="9.0.7" />
     <!-- #endif -->
     <!--#if (fluentvalidation) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Version="6.1.2" />
+    <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Version="6.2.2" />
     <!--#if (mediatr) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation.MediatR" Version="6.1.2" />
+    <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation.MediatR" Version="6.2.2" />
     <!-- #endif -->
     <!-- #endif -->
     <!--#if (mediatr) -->
     <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Version="7.0.2" />
     <!-- #endif -->
     <!--#if (serilog) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Serilog" Version="10.0.1" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Serilog" Version="10.1.2" />
     <!-- #endif -->
     <!--#if (!no-extensions) -->
-    <PackageReference Include="Rocket.Surgery.Extensions" Version="2.1.0" />
-    <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.1.0" />
-    <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.1.0" />
+    <PackageReference Include="Rocket.Surgery.Extensions" Version="2.1.1" />
+    <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.1.1" />
+    <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.1.1" />
     <!-- #endif -->
     <!-- #endif -->
   </ItemGroup>
