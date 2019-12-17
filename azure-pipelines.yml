@@ -33,7 +33,7 @@ resources:
 
 variables:
     - name: CONFIGURATION
-      value: Debug
+      value: Release
     - name: VERBOSITY
       value: Normal
     - name: COVERAGE
