@@ -42,6 +42,8 @@ variables:
       value: $(Build.ArtifactStagingDirectory)
     - name: DOTNET_SKIP_FIRST_TIME_EXPERIENCE
       value: 'true'
+    - name: DeterministicSourcePaths
+      value: 'false'
     - name: CodeCovToken
       value: 'b261d715-d42d-4221-acdc-77b28a6d159a'
     - group: rsg-bot
