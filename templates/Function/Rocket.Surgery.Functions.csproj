@@ -49,7 +49,7 @@
     <!--#if (!no-fluentvalidation) -->
     <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Version="6.2.2" />
     <!--#if (!no-mediatr) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation.MediatR" Version="6.2.2" />
+    <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation.MediatR" Version="6.2.3" />
     <!-- #endif -->
     <!-- #endif -->
     <!--#if (!no-mediatr) -->
