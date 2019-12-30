@@ -53,7 +53,7 @@
     <!-- #endif -->
     <!-- #endif -->
     <!--#if (!no-mediatr) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Version="7.0.2" />
+    <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Version="7.0.3" />
     <!-- #endif -->
     <!--#if (!no-serilog) -->
     <PackageReference Include="Rocket.Surgery.Extensions.Serilog" Version="10.1.2" />
