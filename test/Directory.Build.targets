@@ -3,10 +3,10 @@
   <ItemGroup>
     <PackageReference Include="Rocket.Surgery.Extensions.Testing" Version="3.3.0" />
     <PackageReference Include="Bogus" Version="28.4.4" />
-    <PackageReference Include="coverlet.collector" Version="1.1.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0" />
     <PackageReference Include="FakeItEasy" Version="5.5.0" />
     <PackageReference Include="FakeItEasy.Analyzer.CSharp" Version="5.5.0" />
-    <PackageReference Include="FluentAssertions" Version="5.9.0" />
+    <PackageReference Include="FluentAssertions" Version="5.10.0" />
     <PackageReference Include="FluentAssertions.Analyzers" Version="0.11.4" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
     <PackageReference Include="xunit" Version="2.4.1" />
