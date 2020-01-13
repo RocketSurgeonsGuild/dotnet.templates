@@ -61,7 +61,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.Serilog" Version="10.1.2" />
     <!-- #endif -->
     <!-- #if (!SkipExtensions) -->
-    <PackageReference Include="Rocket.Surgery.Extensions" Version="2.1.1" />
+    <PackageReference Include="Rocket.Surgery.Extensions" Version="2.2.0" />
     <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.1.1" />
     <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.1.1" />
     <!-- #endif -->
