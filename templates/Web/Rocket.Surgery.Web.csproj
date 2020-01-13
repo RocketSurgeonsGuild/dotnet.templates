@@ -76,7 +76,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.3" />
     <!-- #endif -->
     <!-- #if (!SkipMediatR) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Version="7.0.3" />
+    <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Version="7.1.0" />
     <!-- #endif -->
     <!-- #endif -->
     <!-- #if (!SkipSerilog) -->
