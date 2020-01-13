@@ -42,7 +42,7 @@
     <PackageReference Include="Rocket.Surgery.MSBuild.GitVersion" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
+    <PackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.2.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <!-- #if (UseOperations) -->
     <PackageReference Include="Rocket.Surgery.Operational.MediatR" Version="8.0.0-beta.5" />
     <!-- #endif -->
