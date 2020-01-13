@@ -1,79 +1,101 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk.Web">
-  <!--#if (sdk) -->
+  <!-- #if (Sdk) -->
   <Sdk Name="Rocket.Surgery.Meta.Packages" Version="3.0.1" />
   <!-- #endif -->
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <IsPackable>false</IsPackable>
-    <!--#if (!version)
+    <!-- #if (!Version)
     <IncludeRocketSurgeryAspNetCore>true</IncludeRocketSurgeryAspNetCore>
     #endif -->
-    <!--#if (!version) -->
-    <!--#if (autofac)
+    <!-- #if (!Version) -->
+    <!-- #if (UseAutofac)
     <EnableAutofac>true</EnableAutofac>
     #endif -->
-    <!--#if (no-automapper)
+    <!-- #if (SkipAutoMapper)
     <EnableAutoMapper>false</EnableAutoMapper>
     #endif -->
-    <!--#if (no-extensions)
+    <!-- #if (SkipExtensions)
     <EnableExtensions>false</EnableExtensions>
     #endif -->
-    <!--#if (no-fluentvalidation)
+    <!-- #if (SkipFluentValidation)
     <EnableFluentValidation>false</EnableFluentValidation>
     #endif -->
-    <!--#if (no-mediatr)
+    <!-- #if (SkipMediatR)
     <EnableMediatR>false</EnableMediatR>
     #endif -->
-    <!--#if (no-serilog)
+    <!-- #if (SkipSerilog)
     <EnableSerilog>false</EnableSerilog>
     #endif -->
-    <!--#if (newtonsoftjson)
+    <!-- #if (UseNewtonsoftJson)
     <EnableNewtonsoftJson>true</EnableNewtonsoftJson>
+    #endif -->
+    <!-- #if (UseOperations)
+    <EnableOperations>true</EnableOperations>
+    #endif -->
+    <!-- #if (!SkipExtras)
+    <EnableExtras>false</EnableExtras>
+    #endif -->
+    <!-- #if (!SkipSwashBuckle)
+    <EnableSwashbuckle>true</EnableSwashbuckle>
     #endif -->
     <!-- #endif -->
   </PropertyGroup>
   <ItemGroup>
-    <!--#if (!version)
-    <PackageReference Include="Swashbuckle.AspNetCore" />
-    #endif -->
-    <!--#if (version) -->
+    <!-- #if (Version) -->
     <PackageReference Include="Rocket.Surgery.MSBuild.CI" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Rocket.Surgery.MSBuild.GitVersion" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc5" />
-    <!--#if (newtonsoftjson) -->
+    <!-- #if (UseNewtonsoftJson) -->
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.0" />
     <!-- #endif -->
     <PackageReference Include="Rocket.Surgery.AspNetCore" Version="0.2.1" />
-    <!--#if (!no-fluentvalidation) -->
-    <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation" Version="6.2.3" />
+    <!-- #if (!SkipSwashBuckle) -->
+    <PackageReference Include="Rocket.Surgery.AspNetCore.Swashbuckle" Version="8.0.0-beta.1" />
+    <!-- #if (UseNewtonsoftJson) -->
+    <PackageReference Include="Rocket.Surgery.AspNetCore.Swashbuckle.NewtonsoftJson" Version="8.0.0-beta.1" />
     <!-- #endif -->
-    <!--#if (!no-fluentvalidation && !no-mediatr) -->
-    <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.MediatR" Version="6.2.3" />
     <!-- #endif -->
-    <!--#if (!no-fluentvalidation && newtonsoftjson) -->
-    <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.2.3" />
+    <!-- #if (UseOperations) -->
+    <PackageReference Include="Rocket.Surgery.Operational.AspNetCore.MediatR" Version="8.0.0-beta.5" />
+    <!-- #if (UseNewtonsoftJson) -->
+    <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.3.0-beta.37" />
     <!-- #endif -->
-    <!--#if (!no-serilog) -->
-    <PackageReference Include="Rocket.Surgery.AspNetCore.Serilog" Version="10.1.2" />
     <!-- #endif -->
-    <!--#if (!no-automapper) -->
+    <!-- #if (!UseOperations) -->
+    <!-- #if (!SkipFluentValidation) -->
+    <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation" Version="6.3.0-beta.37" />
+    <!-- #if (UseNewtonsoftJson) -->
+    <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.3.0-beta.37" />
+    <!-- #endif -->
+    <!-- #endif -->
+    <!-- #if (!SkipAutoMapper) -->
     <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.3" />
     <!-- #endif -->
-    <!--#if (!no-extensions) -->
+    <!-- #if (!SkipMediatR) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Version="7.0.3" />
+    <!-- #endif -->
+    <!-- #if (!SkipSerilog) -->
+    <PackageReference Include="Rocket.Surgery.AspNetCore.Serilog" Version="10.1.2" />
+    <!-- #endif -->
+    <!-- #endif -->
+    <!-- #if (!SkipExtensions) -->
     <PackageReference Include="Rocket.Surgery.Extensions" Version="2.1.1" />
     <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.1.1" />
     <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.1.1" />
-    <PackageReference Include="Rocket.Surgery.Task.Extensions" Version="2.1.1" />
     <!-- #endif -->
-    <!--#if (!no-mediatr) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Version="7.0.3" />
+    <!-- #if (!SkipExtras) -->
+    <PackageReference Include="System.Collections.Immutable" Version="1.7.0" />
+    <PackageReference Include="System.Interactive" Version="4.0.0" />
+    <PackageReference Include="System.Interactive.Async" Version="4.0.0" />
+    <PackageReference Include="System.Reactive" Version="4.3.2" />
+    <PackageReference Include="System.Reactive.Observable.Aliases" Version="4.3.2" />
     <!-- #endif -->
     <PackageReference Include="Rocket.Surgery.Hosting" Version="9.0.7" />
-    <!--#if (autofac) -->
+    <!-- #if (UseAutofac) -->
     <PackageReference Include="Rocket.Surgery.Hosting.Autofac" Version="7.0.2" />
     <!-- #endif -->
     <!-- #endif -->

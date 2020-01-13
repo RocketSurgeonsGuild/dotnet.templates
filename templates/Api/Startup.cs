@@ -21,13 +21,12 @@ namespace Rocket.Surgery.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services
-                .AddSwaggerGen(c => {
+                .AddSwaggerGen(c =>
+                {
                     c.SwaggerDoc("v1", new OpenApiInfo { Title = "My Test v1" });
                     c.SwaggerDoc("v2", new OpenApiInfo { Title = "My Test v2" });
-                    c.GeneratePolymorphicSchemas();
                 })
-                .AddControllers()
-                .AddNewtonsoftJson()
+                .AddControllers();
             ;
         }
 

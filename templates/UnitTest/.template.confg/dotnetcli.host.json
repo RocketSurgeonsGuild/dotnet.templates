@@ -1,0 +1,94 @@
+{
+    "$schema": "http://json.schemastore.org/dotnetcli.host",
+    "symbolInfo": {
+        "Sdk": {
+            "longName": "sdk",
+            "shortName": ""
+        },
+        "Version": {
+            "longName": "version",
+            "shortName": ""
+        },
+        "UseAutofac": {
+            "longName": "autofac",
+            "shortName": ""
+        },
+        "SkipAutoMapper": {
+            "longName": "no-automapper",
+            "shortName": ""
+        },
+        "UseSwashbuckle": {
+            "longName": "swashbuckle",
+            "shortName": ""
+        },
+        "SkipSwashBuckle": {
+            "longName": "no-swashbuckle",
+            "shortName": ""
+        },
+        "UseOperations": {
+            "longName": "operations",
+            "shortName": ""
+        },
+        "SkipExtras": {
+            "longName": "no-extras",
+            "shortName": ""
+        },
+        "SkipExtensions": {
+            "longName": "no-extensions",
+            "shortName": ""
+        },
+        "SkipFluentValidation": {
+            "longName": "no-fluentvalidation",
+            "shortName": ""
+        },
+        "UseNewtonsoftJson": {
+            "longName": "newtonsoftjson",
+            "shortName": "newtonsoft"
+        },
+        "SkipMediatR": {
+            "longName": "no-mediatr",
+            "shortName": ""
+        },
+        "SkipSerilog": {
+            "longName": "no-serilog",
+            "shortName": ""
+        },
+        "UseAutoMapper": {
+            "longName": "automapper",
+            "shortName": "am"
+        },
+        "UseCommandLine": {
+            "longName": "commandline",
+            "shortName": "cl"
+        },
+        "SkipConfiguration": {
+            "longName": "no-configuration",
+            "shortName": ""
+        },
+        "UseFluentValidation": {
+            "longName": "fluentvalidation",
+            "shortName": "fv"
+        },
+        "UseMediatR": {
+            "longName": "mediatr",
+            "shortName": ""
+        },
+        "SkipDependencyInjection": {
+            "longName": "no-dependencyinjection",
+            "shortName": ""
+        },
+        "UseLogging": {
+            "longName": "logging",
+            "shortName": ""
+        },
+        "UseSerilog": {
+            "longName": "serilog",
+            "shortName": ""
+        },
+        "UseWebJobs": {
+            "longName": "webjobs",
+            "shortName": ""
+        }
+    },
+    "usageExamples": [""]
+}

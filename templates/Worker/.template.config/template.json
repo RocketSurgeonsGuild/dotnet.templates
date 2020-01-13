@@ -1,20 +1,30 @@
 {
     "$schema": "http://json.schemastore.org/template",
-    "author": "David Driscoll",
-    "classifications": ["Common", "Web", "Rocket Surgery"],
-    "identity": "Rocket.Surgery.Web",
-    "name": "Rocket Surgery Web Application",
-    "defaultName": "Web",
-    "preferNameDirectory": true,
-    "sourceName": "Rocket.Surgery.Web",
-    "shortName": "rocketweb",
+    "author": "Microsoft",
+    "classifications": ["Common", "Worker", "Rocket Surgery"],
+    "identity": "Rocket.Surgery.Worker",
+    "name": "Rocket Surgery Worker",
     "generatorVersions": "[1.0.0.0-*)",
-    "description": "",
+    "shortName": "rockerworker",
+    "description": "An empty project template for creating a worker service.",
+    "defaultName": "WorkerService",
+    "preferNameDirectory": true,
+    "sourceName": "Rocket.Surgery.Worker",
     "tags": {
         "language": "C#",
         "type": "project"
     },
-    "guids": [],
+    "guids": ["53bc9b9d-9d6a-45d4-8429-2a2761773502"],
+    "sources": [
+        {
+            "modifiers": [
+                {
+                    "condition": "(ExcludeLaunchSettings)",
+                    "exclude": ["Properties/launchSettings.json"]
+                }
+            ]
+        }
+    ],
     "symbols": {
         "Sdk": {
             "datatype": "bool",
@@ -103,16 +113,20 @@
     },
     "primaryOutputs": [
         {
-            "path": "Rocket.Surgery.Web.csproj"
+            "path": "Rocket.Surgery.Worker.csproj"
         }
     ],
     "postActions": [
         {
-            "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
-            "description": "Add project to solution file",
-            "args": {
-                "primaryOutputIndexes": "0"
-            }
+            "condition": "(!skipRestore)",
+            "description": "Restore NuGet packages required by this project.",
+            "manualInstructions": [
+                {
+                    "text": "Run 'dotnet restore'"
+                }
+            ],
+            "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+            "continueOnError": true
         }
     ],
     "specialCustomOperations": {

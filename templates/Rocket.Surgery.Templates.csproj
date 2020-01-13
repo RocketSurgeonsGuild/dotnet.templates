@@ -22,14 +22,4 @@
     <Content Include="**\*" Exclude="**\bin\**;**\obj\**;*.csproj" PackagePath="content\templates\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Api\obj\Debug\netcoreapp3.1\staticwebassets\" />
-    <Folder Include="Cli\obj\Debug\netcoreapp3.1\" />
-    <Folder Include="Function\obj\Debug\netcoreapp3.1\" />
-    <Folder Include="Library\obj\Debug\netstandard2.0\" />
-    <Folder Include="obj\Debug\" />
-    <Folder Include="obj\Debug\netstandard2.0\" />
-    <Folder Include="Web\obj\Debug\netcoreapp3.1\staticwebassets\" />
-  </ItemGroup>
-
 </Project>

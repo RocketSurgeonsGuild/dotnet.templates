@@ -1,93 +1,109 @@
 {
-  "$schema": "http://json.schemastore.org/template",
-  "author": "David Driscoll",
-  "classifications": [
-    "Common",
-    "Console",
-    "Rocket Surgery"
-  ],
-  "identity": "Rocket.Surgery.Cli",
-  "name": "Rocket Surgery Command Line Application",
-  "shortName": "rocketcli",
-  "defaultName": "Tool",
-  "preferNameDirectory": true,
-  "sourceName": "Rocket.Surgery.Cli",
-  "symbols": {
-    "sdk": {
-      "datatype": "bool",
-      "defaultValue": "false",
-      "type": "parameter",
-      "isRequired": false,
-      "description": "Include the rocket surgery sdk with the project"
+    "$schema": "http://json.schemastore.org/template",
+    "author": "David Driscoll",
+    "classifications": ["Common", "Console", "Rocket Surgery"],
+    "identity": "Rocket.Surgery.Cli",
+    "name": "Rocket Surgery Command Line Application",
+    "shortName": "rocketcli",
+    "defaultName": "Tool",
+    "preferNameDirectory": true,
+    "sourceName": "Rocket.Surgery.Cli",
+    "generatorVersions": "[1.0.0.0-*)",
+    "description": "",
+    "tags": {
+        "language": "C#",
+        "type": "project"
     },
-    "version": {
-      "datatype": "bool",
-      "defaultValue": "false",
-      "type": "parameter",
-      "isRequired": false,
-      "description": "Include the versions in the project file, typically these come from Directory.Build.targets or similar"
-    },
-    "no-automapper": {
-      "datatype": "bool",
-      "defaultValue": "false",
-      "type": "parameter",
-      "isRequired": false,
-      "description": "Do not include AutoMapper in the dependencies"
-    },
-    "no-extensions": {
-      "datatype": "bool",
-      "defaultValue": "false",
-      "type": "parameter",
-      "isRequired": false,
-      "description": "Do not include Rocket.Surgery.Extensions in the dependencies"
-    },
-    "no-fluentvalidation": {
-      "datatype": "bool",
-      "defaultValue": "false",
-      "type": "parameter",
-      "isRequired": false,
-      "description": "Do not include FluentValidation in the dependencies"
-    },
-    "no-mediatr": {
-      "datatype": "bool",
-      "defaultValue": "false",
-      "type": "parameter",
-      "isRequired": false,
-      "description": "Do not include MediatR in the dependencies"
-    },
-    "no-serilog": {
-      "datatype": "bool",
-      "defaultValue": "false",
-      "type": "parameter",
-      "isRequired": false,
-      "description": "Do not include Serilog in the dependencies"
-    }
-  },
-  "primaryOutputs": [
-    {
-      "path": "Rocket.Surgery.Cli.csproj"
-    }
-  ],
-  "postActions": [
-    {
-      "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
-      "description": "Add project to solution file",
-      "args": {
-        "primaryOutputIndexes": "0"
-      }
-    }
-  ],
-  "specialCustomOperations": {
-    "*.yml": {
-      "operations": [
-        {
-          "type": "conditional",
-          "configuration": {
-            "style": "line",
-            "token": "#"
-          }
+    "symbols": {
+        "Sdk": {
+            "datatype": "bool",
+            "defaultValue": "false",
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Include the rocket surgery Sdk with the project"
+        },
+        "Version": {
+            "datatype": "bool",
+            "defaultValue": "false",
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Include the versions in the project file, typically these come from Directory.Build.targets or similar"
+        },
+        "UseOperations": {
+            "datatype": "bool",
+            "defaultValue": "false",
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Enable operational packages"
+        },
+        "SkipExtras": {
+            "datatype": "bool",
+            "defaultValue": "false",
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Exclude extra system packages like System.Reactive and System.Interactive"
+        },
+        "SkipAutoMapper": {
+            "datatype": "bool",
+            "defaultValue": "false",
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Do not include AutoMapper in the dependencies"
+        },
+        "SkipExtensions": {
+            "datatype": "bool",
+            "defaultValue": "false",
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Do not include Rocket.Surgery.Extensions in the dependencies"
+        },
+        "SkipFluentValidation": {
+            "datatype": "bool",
+            "defaultValue": "false",
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Do not include FluentValidation in the dependencies"
+        },
+        "SkipMediatR": {
+            "datatype": "bool",
+            "defaultValue": "false",
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Do not include MediatR in the dependencies"
+        },
+        "SkipSerilog": {
+            "datatype": "bool",
+            "defaultValue": "false",
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Do not include Serilog in the dependencies"
         }
-      ]
+    },
+    "primaryOutputs": [
+        {
+            "path": "Rocket.Surgery.Cli.csproj"
+        }
+    ],
+    "postActions": [
+        {
+            "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
+            "description": "Add project to solution file",
+            "args": {
+                "primaryOutputIndexes": "0"
+            }
+        }
+    ],
+    "specialCustomOperations": {
+        "*.yml": {
+            "operations": [
+                {
+                    "type": "conditional",
+                    "configuration": {
+                        "style": "line",
+                        "token": "#"
+                    }
+                }
+            ]
+        }
     }
-  }
 }

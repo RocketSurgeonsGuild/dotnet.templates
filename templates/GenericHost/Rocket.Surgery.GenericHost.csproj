@@ -1,65 +1,79 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-  <!--#if (sdk) -->
+  <!-- #if (Sdk) -->
   <Sdk Name="Rocket.Surgery.Meta.Packages" Version="3.0.1" />
   <!-- #endif -->
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <OutputType>Exe</OutputType>
     <IsPackable>false</IsPackable>
-    <!--#if (!version)
+    <!-- #if (!Version)
     <IncludeRocketSurgeryHosting>true</IncludeRocketSurgeryHosting>
     #endif -->
-    <!--#if (!version) -->
-    <!--#if (autofac)
+    <!-- #if (!Version) -->
+    <!-- #if (UseAutofac)
     <EnableAutofac>true</EnableAutofac>
     #endif -->
-    <!--#if (no-automapper)
+    <!-- #if (SkipAutoMapper)
     <EnableAutoMapper>false</EnableAutoMapper>
     #endif -->
-    <!--#if (no-extensions)
+    <!-- #if (SkipExtensions)
     <EnableExtensions>false</EnableExtensions>
     #endif -->
-    <!--#if (no-fluentvalidation)
+    <!-- #if (SkipFluentValidation)
     <EnableFluentValidation>false</EnableFluentValidation>
     #endif -->
-    <!--#if (no-mediatr)
+    <!-- #if (SkipMediatR)
     <EnableMediatR>false</EnableMediatR>
     #endif -->
-    <!--#if (no-serilog)
+    <!-- #if (SkipSerilog)
     <EnableSerilog>false</EnableSerilog>
+    #endif -->
+    <!-- #if (UseOperations)
+    <EnableOperations>true</EnableOperations>
+    #endif -->
+    <!-- #if (!SkipExtras)
+    <EnableExtras>false</EnableExtras>
     #endif -->
   </PropertyGroup>
   <ItemGroup>
-    <!--#if (version) -->
+    <!-- #if (Version) -->
     <PackageReference Include="Rocket.Surgery.MSBuild.CI" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Rocket.Surgery.MSBuild.GitVersion" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
     <PackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
-    <!--#if (!no-automapper) -->
+    <!-- #if (UseOperations) -->
+    <PackageReference Include="Rocket.Surgery.Operational.MediatR" Version="8.0.0-beta.5" />
+    <!-- #endif -->
+    <!-- #if (!UseOperations) -->
+    <!-- #if (!SkipAutoMapper) -->
     <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.3" />
     <!-- #endif -->
-    <!--#if (!no-extensions) -->
+    <!-- #if (!SkipFluentValidation) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Version="6.3.0-beta.37" />
+    <!-- #endif -->
+    <!-- #if (!SkipMediatR) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Version="7.0.3" />
+    <!-- #endif -->
+    <!-- #endif -->
+    <!-- #if (!SkipSerilog) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.Serilog" Version="10.1.2" />
+    <!-- #endif -->
+    <!-- #if (!SkipExtensions) -->
     <PackageReference Include="Rocket.Surgery.Extensions" Version="2.1.1" />
     <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.1.1" />
     <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.1.1" />
-    <PackageReference Include="Rocket.Surgery.Task.Extensions" Version="2.1.1" />
     <!-- #endif -->
-    <!--#if (!no-fluentvalidation) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Version="6.2.3" />
-    <!--#if (!no-mediatr) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation.MediatR" Version="6.2.3" />
-    <!-- #endif -->
-    <!-- #endif -->
-    <!--#if (!no-mediatr) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Version="7.0.3" />
-    <!-- #endif -->
-    <!--#if (!no-serilog) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Serilog" Version="10.1.2" />
+    <!-- #if (!SkipExtras) -->
+    <PackageReference Include="System.Collections.Immutable" Version="1.7.0" />
+    <PackageReference Include="System.Interactive" Version="4.0.0" />
+    <PackageReference Include="System.Interactive.Async" Version="4.0.0" />
+    <PackageReference Include="System.Reactive" Version="4.3.2" />
+    <PackageReference Include="System.Reactive.Observable.Aliases" Version="4.3.2" />
     <!-- #endif -->
     <PackageReference Include="Rocket.Surgery.Hosting" Version="9.0.7" />
-    <!--#if (autofac) -->
+    <!-- #if (UseAutofac) -->
     <PackageReference Include="Rocket.Surgery.Hosting.Autofac" Version="7.0.2" />
     <!-- #endif -->
     <!-- #endif -->
