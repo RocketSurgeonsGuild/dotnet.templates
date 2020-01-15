@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk.Web">
   <!-- #if (Sdk) -->
-  <Sdk Name="Rocket.Surgery.Meta.Packages" Version="3.0.1" />
+  <Sdk Name="Rocket.Surgery.Meta.Packages" Version="4.0.0" />
   <!-- #endif -->
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -44,11 +44,11 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- #if (Version) -->
-    <PackageReference Include="Rocket.Surgery.MSBuild.CI" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.GitVersion" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.1.0" IncludeAssets="Analyzers;Build" PrivateAssets="All" />
+    <PackageReference Include="Rocket.Surgery.MSBuild.CI" Version="0.2.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
+    <PackageReference Include="Rocket.Surgery.MSBuild.GitVersion" Version="0.2.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
+    <PackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="0.2.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
+    <PackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.2.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
+    <PackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.2.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
     <!-- #if (UseNewtonsoftJson) -->
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.0" />
     <!-- #endif -->
@@ -76,16 +76,16 @@
     <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.3" />
     <!-- #endif -->
     <!-- #if (!SkipMediatR) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Version="7.0.3" />
+    <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Version="7.1.0" />
     <!-- #endif -->
     <!-- #if (!SkipSerilog) -->
     <PackageReference Include="Rocket.Surgery.AspNetCore.Serilog" Version="10.1.2" />
     <!-- #endif -->
     <!-- #endif -->
     <!-- #if (!SkipExtensions) -->
-    <PackageReference Include="Rocket.Surgery.Extensions" Version="2.1.1" />
-    <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.1.1" />
-    <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.1.1" />
+    <PackageReference Include="Rocket.Surgery.Extensions" Version="2.2.0" />
+    <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.2.0" />
+    <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.2.0" />
     <!-- #endif -->
     <!-- #if (!SkipExtras) -->
     <PackageReference Include="System.Collections.Immutable" Version="1.7.0" />
