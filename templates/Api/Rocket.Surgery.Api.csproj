@@ -67,7 +67,7 @@
     <!-- #endif -->
     <!-- #if (!UseOperations) -->
     <!-- #if (!SkipFluentValidation) -->
-    <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation" Version="6.3.0-beta.37" />
+    <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation" Version="6.3.0" />
     <!-- #if (UseNewtonsoftJson) -->
     <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.3.0-beta.37" />
     <!-- #endif -->
