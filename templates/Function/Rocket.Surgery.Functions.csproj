@@ -58,7 +58,7 @@
     <!-- #endif -->
     <!-- #endif -->
     <!-- #if (!SkipSerilog) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Serilog" Version="10.1.2" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Serilog" Version="10.2.0" />
     <!-- #endif -->
     <!-- #if (!SkipExtensions) -->
     <PackageReference Include="Rocket.Surgery.Extensions" Version="2.2.0" />
