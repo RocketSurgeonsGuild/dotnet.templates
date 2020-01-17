@@ -62,14 +62,14 @@
     <!-- #if (UseOperations) -->
     <PackageReference Include="Rocket.Surgery.Operational.AspNetCore.MediatR" Version="8.0.0-beta.5" />
     <!-- #if (UseNewtonsoftJson) -->
-    <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.3.0-beta.37" />
+    <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.3.0" />
     <!-- #endif -->
     <!-- #endif -->
     <!-- #if (!UseOperations) -->
     <!-- #if (!SkipFluentValidation) -->
     <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation" Version="6.3.0-beta.37" />
     <!-- #if (UseNewtonsoftJson) -->
-    <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.3.0-beta.37" />
+    <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.3.0" />
     <!-- #endif -->
     <!-- #endif -->
     <!-- #if (!SkipAutoMapper) -->
