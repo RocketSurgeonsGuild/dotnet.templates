@@ -72,7 +72,7 @@
     <PackageReference Include="System.Reactive" Version="4.3.2" />
     <PackageReference Include="System.Reactive.Observable.Aliases" Version="4.3.2" />
     <!-- #endif -->
-    <PackageReference Include="Rocket.Surgery.Hosting" Version="9.0.7" />
+    <PackageReference Include="Rocket.Surgery.Hosting" Version="9.1.0" />
     <!-- #if (UseAutofac) -->
     <PackageReference Include="Rocket.Surgery.Hosting.Autofac" Version="7.0.2" />
     <!-- #endif -->
