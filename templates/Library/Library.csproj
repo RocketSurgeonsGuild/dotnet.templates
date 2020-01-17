@@ -81,7 +81,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="9.0.7" />
     <!-- #endif -->
     <!-- #if (!SkipConfiguration) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="9.0.7" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="9.1.0" />
     <!-- #endif -->
     <!-- #if (!SkipDependencyInjection) -->
     <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="9.0.7" />
