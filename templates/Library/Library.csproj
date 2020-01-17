@@ -90,7 +90,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="9.1.0" />
     <!-- #endif -->
     <!-- #if (UseWebJobs) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.WebJobs" Version="9.0.7" />
+    <PackageReference Include="Rocket.Surgery.Extensions.WebJobs" Version="9.1.0" />
     <!-- #endif -->
     <!-- #if (!SkipExtensions) -->
     <PackageReference Include="Rocket.Surgery.Extensions" Version="2.2.0" />
