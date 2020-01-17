@@ -44,11 +44,11 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- #if (Version) -->
-    <PackageReference Include="Rocket.Surgery.MSBuild.CI" Version="0.2.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.GitVersion" Version="0.2.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="0.2.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.2.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.2.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
+    <PackageReference Include="Rocket.Surgery.MSBuild.CI" Version="0.3.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
+    <PackageReference Include="Rocket.Surgery.MSBuild.GitVersion" Version="0.3.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
+    <PackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="0.3.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
+    <PackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.3.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
+    <PackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.3.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
     <!-- #if (UseNewtonsoftJson) -->
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.0" />
     <!-- #endif -->
@@ -94,7 +94,7 @@
     <PackageReference Include="System.Reactive" Version="4.3.2" />
     <PackageReference Include="System.Reactive.Observable.Aliases" Version="4.3.2" />
     <!-- #endif -->
-    <PackageReference Include="Rocket.Surgery.Hosting" Version="9.0.7" />
+    <PackageReference Include="Rocket.Surgery.Hosting" Version="9.1.0" />
     <!-- #if (UseAutofac) -->
     <PackageReference Include="Rocket.Surgery.Hosting.Autofac" Version="7.0.2" />
     <!-- #endif -->

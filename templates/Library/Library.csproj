@@ -52,42 +52,42 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- #if (Version) -->
-    <PackageReference Include="Rocket.Surgery.MSBuild.CI" Version="0.2.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.GitVersion" Version="0.2.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="0.2.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.2.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.2.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
+    <PackageReference Include="Rocket.Surgery.MSBuild.CI" Version="0.3.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
+    <PackageReference Include="Rocket.Surgery.MSBuild.GitVersion" Version="0.3.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
+    <PackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="0.3.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
+    <PackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.3.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
+    <PackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.3.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
     <!-- #if (UseAutofac) -->
     <PackageReference Include="Rocket.Surgery.Extensions.Autofac" Version="7.0.2" />
     <!-- #endif -->
     <!-- #if (UseOperations) -->
-    <PackageReference Include="Rocket.Surgery.Operational.MediatR" Version="8.0.0-beta.5" />
+    <PackageReference Include="Rocket.Surgery.Operational.MediatR" Version="8.0.0-beta.46" />
     <!-- #endif -->
     <!-- #if (!UseOperations) -->
     <!-- #if (UseAutoMapper) -->
     <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.3" />
     <!-- #endif -->
     <!-- #if (UseFluentValidation) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Version="6.3.0-beta.37" />
+    <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Version="6.3.1-beta.38" />
     <!-- #endif -->
     <!-- #if (UseMediatR) -->
     <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Version="7.1.0" />
     <!-- #endif -->
     <!-- #endif -->
     <!-- #if (UseSerilog) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Serilog" Version="10.1.2" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Serilog" Version="10.2.0" />
     <!-- #endif -->
     <!-- #if (UseCommandLine) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="9.0.7" />
+    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="9.1.0" />
     <!-- #endif -->
     <!-- #if (!SkipConfiguration) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="9.0.7" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="9.1.0" />
     <!-- #endif -->
     <!-- #if (!SkipDependencyInjection) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="9.0.7" />
+    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="9.1.0" />
     <!-- #endif -->
     <!-- #if (UseLogging) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="9.0.7" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="9.1.0" />
     <!-- #endif -->
     <!-- #if (UseWebJobs) -->
     <PackageReference Include="Rocket.Surgery.Extensions.WebJobs" Version="9.0.7" />
