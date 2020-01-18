@@ -96,7 +96,7 @@
     <!-- #endif -->
     <PackageReference Include="Rocket.Surgery.Hosting" Version="9.1.0" />
     <!-- #if (UseAutofac) -->
-    <PackageReference Include="Rocket.Surgery.Hosting.Autofac" Version="7.0.2" />
+    <PackageReference Include="Rocket.Surgery.Hosting.Autofac" Version="7.1.0" />
     <!-- #endif -->
     <!-- #endif -->
   </ItemGroup>
