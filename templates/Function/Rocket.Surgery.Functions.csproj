@@ -51,7 +51,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.3" />
     <!-- #endif -->
     <!-- #if (!SkipFluentValidation) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Version="6.3.1-beta.38" />
+    <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Version="6.3.1" />
     <!-- #endif -->
     <!-- #if (!SkipMediatR) -->
     <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Version="7.1.0" />
