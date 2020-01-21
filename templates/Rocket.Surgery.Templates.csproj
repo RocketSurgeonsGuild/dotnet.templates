@@ -8,6 +8,7 @@
     <Description>Templates to use when creating an application using Rocket Surgery!</Description>
     <Tags>dotnet-new;templates;rocket surgery;rocket;surgery</Tags>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <IsPackable>true</IsPackable>
 
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>

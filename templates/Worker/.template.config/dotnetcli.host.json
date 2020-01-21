@@ -13,10 +13,6 @@
             "longName": "autofac",
             "shortName": ""
         },
-        "SkipAutoMapper": {
-            "longName": "no-automapper",
-            "shortName": ""
-        },
         "UseSwashbuckle": {
             "longName": "swashbuckle",
             "shortName": ""
@@ -29,29 +25,9 @@
             "longName": "operations",
             "shortName": ""
         },
-        "SkipExtras": {
-            "longName": "no-extras",
-            "shortName": ""
-        },
-        "SkipExtensions": {
-            "longName": "no-extensions",
-            "shortName": ""
-        },
-        "SkipFluentValidation": {
-            "longName": "no-fluentvalidation",
-            "shortName": ""
-        },
         "UseNewtonsoftJson": {
             "longName": "newtonsoftjson",
             "shortName": "newtonsoft"
-        },
-        "SkipMediatR": {
-            "longName": "no-mediatr",
-            "shortName": ""
-        },
-        "SkipSerilog": {
-            "longName": "no-serilog",
-            "shortName": ""
         },
         "UseAutoMapper": {
             "longName": "automapper",
@@ -61,7 +37,7 @@
             "longName": "commandline",
             "shortName": "cl"
         },
-        "SkipConfiguration": {
+        "UseConfiguration": {
             "longName": "no-configuration",
             "shortName": ""
         },
@@ -73,7 +49,7 @@
             "longName": "mediatr",
             "shortName": ""
         },
-        "SkipDependencyInjection": {
+        "UseDependencyInjection": {
             "longName": "no-dependencyinjection",
             "shortName": ""
         },

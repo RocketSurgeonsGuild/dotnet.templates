@@ -36,47 +36,12 @@
             "isRequired": false,
             "description": "Enable operational packages"
         },
-        "SkipExtras": {
+        "UseAutofac": {
             "datatype": "bool",
             "defaultValue": "false",
             "type": "parameter",
             "isRequired": false,
-            "description": "Exclude extra system packages like System.Reactive and System.Interactive"
-        },
-        "SkipAutoMapper": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Do not include AutoMapper in the dependencies"
-        },
-        "SkipExtensions": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Do not include Rocket.Surgery.Extensions in the dependencies"
-        },
-        "SkipFluentValidation": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Do not include FluentValidation in the dependencies"
-        },
-        "SkipMediatR": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Do not include MediatR in the dependencies"
-        },
-        "SkipSerilog": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Do not include Serilog in the dependencies"
+            "description": "Enable autofac packages"
         }
     },
     "primaryOutputs": [

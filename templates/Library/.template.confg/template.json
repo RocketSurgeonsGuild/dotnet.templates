@@ -36,13 +36,6 @@
             "isRequired": false,
             "description": "Enable operational packages"
         },
-        "SkipExtras": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Exclude extra system packages like System.Reactive and System.Interactive"
-        },
         "UseAutofac": {
             "datatype": "bool",
             "defaultValue": "false",
@@ -64,19 +57,12 @@
             "isRequired": false,
             "description": "Include Rocket.Surgery.Extensions.CommandLine as a package reference"
         },
-        "SkipConfiguration": {
+        "UseConfiguration": {
             "datatype": "bool",
             "defaultValue": "false",
             "type": "parameter",
             "isRequired": false,
             "description": "Do not include Rocket.Surgery.Extensions.Configuration as a package reference"
-        },
-        "SkipExtensions": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Include Rocket.Surgery.Extensions in the dependencies"
         },
         "UseFluentValidation": {
             "datatype": "bool",
@@ -92,7 +78,7 @@
             "isRequired": false,
             "description": "Include MediatR in the dependencies"
         },
-        "SkipDependencyInjection": {
+        "UseDependencyInjection": {
             "datatype": "bool",
             "defaultValue": "false",
             "type": "parameter",
