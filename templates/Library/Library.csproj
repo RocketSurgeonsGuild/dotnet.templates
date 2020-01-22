@@ -59,7 +59,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.Autofac" Version="7.1.0" />
     <!-- #endif -->
     <!-- #if (UseAutoMapper) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.1.0" />
+    <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.1.3" />
     <!-- #endif -->
     <!-- #if (UseFluentValidation) -->
     <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Version="6.3.1" />
