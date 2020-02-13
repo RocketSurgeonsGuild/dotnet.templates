@@ -38,7 +38,7 @@
     <!-- #if (!SkipSwashBuckle) -->
     <PackageReference Include="Rocket.Surgery.AspNetCore.Swashbuckle" Version="8.0.1" />
     <!-- #if (UseNewtonsoftJson) -->
-    <PackageReference Include="Rocket.Surgery.AspNetCore.Swashbuckle.NewtonsoftJson" Version="8.0.1" />
+    <PackageReference Include="Rocket.Surgery.AspNetCore.Swashbuckle.NewtonsoftJson" Version="8.0.2" />
     <!-- #endif -->
     <!-- #endif -->
     <!-- #if (UseOperations) -->
