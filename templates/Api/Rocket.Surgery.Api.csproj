@@ -44,7 +44,7 @@
     <!-- #if (UseOperations) -->
     <PackageReference Include="Rocket.Surgery.Meta.Api.Operations" Version="4.1.1" />
     <!-- #endif -->
-    <PackageReference Include="Rocket.Surgery.Extensions" Version="2.2.0" />
+    <PackageReference Include="Rocket.Surgery.Extensions" Version="2.3.0" />
     <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.2.0" />
     <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.2.0" />
     <PackageReference Include="System.Collections.Immutable" Version="1.7.0" />
