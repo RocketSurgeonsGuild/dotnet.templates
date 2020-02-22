@@ -18,7 +18,7 @@
     <PackageReference Include="Rocket.Surgery.MSBuild.GitVersion" Version="0.3.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
     <PackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="0.3.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
     <PackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.3.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.3.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
+    <PackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.3.1" IncludeAssets="build; analyzers" PrivateAssets="all" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.2" />
     <PackageReference Include="Rocket.Surgery.Meta.Functions" Version="4.1.1" />
     <!-- #if (UseOperations) -->
