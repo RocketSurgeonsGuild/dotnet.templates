@@ -14,7 +14,7 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- #if (Version) -->
-    <PackageReference Include="Rocket.Surgery.MSBuild.CI" Version="0.3.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
+    <PackageReference Include="Rocket.Surgery.MSBuild.CI" Version="0.3.1" IncludeAssets="build; analyzers" PrivateAssets="all" />
     <PackageReference Include="Rocket.Surgery.MSBuild.GitVersion" Version="0.3.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
     <PackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="0.3.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
     <PackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.3.0" IncludeAssets="build; analyzers" PrivateAssets="all" />
