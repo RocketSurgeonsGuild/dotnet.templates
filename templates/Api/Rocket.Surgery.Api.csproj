@@ -32,7 +32,7 @@
     <PackageReference Include="Rocket.Surgery.AspNetCore.Serilog" Version="0.3.1" />
     <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation" Version="0.3.1" />
     <PackageReference Include="Rocket.Surgery.Hosting" Version="0.3.1" />
-    <PackageReference Include="Rocket.Surgery.Hosting.Serilog" Version="0.3.1" />
+    <PackageReference Include="Rocket.Surgery.Hosting.Serilog" Version="10.2.1" />
     <!-- #if (UseNewtonsoftJson) -->
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.1" />
     <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.3.1" />
