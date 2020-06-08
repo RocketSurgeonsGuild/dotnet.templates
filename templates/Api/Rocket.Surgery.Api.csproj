@@ -28,7 +28,7 @@
     <PackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="0.3.1" IncludeAssets="build; analyzers" PrivateAssets="all" />
     <PackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.3.1" IncludeAssets="build; analyzers" PrivateAssets="all" />
     <PackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.3.1" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.AspNetCore" Version="0.3.1" />
+    <PackageReference Include="Rocket.Surgery.AspNetCore" Version="0.3.2" />
     <PackageReference Include="Rocket.Surgery.AspNetCore.Serilog" Version="0.3.1" />
     <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation" Version="0.3.1" />
     <PackageReference Include="Rocket.Surgery.Hosting" Version="0.3.1" />
