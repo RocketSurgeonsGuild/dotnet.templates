@@ -8,7 +8,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.Autofac" Version="7.1.0" />
     <!-- #endif -->
     <!-- #if (UseAutoMapper) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.1.0" />
+    <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.1.4" />
     <!-- #endif -->
     <!-- #if (UseFluentValidation) -->
     <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Version="6.3.1" />
@@ -35,12 +35,12 @@
     <PackageReference Include="Rocket.Surgery.Extensions.WebJobs" Version="9.1.1" />
     <!-- #endif -->
     <PackageReference Include="Rocket.Surgery.Extensions" Version="2.3.1" />
-    <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.2.0" />
-    <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.2.0" />
-    <PackageReference Include="System.Collections.Immutable" Version="1.7.0" />
-    <PackageReference Include="System.Interactive" Version="4.0.0" />
-    <PackageReference Include="System.Interactive.Async" Version="4.0.0" />
-    <PackageReference Include="System.Reactive" Version="4.3.2" />
-    <PackageReference Include="System.Reactive.Observable.Aliases" Version="4.3.2" />
+    <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.3.1" />
+    <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.3.1" />
+    <PackageReference Include="System.Collections.Immutable" Version="1.7.1" />
+    <PackageReference Include="System.Interactive" Version="4.1.1" />
+    <PackageReference Include="System.Interactive.Async" Version="4.1.1" />
+    <PackageReference Include="System.Reactive" Version="4.4.1" />
+    <PackageReference Include="System.Reactive.Observable.Aliases" Version="4.4.1" />
   </ItemGroup>
 </Project>
