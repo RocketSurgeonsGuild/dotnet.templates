@@ -1,60 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk.Web">
-  <!-- #if (Sdk) -->
-  <Sdk Name="Rocket.Surgery.Meta.Packages" Version="4.1.1" />
-  <!-- #endif -->
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <IsPackable>false</IsPackable>
-    <!-- #if (Sdk) -->
-    <!-- #if (UseAutofac)
-    <EnableAutofac>true</EnableAutofac>
-    #endif -->
-    <!-- #if (UseNewtonsoftJson)
-    <EnableNewtonsoftJson>true</EnableNewtonsoftJson>
-    #endif -->
-    <!-- #if (UseOperations)
-    <EnableOperations>true</EnableOperations>
-    #endif -->
-    <!-- #if (UseSwashbuckle)
-    <EnableSwashbuckle>true</EnableSwashbuckle>
-    #endif -->
-    <!-- #endif -->
   </PropertyGroup>
   <ItemGroup>
-    <!-- #if (Version) -->
-    <PackageReference Include="Rocket.Surgery.MSBuild.CI" Version="0.3.1" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.GitVersion" Version="0.3.1" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="0.3.1" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.3.1" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.3.1" IncludeAssets="build; analyzers" PrivateAssets="all" />
-
     <PackageReference Include="Rocket.Surgery.Meta.Api" Version="4.1.1" />
     <PackageReference Include="Rocket.Surgery.Meta.AspNetCore" Version="4.1.1" />
     <!-- #if (UseNewtonsoftJson) -->
     <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.3.1" />
-    <PackageReference Include="Rocket.Surgery.AspNetCore.NewtonsoftJson" Version="0.3.1" />
+    <PackageReference Include="Rocket.Surgery.AspNetCore.NewtonsoftJson" Version="0.3.2" />
     <!-- #endif -->
     <!-- #if (UseSwashbuckle) -->
-    <PackageReference Include="Rocket.Surgery.AspNetCore.Swashbuckle" Version="8.0.1" />
+    <PackageReference Include="Rocket.Surgery.AspNetCore.Swashbuckle" Version="8.0.2" />
     <!-- #if (UseNewtonsoftJson) -->
-    <PackageReference Include="Rocket.Surgery.AspNetCore.Swashbuckle.NewtonsoftJson" Version="8.0.1" />
+    <PackageReference Include="Rocket.Surgery.AspNetCore.Swashbuckle.NewtonsoftJson" Version="8.0.2" />
     <!-- #endif -->
-    <!-- #endif -->
-    <!-- #if (UseOperations) -->
-    <PackageReference Include="Rocket.Surgery.Meta.Operations" Version="4.1.1" />
     <!-- #endif -->
     <PackageReference Include="Rocket.Surgery.Extensions" Version="2.3.1" />
-    <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.2.0" />
-    <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.2.0" />
-    <PackageReference Include="System.Collections.Immutable" Version="1.7.0" />
-    <PackageReference Include="System.Interactive" Version="4.0.0" />
-    <PackageReference Include="System.Interactive.Async" Version="4.0.0" />
-    <PackageReference Include="System.Reactive" Version="4.3.2" />
-    <PackageReference Include="System.Reactive.Observable.Aliases" Version="4.3.2" />
+    <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.3.1" />
+    <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.3.1" />
+    <PackageReference Include="System.Collections.Immutable" Version="1.7.1" />
+    <PackageReference Include="System.Interactive" Version="4.1.1" />
+    <PackageReference Include="System.Interactive.Async" Version="4.1.1" />
+    <PackageReference Include="System.Reactive" Version="4.4.1" />
+    <PackageReference Include="System.Reactive.Observable.Aliases" Version="4.4.1" />
     <!-- #if (UseAutofac) -->
     <PackageReference Include="Rocket.Surgery.Hosting.Autofac" Version="7.1.0" />
-    <!-- #endif -->
     <!-- #endif -->
   </ItemGroup>
 </Project>

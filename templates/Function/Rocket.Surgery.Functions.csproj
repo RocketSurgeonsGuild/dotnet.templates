@@ -1,38 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-  <!-- #if (Sdk) -->
-  <Sdk Name="Rocket.Surgery.Meta.Packages" Version="4.1.1" />
-  <!-- #endif -->
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AzureFunctionsVersion>v3</AzureFunctionsVersion>
-    <!-- #if (Sdk) -->
-    <!-- #if (UseOperations)
-    <EnableOperations>true</EnableOperations>
-    #endif -->
-    <!-- #endif -->
   </PropertyGroup>
   <ItemGroup>
-    <!-- #if (Version) -->
-    <PackageReference Include="Rocket.Surgery.MSBuild.CI" Version="0.3.1" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.GitVersion" Version="0.3.1" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="0.3.1" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.3.1" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.3.1" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.2" />
-    <PackageReference Include="Rocket.Surgery.Meta.Functions" Version="4.1.1" />
-    <!-- #if (UseOperations) -->
-    <PackageReference Include="Rocket.Surgery.Meta.Operations" Version="4.1.1" />
-    <!-- #endif -->
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.7" />
+    <PackageReference Include="Rocket.Surgery.Extensions.WebJobs" Version="9.1.1" />
+    <PackageReference Include="Rocket.Surgery.Hosting.Functions" Version="9.1.1" />
     <PackageReference Include="Rocket.Surgery.Extensions" Version="2.3.1" />
-    <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.2.0" />
-    <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.2.0" />
-    <PackageReference Include="System.Collections.Immutable" Version="1.7.0" />
-    <PackageReference Include="System.Interactive" Version="4.0.0" />
-    <PackageReference Include="System.Interactive.Async" Version="4.0.0" />
-    <PackageReference Include="System.Reactive" Version="4.3.2" />
-    <PackageReference Include="System.Reactive.Observable.Aliases" Version="4.3.2" />
-    <!-- #endif -->
+    <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.3.1" />
+    <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.3.1" />
+    <PackageReference Include="System.Collections.Immutable" Version="1.7.1" />
+    <PackageReference Include="System.Interactive" Version="4.1.1" />
+    <PackageReference Include="System.Interactive.Async" Version="4.1.1" />
+    <PackageReference Include="System.Reactive" Version="4.4.1" />
+    <PackageReference Include="System.Reactive.Observable.Aliases" Version="4.4.1" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">

@@ -8,7 +8,6 @@ using Microsoft.Extensions.Logging;
 
 namespace Rocket.Surgery.Functions
 {
-    [PublicAPI]
     public class Function
     {
         private readonly ILogger _logger;
@@ -16,7 +15,7 @@ namespace Rocket.Surgery.Functions
         public Function(ILogger<Function> logger) => _logger = logger;
 
         [FunctionName("Function")]
-        public ActionResult<int> Run([HttpTrigger("get")]HttpRequest context, ILogger logger)
+        public ActionResult<int> Run([HttpTrigger("get")] HttpRequest context, ILogger logger)
         {
             logger.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
             _logger.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");

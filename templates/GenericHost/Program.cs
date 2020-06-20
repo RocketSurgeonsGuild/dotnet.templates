@@ -22,7 +22,6 @@ using Rocket.Surgery.Hosting;
 
 namespace Rocket.Surgery.GenericHost
 {
-    [PublicAPI]
     public static class Program
     {
         public static Task Main(string[] args) => CreateHostBuilder(args).Build().RunAsync();

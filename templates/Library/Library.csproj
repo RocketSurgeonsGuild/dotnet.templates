@@ -1,65 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-  <!-- #if (Sdk) -->
-  <Sdk Name="Rocket.Surgery.Meta.Packages" Version="4.1.1" />
-  <!-- #endif -->
   <PropertyGroup>
     <TargetFrameworks>netstandard2.1;netstandard2.0</TargetFrameworks>
-    <!-- #if (Sdk) -->
-    <!-- #if (UseAutofac)
-    <EnableAutofac>true</EnableAutofac>
-    #endif -->
-    <!-- #if (UseAutoMapper)
-    <EnableAutoMapper>false</EnableAutoMapper>
-    #endif -->
-    <!-- #if (UseCommandLine)
-    <EnableCommandLine>true</EnableCommandLine>
-    #endif -->
-    <!-- #if (UseConfiguration)
-    <EnableConfiguration>true</EnableConfiguration>
-    #endif -->
-    <!-- #if (UseFluentValidation)
-    <EnableFluentValidation>true</EnableFluentValidation>
-    #endif -->
-    <!-- #if (UseMediatR)
-    <EnableMediatR>true</EnableMediatR>
-    #endif -->
-    <!-- #if (UseDependencyInjection)
-    <EnableDependencyInjection>false</EnableDependencyInjection>
-    #endif -->
-    <!-- #if (UseLogging)
-    <EnableLogging>true</EnableLogging>
-    #endif -->
-    <!-- #if (UseSerilog)
-    <EnableSerilog>true</EnableSerilog>
-    #endif -->
-    <!-- #if (UseWebJobs)
-    <EnableWebJobs>true</EnableWebJobs>
-    #endif -->
-    <!-- #if (UseOperations)
-    <EnableOperations>true</EnableOperations>
-    #endif -->
-    <!-- #if (UseAutofac)
-    <EnableAutofac>true</EnableAutofac>
-    #endif -->
-    <!-- #endif -->
   </PropertyGroup>
   <ItemGroup>
-    <!-- #if (Version) -->
-    <PackageReference Include="Rocket.Surgery.MSBuild.CI" Version="0.3.1" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.GitVersion" Version="0.3.1" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="0.3.1" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.3.1" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.3.1" IncludeAssets="build; analyzers" PrivateAssets="all" />
-    <PackageReference Include="Rocket.Surgery.Meta.Core" Version="4.1.1" />
-    <!-- #if (UseOperations) -->
-    <PackageReference Include="Rocket.Surgery.Meta.Operations" Version="4.1.1" />
-    <!-- #endif -->
     <!-- #if (UseAutofac) -->
     <PackageReference Include="Rocket.Surgery.Extensions.Autofac" Version="7.1.0" />
     <!-- #endif -->
     <!-- #if (UseAutoMapper) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.1.0" />
+    <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.1.4" />
     <!-- #endif -->
     <!-- #if (UseFluentValidation) -->
     <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Version="6.3.1" />
@@ -86,13 +35,12 @@
     <PackageReference Include="Rocket.Surgery.Extensions.WebJobs" Version="9.1.1" />
     <!-- #endif -->
     <PackageReference Include="Rocket.Surgery.Extensions" Version="2.3.1" />
-    <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.2.0" />
-    <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.2.0" />
-    <PackageReference Include="System.Collections.Immutable" Version="1.7.0" />
-    <PackageReference Include="System.Interactive" Version="4.0.0" />
-    <PackageReference Include="System.Interactive.Async" Version="4.0.0" />
-    <PackageReference Include="System.Reactive" Version="4.3.2" />
-    <PackageReference Include="System.Reactive.Observable.Aliases" Version="4.3.2" />
-    <!-- #endif -->
+    <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.3.1" />
+    <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.3.1" />
+    <PackageReference Include="System.Collections.Immutable" Version="1.7.1" />
+    <PackageReference Include="System.Interactive" Version="4.1.1" />
+    <PackageReference Include="System.Interactive.Async" Version="4.1.1" />
+    <PackageReference Include="System.Reactive" Version="4.4.1" />
+    <PackageReference Include="System.Reactive.Observable.Aliases" Version="4.4.1" />
   </ItemGroup>
 </Project>

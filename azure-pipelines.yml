@@ -3,6 +3,7 @@ trigger:
     branches:
         include:
             - master
+            - next
             - refs/tags/*
     paths:
         exclude:
@@ -22,13 +23,14 @@ pr:
     branches:
         include:
             - master
+            - next
 
 resources:
     repositories:
         - repository: rsg
           type: github
           name: RocketSurgeonsGuild/AzureDevopsTemplates
-          ref: refs/tags/v0.11.8
+          ref: refs/tags/v0.13.0
           endpoint: github
 
 variables:
@@ -47,20 +49,64 @@ variables:
     - group: rsg-bot
 
 jobs:
-    - template: pipeline/nuke.yml@rsg
+    - template: jobs/publish-release.yml@rsg
       parameters:
-          AuthNuGetFeeds:
-              - name: RocketSurgeonsGuild
-                source: https://nuget.pkg.github.com/RocketSurgeonsGuild/index.json
-                username: $(GitHub.UserName)
-                password: $(GitHub.Token)
-          Configuration: $(Configuration)
-          Verbosity: $(Verbosity)
-          GitHub: true
-          GitHubAuthVariableGroup: rsg-bot
           GitHubPackages: true
-          MyGetPackages: false
-          DotNetSdk:
-              - '2.x'
-              - '3.x'
-          NuGetVersion: '5.4.0'
+          GitHubAuthVariableGroup: rsg-bot
+          PublishNuGetPackagesFromArtifact: 'NuGet - Windows'
+
+    - job: Build
+      dependsOn:
+      variables:
+          - group: rsg-bot
+      strategy:
+          matrix:
+              Windows:
+                  BuildName: 'Windows'
+                  ImageName: 'windows-latest'
+              Linux:
+                  BuildName: 'Linux'
+                  ImageName: 'ubuntu-latest'
+              macOS:
+                  BuildName: 'macOS'
+                  ImageName: 'macOS-latest'
+      pool:
+          vmImage: $(ImageName)
+      steps:
+          - template: support/mono.yml@rsg
+          # - ${{ if startsWith(variables['Build.SourceBranch'], 'refs/tags/v') }}:
+          #   - template: support/download-release-notes.yml@rsg
+          - template: support/install-dotnet.yml@rsg
+            parameters:
+                DotNetSdk:
+                    - '2.x'
+                    - '3.x'
+
+          - task: DotNetCoreCLI@2
+            displayName: 'dotnet tool restore'
+            inputs:
+                command: custom
+                custom: tool
+                arguments: 'restore'
+
+          - task: DotNetCoreCLI@2
+            displayName: 'dotnet restore'
+            inputs:
+                command: restore
+                feedsToUse: config
+                nugetConfigPath: NuGet.config
+                verbosityRestore: Minimal
+
+          - template: ./azure-pipelines.nuke.yml
+            parameters:
+                Artifacts: $(Artifacts)
+                Configuration: $(Configuration)
+                Coverage: $(Coverage)
+
+          - template: support/publish-artifacts.yml@rsg
+            parameters:
+                Artifacts: $(Artifacts)
+                Configuration: $(Configuration)
+                Coverage: $(Coverage)
+                Postfix: ' - $(BuildName)'
+                PublishVSTest: true

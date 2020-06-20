@@ -23,7 +23,6 @@ using Rocket.Surgery.Hosting;
 
 namespace Rocket.Surgery.Cli
 {
-    [PublicAPI]
     public class Program : ICommandLineConvention
     {
         public static Task<int> Main(string[] args) => CreateHostBuilder(args).RunCli();

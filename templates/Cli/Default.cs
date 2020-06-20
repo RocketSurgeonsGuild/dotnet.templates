@@ -7,7 +7,6 @@ using Rocket.Surgery.Extensions.CommandLine;
 
 namespace Rocket.Surgery.Cli
 {
-    [PublicAPI]
     public class Default : IDefaultCommand
     {
         private readonly IApplicationState _state;
