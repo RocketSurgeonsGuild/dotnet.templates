@@ -1,0 +1,17 @@
+##if (no-serilog)
+Logging:
+    LogLevel:
+        Default: 'Debug'
+        System: 'Information'
+        Microsoft: 'Information'
+##endif
+##if (!no-serilog)
+Serilog:
+    MinimumLevel:
+        Default: Verbose
+        Override:
+            Microsoft: 'Debug'
+            Microsoft.AspNetCore.Hosting.Diagnostics: 'Debug'
+            Microsoft.Hosting.Lifetime": 'Debug'
+            System": 'Debug'
+##endif
