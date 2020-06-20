@@ -12,7 +12,6 @@ using Rocket.Surgery.Hosting.Functions;
 
 namespace Rocket.Surgery.Functions
 {
-    [PublicAPI]
     public class Startup : IWebJobsStartup, IServiceConvention
     {
         public void Register(IServiceConventionContext context)

@@ -12,7 +12,6 @@ using Rocket.Surgery.Hosting;
 
 namespace Rocket.Surgery.Api
 {
-    [PublicAPI]
     public static class Program
     {
         public static Task<int> Main(string[] args) => CreateHostBuilder(args).RunCli();
