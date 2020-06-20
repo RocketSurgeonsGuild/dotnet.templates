@@ -91,6 +91,13 @@
             "type": "parameter",
             "isRequired": false,
             "description": "Include Rocket.Surgery.Extensions.WebJobs as a package reference"
+        },
+        "skipSolution": {
+            "datatype": "bool",
+            "defaultValue": "true",
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Do not automatically add to a solution"
         }
     },
     "sources": [],
@@ -101,6 +108,7 @@
     ],
     "postActions": [
         {
+            "condition": "(!skipSolution)",
             "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
             "description": "Add project to solution file",
             "args": {

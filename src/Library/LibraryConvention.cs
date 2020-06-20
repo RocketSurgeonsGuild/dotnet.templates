@@ -3,7 +3,7 @@
 using Rocket.Surgery.Extensions.Autofac;
 //#endif
 //#if dryioc
-//using Rocket.Surgery.Extensions.DryIoc;
+using Rocket.Surgery.Extensions.DryIoc;
 //#endif
 //#if commandline
 using Rocket.Surgery.Extensions.CommandLine;
@@ -37,10 +37,10 @@ namespace Library
 
         }
         //#if dryioc
-        // public void Register(IDryIocConventionContext context)
-        // {
-        //
-        // }
+        public void Register(IDryIocConventionContext context)
+        {
+
+        }
         //#endif
         //#if (!no-configuration)
         public void Register(IConfigurationConventionContext context)
@@ -85,7 +85,7 @@ namespace Library
     public partial class LibraryConvention : IAutofacConvention { }
     //#endif
     //#if dryioc
-    //public partial class LibraryConvention : IDryIocConvention { }
+    public partial class LibraryConvention : IDryIocConvention { }
     //#endif
     //#if (!no-configuration)
     public partial class LibraryConvention : IConfigurationConvention { }

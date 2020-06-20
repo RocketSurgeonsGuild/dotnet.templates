@@ -34,7 +34,8 @@ public partial class Solution : NukeBuild,
                         IGenerateCodeCoverageSummary,
                         IGenerateCodeCoverageBadges,
                         IHaveConfiguration<Configuration>,
-                        ICanLint
+                        ICanLint,
+                        ICanInstallDotNetTemplates
 {
     /// <summary>
     /// Support plugins are available for:
@@ -54,9 +55,12 @@ public partial class Solution : NukeBuild,
        .DependsOn(Test)
        .DependsOn(Pack)
        .DependsOn(Install)
+       .DependsOn(InstallForTest)
        ;
 
     public Target Build => _ => _.Inherit<ICanBuildWithDotNetCore>(x => x.CoreBuild);
+    public Target Install => _ => _.Inherit<ICanInstallDotNetTemplates>(x => x.Install);
+    public Target InstallForTest => _ => _.Inherit<ICanInstallDotNetTemplates>(x => x.InstallForTest);
 
     public Target Pack => _ => _.Inherit<ICanPackWithDotNetCore>(x => x.CorePack)
        .DependsOn(Clean);
@@ -74,15 +78,28 @@ public partial class Solution : NukeBuild,
 
     [Parameter("Configuration to build")]
     public Configuration Configuration { get; } = IsLocalBuild ? Configuration.Debug : Configuration.Release;
+}
+
+public interface ICanInstallDotNetTemplates : IHaveTestTarget, IHaveBuildTarget, IHavePackTarget, IHaveNuGetPackages, IComprehendSources
+{
+    public Target InstallForTest => _ => _
+       .Before(Test)
+       .DependsOn(Build)
+       .Executes(() =>
+        {
+            DotNet($"new --install {SourceDirectory}");
+        });
 
     public Target Install => _ => _
-        .After(Pack)
-        .DependsOn(Pack)
-        .OnlyWhenStatic(() => IsLocalBuild)
-        .Executes(() =>
+       .After(Pack)
+       .DependsOn(Pack)
+       .OnlyWhenStatic(() => NukeBuild.IsLocalBuild)
+       .Executes(() =>
         {
+            DotNet($"new --uninstall {SourceDirectory}");
             foreach (var item in ( (IHaveNuGetPackages)this ).NuGetPackageDirectory.GlobFiles("*.nupkg"))
             {
+
                 try
                 {
                     DotNet("new --uninstall Rocket.Surgery.Templates");

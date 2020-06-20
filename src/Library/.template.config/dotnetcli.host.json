@@ -9,10 +9,6 @@
             "longName": "dryioc",
             "shortName": ""
         },
-        "UseSwashbuckle": {
-            "longName": "no-swashbuckle",
-            "shortName": ""
-        },
         "SkipSwashBuckle": {
             "longName": "no-swashbuckle",
             "shortName": ""
