@@ -27,6 +27,13 @@
             "isRequired": false,
             "description": "Include Rocket.Surgery.Extensions.Testing.Moq as a testing package reference"
         },
+        "UseNSubstitute": {
+            "datatype": "bool",
+            "defaultValue": "false",
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Include Rocket.Surgery.Extensions.Testing.NSubstitute as a testing package reference"
+        },
         "SkipBogus": {
             "datatype": "bool",
             "defaultValue": "false",

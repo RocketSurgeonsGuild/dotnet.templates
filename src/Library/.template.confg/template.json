@@ -15,33 +15,19 @@
         "type": "project"
     },
     "symbols": {
-        "Sdk": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Include the rocket surgery Sdk with the project"
-        },
-        "Version": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Include the versions in the project file, typically these come from Directory.Build.targets or similar"
-        },
-        "UseOperations": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Enable operational packages"
-        },
         "UseAutofac": {
             "datatype": "bool",
             "defaultValue": "false",
             "type": "parameter",
             "isRequired": false,
             "description": "Include Rocket.Surgery.Extensions.Autofac as a package reference"
+        },
+        "UseDryIoc": {
+            "datatype": "bool",
+            "defaultValue": "false",
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Enable dryioc packages"
         },
         "UseAutoMapper": {
             "datatype": "bool",

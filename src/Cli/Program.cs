@@ -33,6 +33,9 @@ namespace Rocket.Surgery.Cli
                 //#if autofac
                 .ConfigureRocketSurgery(builder => builder.UseAutofac())
                 //#endif
+                //#if dryioc
+                //.ConfigureRocketSurgery(builder => builder.UseDryIoc())
+                //#endif
                 ;
 
         public void Register(ICommandLineConventionContext context)

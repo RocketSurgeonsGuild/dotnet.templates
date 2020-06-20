@@ -9,6 +9,10 @@
             "longName": "moq",
             "shortName": ""
         },
+        "UseNSubstitute": {
+            "longName": "nsubstitute",
+            "shortName": ""
+        },
         "SkipBogus": {
             "longName": "no-bogus",
             "shortName": ""

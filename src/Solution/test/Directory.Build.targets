@@ -7,6 +7,9 @@
         <!-- #if (UseMoq)
         <PackageReference Include="Rocket.Surgery.Extensions.Testing.Moq" />
         #endif -->
+        <!-- #if (UseNSubstitute)
+        <PackageReference Include="Rocket.Surgery.Extensions.Testing.NSubstitute" />
+        #endif -->
         <!-- #if (SkipBogus) -->
         <PackageReference Include="Bogus" />
         <!-- #endif -->
@@ -18,6 +21,9 @@
         <!-- #endif -->
         <!-- #if (UseMoq)
         <PackageReference Include="Moq" />
+        #endif -->
+        <!-- #if (UseNSubstitute)
+        <PackageReference Include="NSubstitute" />
         #endif -->
         <PackageReference Include="FluentAssertions" />
         <PackageReference Include="FluentAssertions.Analyzers" />

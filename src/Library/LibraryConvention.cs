@@ -2,6 +2,9 @@
 //#if autofac
 using Rocket.Surgery.Extensions.Autofac;
 //#endif
+//#if dryioc
+//using Rocket.Surgery.Extensions.DryIoc;
+//#endif
 //#if commandline
 using Rocket.Surgery.Extensions.CommandLine;
 //#endif
@@ -33,6 +36,11 @@ namespace Library
         {
 
         }
+        //#if dryioc
+        // public void Register(IDryIocConventionContext context)
+        // {
+        //
+        // }
         //#endif
         //#if (!no-configuration)
         public void Register(IConfigurationConventionContext context)
@@ -75,6 +83,9 @@ namespace Library
     #region Partial
     //#if autofac
     public partial class LibraryConvention : IAutofacConvention { }
+    //#endif
+    //#if dryioc
+    //public partial class LibraryConvention : IDryIocConvention { }
     //#endif
     //#if (!no-configuration)
     public partial class LibraryConvention : IConfigurationConvention { }
