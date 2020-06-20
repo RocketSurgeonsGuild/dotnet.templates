@@ -8,21 +8,21 @@
 <!-- badges -->
 
 <!-- history badges -->
-| Azure Pipelines | AppVeyor |
-| --------------- | -------- |
-| [![azurepipelines-badge]][azurepipelines] | [![appveyor-badge]][appveyor] |
+| Azure Pipelines                                           | AppVeyor                                      |
+| --------------------------------------------------------- | --------------------------------------------- |
+| [![azurepipelines-badge]][azurepipelines]                 | [![appveyor-badge]][appveyor]                 |
 | [![azurepipelines-history-badge]][azurepipelines-history] | [![appveyor-history-badge]][appveyor-history] |
 <!-- history badges -->
 
 <!-- nuget packages -->
-| Package | NuGet |
-| ------- | ----- |
+| Package                  | NuGet                                                                                          |
+| ------------------------ | ---------------------------------------------------------------------------------------------- |
 | Rocket.Surgery.Templates | [![nuget-version-o0+agny7zfaw-badge]![nuget-downloads-o0+agny7zfaw-badge]][nuget-o0+agny7zfaw] |
-| Library | [![nuget-version-olyuf6bugtvg-badge]![nuget-downloads-olyuf6bugtvg-badge]][nuget-olyuf6bugtvg] |
-| UnitTest | [![nuget-version-wvy4njxqr3uq-badge]![nuget-downloads-wvy4njxqr3uq-badge]][nuget-wvy4njxqr3uq] |
+| Library                  | [![nuget-version-olyuf6bugtvg-badge]![nuget-downloads-olyuf6bugtvg-badge]][nuget-olyuf6bugtvg] |
+| UnitTest                 | [![nuget-version-wvy4njxqr3uq-badge]![nuget-downloads-wvy4njxqr3uq-badge]][nuget-wvy4njxqr3uq] |
 <!-- nuget packages -->
-| Package | NuGet | MyGet |
-| ------- | ----- | ----- |
+| Package                  | NuGet                                                                                 | MyGet                                                                                    |
+| ------------------------ | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | Rocket.Surgery.Templates | [![nuget-version-templates-badge]![nuget-downloads-templates-badge]][nuget-templates] | [![myget-version-templates-badge]![myget-downloads-templates-badge]][myget-feevisq63few] |
 
 # Whats next?
@@ -68,7 +68,4 @@ azurepipelines:
   account: rocketsurgeonsguild
   teamproject: Libraries
   builddefinition: 30
-appveyor:
-  account: RocketSurgeonsGuild
-  build: dotnet-templates
 -->
