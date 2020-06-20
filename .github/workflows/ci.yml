@@ -20,11 +20,13 @@ on:
   push:
     branches:
       - master
+      - next
     tags:
       - v*
   pull_request:
     branches:
       - master
+      - next
 
 jobs:
   Build:
@@ -38,6 +40,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           clean: 'false'
+          fetch-depth: '0'
       - name: Fetch all history for all tags and branches
         run: |
           git fetch --prune
@@ -54,20 +57,14 @@ jobs:
         run: |
           $version = Split-Path (Split-Path $ENV:DOTNET_ROOT -Parent) -Leaf;
           $root = Split-Path (Split-Path $ENV:DOTNET_ROOT -Parent) -Parent;
-          $directories = Get-ChildItem $ENV:DOTNET_ROOT | Where-Object { $_.Name -ne $version };
+          $directories = Get-ChildItem $root | Where-Object { $_.Name -ne $version };
           foreach ($dir in $directories) {
           $from = $dir.FullName;
-          $to = "$root/$version/$($dir.Name)";
+          $to = "$root/$version";
           Write-Host Copying from $from to $to;
-          Copy-Item $from $to -Recurse -Force;
+          Copy-Item "$from\*" $to -Recurse -Force;
           }
-      - name: 📲 Install GitVersion
-        uses: gittools/actions/gitversion/setup@master
-        with:
-          versionSpec: '5.1.x'
-      - name: 🔨 Use GitVersion
-        id: gitversion
-        uses: gittools/actions/gitversion/execute@master
+          
       - name: 🎁 dotnet tool restore
         run: |
           dotnet tool restore
@@ -83,6 +80,9 @@ jobs:
       - name: 📦 Pack
         run: |
           dotnet nuke Pack --skip
+      - name: 📲 Install
+        run: |
+          dotnet nuke Install --skip
       - name: 🐿 Publish Coverage
         uses: codecov/codecov-action@v1
         with:
@@ -90,25 +90,25 @@ jobs:
           fail_ci_if_error: 'true'
       - name: 🏺 Publish logs
         if: always()
-        uses: actions/upload-artifact@v2.0.1
+        uses: actions/upload-artifact@v1
         with:
           name: 'logs'
           path: 'artifacts/logs/'
       - name: 🏺 Publish coverage data
         if: always()
-        uses: actions/upload-artifact@v2.0.1
+        uses: actions/upload-artifact@v1
         with:
           name: 'coverage'
           path: 'coverage/'
       - name: 🏺 Publish test data
         if: always()
-        uses: actions/upload-artifact@v2.0.1
+        uses: actions/upload-artifact@v1
         with:
           name: 'test data'
           path: 'artifacts/test/'
       - name: 🏺 Publish NuGet Packages
         if: always()
-        uses: actions/upload-artifact@v2.0.1
+        uses: actions/upload-artifact@v1
         with:
           name: 'nuget'
           path: 'artifacts/nuget/'
