@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <Compile Remove="**\*.cs" />
-    <Content Include="**\*" Exclude="**\bin\**;**\obj\**;*.csproj" PackagePath="content\templates\" />
+    <Content Include="..\src\**\*" Exclude="**\Directory.Build.*;**\bin\**;**\obj\**;*.csproj" PackagePath="content\templates\" />
   </ItemGroup>
 
 </Project>

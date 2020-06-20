@@ -1,0 +1,16 @@
+##if no-serilog
+Logging:
+    LogLevel:
+        Default: 'Warning'
+##endif
+##if !no-serilog
+Serilog:
+    MinimumLevel:
+        Default: 'Information'
+        Override:
+            Microsoft: 'Warning'
+            Microsoft.AspNetCore.Hosting.Diagnostics: 'Information'
+            Microsoft.Hosting.Lifetime: 'Information'
+            System: 'Warning'
+##endif
+AllowedHosts: '*'
