@@ -15,33 +15,19 @@
         "type": "project"
     },
     "symbols": {
-        "Sdk": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Include the rocket surgery Sdk with the project"
-        },
-        "Version": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Include the versions in the project file, typically these come from Directory.Build.targets or similar"
-        },
-        "UseOperations": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Enable operational packages"
-        },
         "UseAutofac": {
             "datatype": "bool",
             "defaultValue": "false",
             "type": "parameter",
             "isRequired": false,
             "description": "Include Rocket.Surgery.Extensions.Autofac as a package reference"
+        },
+        "UseDryIoc": {
+            "datatype": "bool",
+            "defaultValue": "false",
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Enable dryioc packages"
         },
         "UseAutoMapper": {
             "datatype": "bool",
@@ -57,12 +43,26 @@
             "isRequired": false,
             "description": "Include Rocket.Surgery.Extensions.CommandLine as a package reference"
         },
-        "UseConfiguration": {
+        "SkipConfiguration": {
             "datatype": "bool",
             "defaultValue": "false",
             "type": "parameter",
             "isRequired": false,
             "description": "Do not include Rocket.Surgery.Extensions.Configuration as a package reference"
+        },
+        "SkipDependencyInjection": {
+            "datatype": "bool",
+            "defaultValue": "false",
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Do not include Rocket.Surgery.Extensions.DependencyInjection as a package reference"
+        },
+        "SkipLogging": {
+            "datatype": "bool",
+            "defaultValue": "false",
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Do not include  Rocket.Surgery.Extensions.Logging as a package reference"
         },
         "UseFluentValidation": {
             "datatype": "bool",
@@ -78,20 +78,6 @@
             "isRequired": false,
             "description": "Include MediatR in the dependencies"
         },
-        "UseDependencyInjection": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Include Rocket.Surgery.Extensions.DependencyInjection as a package reference"
-        },
-        "UseLogging": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Include Rocket.Surgery.Extensions.Logging as a package reference"
-        },
         "UseSerilog": {
             "datatype": "bool",
             "defaultValue": "false",
@@ -105,6 +91,13 @@
             "type": "parameter",
             "isRequired": false,
             "description": "Include Rocket.Surgery.Extensions.WebJobs as a package reference"
+        },
+        "skipSolution": {
+            "datatype": "bool",
+            "defaultValue": "true",
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Do not automatically add to a solution"
         }
     },
     "sources": [],
@@ -115,6 +108,7 @@
     ],
     "postActions": [
         {
+            "condition": "(!skipSolution)",
             "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
             "description": "Add project to solution file",
             "args": {

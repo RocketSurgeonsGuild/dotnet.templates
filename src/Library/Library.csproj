@@ -7,6 +7,9 @@
     <!-- #if (UseAutofac) -->
     <PackageReference Include="Rocket.Surgery.Extensions.Autofac" Version="7.1.0" />
     <!-- #endif -->
+    <!-- #if (UseDryIoc) -->
+    <PackageReference Include="Rocket.Surgery.Extensions.DryIoc" Version="0.1.0-beta.1" />
+    <!-- #endif -->
     <!-- #if (UseAutoMapper) -->
     <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.1.4" />
     <!-- #endif -->

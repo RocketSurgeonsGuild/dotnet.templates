@@ -1,13 +1,13 @@
 {
     "$schema": "http://json.schemastore.org/template",
     "author": "David Driscoll",
-    "classifications": ["Common", "Api", "Web", "Rocket Surgery"],
-    "identity": "Rocket.Surgery.Api",
-    "name": "Rocket Surgery AspNetCore Api",
-    "shortName": "rocketapi",
-    "defaultName": "Api",
+    "classifications": ["Common", "Web", "Rocket Surgery"],
+    "identity": "Rocket.Surgery.Web",
+    "name": "Rocket Surgery Web Application",
+    "defaultName": "Web",
     "preferNameDirectory": true,
-    "sourceName": "Rocket.Surgery.Api",
+    "sourceName": "Rocket.Surgery.Web",
+    "shortName": "rocketweb",
     "generatorVersions": "[1.0.0.0-*)",
     "description": "",
     "tags": {
@@ -16,33 +16,26 @@
     },
     "guids": [],
     "symbols": {
-        "Sdk": {
+        "UseAutofac": {
             "datatype": "bool",
             "defaultValue": "false",
             "type": "parameter",
             "isRequired": false,
-            "description": "Include the rocket surgery Sdk with the project"
+            "description": "Include AutoMapper in the dependencies"
         },
-        "Version": {
+        "UseDryIoc": {
             "datatype": "bool",
             "defaultValue": "false",
             "type": "parameter",
             "isRequired": false,
-            "description": "Include the versions in the project file, typically these come from Directory.Build.targets or similar"
+            "description": "Enable dryioc packages"
         },
-        "UseOperations": {
+        "UseSwashbuckle": {
             "datatype": "bool",
             "defaultValue": "false",
             "type": "parameter",
             "isRequired": false,
-            "description": "Enable operational packages"
-        },
-        "SkipSwashBuckle": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Disable swashbuckle package"
+            "description": "Include Swashbuckle in the dependencies"
         },
         "UseNewtonsoftJson": {
             "datatype": "bool",
@@ -54,7 +47,7 @@
     },
     "primaryOutputs": [
         {
-            "path": "Rocket.Surgery.Api.csproj"
+            "path": "Rocket.Surgery.Web.csproj"
         }
     ],
     "postActions": [

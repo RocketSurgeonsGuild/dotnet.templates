@@ -1,28 +1,12 @@
 {
     "$schema": "http://json.schemastore.org/dotnetcli.host",
     "symbolInfo": {
-        "Sdk": {
-            "longName": "sdk",
-            "shortName": ""
-        },
-        "Version": {
-            "longName": "version",
-            "shortName": ""
-        },
         "UseAutofac": {
             "longName": "autofac",
             "shortName": ""
         },
-        "UseSwashbuckle": {
-            "longName": "swashbuckle",
-            "shortName": ""
-        },
-        "SkipSwashBuckle": {
-            "longName": "no-swashbuckle",
-            "shortName": ""
-        },
-        "UseOperations": {
-            "longName": "operations",
+        "UseDryIoc": {
+            "longName": "dryioc",
             "shortName": ""
         },
         "UseNewtonsoftJson": {
@@ -37,8 +21,16 @@
             "longName": "commandline",
             "shortName": "cl"
         },
-        "UseConfiguration": {
+        "SkipConfiguration": {
             "longName": "no-configuration",
+            "shortName": ""
+        },
+        "SkipLogging": {
+            "longName": "no-logging",
+            "shortName": ""
+        },
+        "SkipDependencyInjection": {
+            "longName": "no-di",
             "shortName": ""
         },
         "UseFluentValidation": {
@@ -47,14 +39,6 @@
         },
         "UseMediatR": {
             "longName": "mediatr",
-            "shortName": ""
-        },
-        "UseDependencyInjection": {
-            "longName": "no-dependencyinjection",
-            "shortName": ""
-        },
-        "UseLogging": {
-            "longName": "logging",
             "shortName": ""
         },
         "UseSerilog": {

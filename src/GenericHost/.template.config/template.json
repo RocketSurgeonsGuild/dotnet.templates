@@ -1,13 +1,13 @@
 {
     "$schema": "http://json.schemastore.org/template",
     "author": "David Driscoll",
-    "classifications": ["Common", "Console", "Rocket Surgery"],
-    "identity": "Rocket.Surgery.Cli",
-    "name": "Rocket Surgery Command Line Application",
-    "shortName": "rocketcli",
-    "defaultName": "Tool",
+    "classifications": ["Common", "Host", "Rocket Surgery"],
+    "identity": "Rocket.Surgery.GenericHost",
+    "name": "Rocket Surgery General Host",
+    "shortName": "rockethost",
+    "defaultName": "GenericHost",
     "preferNameDirectory": true,
-    "sourceName": "Rocket.Surgery.Cli",
+    "sourceName": "Rocket.Surgery.GenericHost",
     "generatorVersions": "[1.0.0.0-*)",
     "description": "",
     "tags": {
@@ -15,38 +15,24 @@
         "type": "project"
     },
     "symbols": {
-        "Sdk": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Include the rocket surgery Sdk with the project"
-        },
-        "Version": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Include the versions in the project file, typically these come from Directory.Build.targets or similar"
-        },
-        "UseOperations": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Enable operational packages"
-        },
         "UseAutofac": {
             "datatype": "bool",
             "defaultValue": "false",
             "type": "parameter",
             "isRequired": false,
-            "description": "Enable autofac packages"
+            "description": "Include AutoMapper in the dependencies"
+        },
+        "UseDryIoc": {
+            "datatype": "bool",
+            "defaultValue": "false",
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Enable dryioc packages"
         }
     },
     "primaryOutputs": [
         {
-            "path": "Rocket.Surgery.Cli.csproj"
+            "path": "Rocket.Surgery.GenericHost.csproj"
         }
     ],
     "postActions": [

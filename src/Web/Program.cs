@@ -22,6 +22,9 @@ namespace Rocket.Surgery.Web
                 //#if autofac
                 .ConfigureRocketSurgery(builder => builder.UseAutofac())
                 //#endif
+                //#if dryioc
+                //.ConfigureRocketSurgery(builder => builder.UseDryIoc())
+                //#endif
                 .ConfigureWebHostDefaults(webBuilder => webBuilder.UseStartup<Startup>());
     }
 }

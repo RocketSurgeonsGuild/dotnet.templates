@@ -26,34 +26,6 @@
         }
     ],
     "symbols": {
-        "Sdk": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Include the rocket surgery Sdk with the project"
-        },
-        "Version": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Include the versions in the project file, typically these come from Directory.Build.targets or similar"
-        },
-        "UseOperations": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Enable operational packages"
-        },
-        "UseSwashbuckle": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "EnableSwashbucklepackage"
-        },
         "UseAutofac": {
             "datatype": "bool",
             "defaultValue": "false",
@@ -61,12 +33,12 @@
             "isRequired": false,
             "description": "Include AutoMapper in the dependencies"
         },
-        "UseNewtonsoftJson": {
+        "UseDryIoc": {
             "datatype": "bool",
             "defaultValue": "false",
             "type": "parameter",
             "isRequired": false,
-            "description": "Include ASP.NET Core NewtonsoftJson in the dependencies"
+            "description": "Enable dryioc packages"
         }
     },
     "primaryOutputs": [

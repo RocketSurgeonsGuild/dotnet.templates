@@ -1,13 +1,13 @@
 {
     "$schema": "http://json.schemastore.org/template",
     "author": "David Driscoll",
-    "classifications": ["Common", "Host", "Rocket Surgery"],
-    "identity": "Rocket.Surgery.GenericHost",
-    "name": "Rocket Surgery General Host",
-    "shortName": "rockethost",
-    "defaultName": "GenericHost",
+    "classifications": ["Common", "Console", "Rocket Surgery"],
+    "identity": "Rocket.Surgery.Cli",
+    "name": "Rocket Surgery Command Line Application",
+    "shortName": "rocketcli",
+    "defaultName": "Tool",
     "preferNameDirectory": true,
-    "sourceName": "Rocket.Surgery.GenericHost",
+    "sourceName": "Rocket.Surgery.Cli",
     "generatorVersions": "[1.0.0.0-*)",
     "description": "",
     "tags": {
@@ -15,38 +15,24 @@
         "type": "project"
     },
     "symbols": {
-        "Sdk": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Include the rocket surgery Sdk with the project"
-        },
-        "Version": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Include the versions in the project file, typically these come from Directory.Build.targets or similar"
-        },
         "UseAutofac": {
             "datatype": "bool",
             "defaultValue": "false",
             "type": "parameter",
             "isRequired": false,
-            "description": "Include AutoMapper in the dependencies"
+            "description": "Enable autofac packages"
         },
-        "UseOperations": {
+        "UseDryIoc": {
             "datatype": "bool",
             "defaultValue": "false",
             "type": "parameter",
             "isRequired": false,
-            "description": "Enable operational packages"
+            "description": "Enable dryioc packages"
         }
     },
     "primaryOutputs": [
         {
-            "path": "Rocket.Surgery.GenericHost.csproj"
+            "path": "Rocket.Surgery.Cli.csproj"
         }
     ],
     "postActions": [
