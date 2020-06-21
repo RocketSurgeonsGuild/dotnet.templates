@@ -29,11 +29,11 @@ namespace Rocket.Surgery.GenericHost
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .LaunchWith(RocketBooster.For(DependencyContext.Default))
-                //#if autofac
+                /* #if UseAutofac
                 .ConfigureRocketSurgery(builder => builder.UseAutofac())
-                //#endif
-                //#if dryioc
-                //.ConfigureRocketSurgery(builder => builder.UseDryIoc())
+                #endif */
+                //#if UseDryIoc
+                .ConfigureRocketSurgery(builder => builder.UseDryIoc())
                 //#endif
                 ;
     }

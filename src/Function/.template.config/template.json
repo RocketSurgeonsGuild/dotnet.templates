@@ -14,7 +14,15 @@
         "language": "C#",
         "type": "project"
     },
-    "symbols": {},
+    "symbols": {
+        "skipSolution": {
+            "datatype": "bool",
+            "defaultValue": "true",
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Do not automatically add to a solution"
+        }
+    },
     "primaryOutputs": [
         {
             "path": "Rocket.Surgery.Function.csproj"
@@ -22,6 +30,7 @@
     ],
     "postActions": [
         {
+            "condition": "(!skipSolution)",
             "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
             "description": "Add project to solution file",
             "args": {

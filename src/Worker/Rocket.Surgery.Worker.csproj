@@ -16,11 +16,11 @@
     <PackageReference Include="System.Interactive.Async" Version="4.1.1" />
     <PackageReference Include="System.Reactive" Version="4.4.1" />
     <PackageReference Include="System.Reactive.Observable.Aliases" Version="4.4.1" />
-    <!-- #if (UseAutofac) -->
+    <!--#if (UseAutofac) -->
     <PackageReference Include="Rocket.Surgery.Hosting.Autofac" Version="7.1.0" />
-    <!-- #endif -->
-    <!-- #if (UseDryIoc) -->
+    <!--#endif -->
+    <!--#if (UseDryIoc) -->
     <PackageReference Include="Rocket.Surgery.Hosting.DryIoc" Version="0.1.0-beta.1" />
-    <!-- #endif -->
+    <!--#endif -->
   </ItemGroup>
 </Project>

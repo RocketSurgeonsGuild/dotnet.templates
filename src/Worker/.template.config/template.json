@@ -39,6 +39,13 @@
             "type": "parameter",
             "isRequired": false,
             "description": "Enable dryioc packages"
+        },
+        "skipSolution": {
+            "datatype": "bool",
+            "defaultValue": "true",
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Do not automatically add to a solution"
         }
     },
     "primaryOutputs": [

@@ -1,9 +1,9 @@
-##if no-serilog
+##if SkipSerilog
 Logging:
     LogLevel:
         Default: 'Warning'
 ##endif
-##if !no-serilog
+##if !SkipSerilog
 Serilog:
     MinimumLevel:
         Default: 'Information'

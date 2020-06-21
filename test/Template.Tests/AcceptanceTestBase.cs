@@ -42,7 +42,10 @@ namespace Rocket.Surgery.Templates.Tests
             var test = (ITest)testMember.GetValue(outputHelper);
             _currentTest = test.DisplayName;
             using var sha1 = SHA1.Create();
-            var directory = Convert.ToBase64String(sha1.ComputeHash(Encoding.UTF8.GetBytes(_currentTest)));
+            var directory = string.Join(
+                "",
+                sha1.ComputeHash(Encoding.UTF8.GetBytes(_currentTest)).Select(z => z.ToString("X2"))
+            );
             if (directory.Length > 12)
             {
                 directory = directory.Substring(0, 12);
@@ -51,10 +54,6 @@ namespace Rocket.Surgery.Templates.Tests
             _testDirectory = directory;
         }
 
-        /// <summary>
-        /// Invokes <c>dotnet</c> with specified arguments.
-        /// </summary>
-        /// <param name="arguments">Arguments provided to <c>dotnet</c>.exe</param>
         public (AbsolutePath directory, IEnumerable<Output> output) InvokeDotnetNew(string templateName, Action<IDictionary<string, string?>> parameters)
         {
             var dictonary = new Dictionary<string, string?>();
@@ -62,10 +61,6 @@ namespace Rocket.Surgery.Templates.Tests
             return InvokeDotnetNew(templateName, dictonary);
         }
 
-        /// <summary>
-        /// Invokes <c>dotnet</c> with specified arguments.
-        /// </summary>
-        /// <param name="arguments">Arguments provided to <c>dotnet</c>.exe</param>
         public (AbsolutePath directory, IEnumerable<Output> output) InvokeDotnetNew(string templateName, IDictionary<string, string?> parameters)
         {
             var result = Execute(templateName, parameters);
