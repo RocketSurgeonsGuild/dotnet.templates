@@ -43,8 +43,8 @@ namespace Rocket.Surgery.Templates.Tests
                .AddPair("dryioc")
             );
 
-            var project = XDocument.Load(directory.GlobFiles("**/*.csproj").Single());
-            var program = TextTasks.ReadAllText(directory.GlobFiles("**/Program.cs").Single());
+            var project = XDocument.Load(directory.GlobFiles("*.csproj").Single());
+            var program = TextTasks.ReadAllText(directory.GlobFiles("Program.cs").Single());
 
             project.Descendants("PackageReference")
                .Should().ContainSingle(x => x.Attribute("Include").Value == "Rocket.Surgery.Hosting.DryIoc");
@@ -60,8 +60,8 @@ namespace Rocket.Surgery.Templates.Tests
                .AddPair("autofac")
             );
 
-            var project = XDocument.Load(directory.GlobFiles("**/*.csproj").Single());
-            var program = TextTasks.ReadAllText(directory.GlobFiles("**/Program.cs").Single());
+            var project = XDocument.Load(directory.GlobFiles("*.csproj").Single());
+            var program = TextTasks.ReadAllText(directory.GlobFiles("Program.cs").Single());
 
             project.Descendants("PackageReference")
                .Should().ContainSingle(x => x.Attribute("Include").Value == "Rocket.Surgery.Hosting.Autofac");
