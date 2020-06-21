@@ -13,8 +13,64 @@ using Xunit.Abstractions;
 
 namespace Rocket.Surgery.Templates.Tests
 {
-    public class LibraryTemplateTests : AcceptanceTestBase
+    public class CommonApplicationTests : AcceptanceTestBase
     {
+        public static IEnumerable<string> Templates = new[]
+        {
+            "rocketapi",
+            "rocketcli",
+            "rockethost",
+            "rocketweb",
+            "rockerworker",
+        };
+
+        class TemplateData : TheoryData<string>
+        {
+            public TemplateData()
+            {
+                foreach (var t in Templates) Add(t);
+            }
+        }
+
+        public CommonApplicationTests(ITestOutputHelper outputHelper) : base(outputHelper) { }
+
+        [Theory]
+        [ClassData(typeof(TemplateData))]
+        public void Should_Emit_DryIoc(string template)
+        {
+            var (directory, output) = InvokeDotnetNew(template, x => x
+               .AddPair("skipSolution")
+               .AddPair("dryioc")
+            );
+
+            var project = XDocument.Load(directory.GlobFiles("*.csproj").Single());
+            var program = TextTasks.ReadAllText(directory.GlobFiles("Program.cs").Single());
+
+            project.Descendants("PackageReference")
+               .Should().ContainSingle(x => x.Attribute("Include").Value == "Rocket.Surgery.Hosting.DryIoc");
+            program.Should().Contain(".ConfigureRocketSurgery(builder => builder.UseDryIoc())");
+        }
+
+        [Theory]
+        [ClassData(typeof(TemplateData))]
+        public void Should_Emit_Autofac(string template)
+        {
+            var (directory, output) = InvokeDotnetNew(template, x => x
+               .AddPair("skipSolution")
+               .AddPair("autofac")
+            );
+
+            var project = XDocument.Load(directory.GlobFiles("*.csproj").Single());
+            var program = TextTasks.ReadAllText(directory.GlobFiles("Program.cs").Single());
+
+            project.Descendants("PackageReference")
+               .Should().ContainSingle(x => x.Attribute("Include").Value == "Rocket.Surgery.Hosting.Autofac");
+            program.Should().Contain(".ConfigureRocketSurgery(builder => builder.UseAutofac())");
+        }
+    }
+
+    public class LibraryTemplateTests : AcceptanceTestBase
+        {
         public LibraryTemplateTests(ITestOutputHelper outputHelper) : base(outputHelper) { }
 
         [Fact]
@@ -190,7 +246,7 @@ namespace Rocket.Surgery.Templates.Tests
                         text.Should().NotContain("public void Register(IConfigurationConventionContext context)");
                         text.Should().NotContain("IConfigurationConvention { }");
                         project.Descendants("PackageReference").Should()
-                           .ContainSingle(z => z.Attribute("Include").Value == "Rocket.Surgery.Extensions.Configuration");
+                           .NotContain(z => z.Attribute("Include").Value == "Rocket.Surgery.Extensions.Configuration");
                     }
                 ));
                 Add(new Should_Emit_Multiple_Conventions_Item(
@@ -206,7 +262,7 @@ namespace Rocket.Surgery.Templates.Tests
                         text.Should().NotContain("public void Register(ILoggingConventionContext context)");
                         text.Should().NotContain("ILoggingConvention { }");
                         project.Descendants("PackageReference").Should()
-                           .ContainSingle(z => z.Attribute("Include").Value == "Rocket.Surgery.Extensions.Logging");
+                           .NotContain(z => z.Attribute("Include").Value == "Rocket.Surgery.Extensions.Logging");
                     }
                 ));
                 Add(new Should_Emit_Multiple_Conventions_Item(
@@ -222,7 +278,7 @@ namespace Rocket.Surgery.Templates.Tests
                         text.Should().NotContain("public void Register(IDependencyInjectionConventionContext context)");
                         text.Should().NotContain("IDependencyInjectionConvention { }");
                         project.Descendants("PackageReference").Should()
-                           .ContainSingle(z => z.Attribute("Include").Value == "Rocket.Surgery.Extensions.DependencyInjection");
+                           .NotContain(z => z.Attribute("Include").Value == "Rocket.Surgery.Extensions.DependencyInjection");
                     }
                 ));
                 Add(new Should_Emit_Multiple_Conventions_Item(
@@ -258,37 +314,6 @@ namespace Rocket.Surgery.Templates.Tests
                            .ContainSingle(z => z.Attribute("Include").Value == "Rocket.Surgery.Extensions.MediatR");
                     }
                 ));
-                /*
-
-
-  --no-configuration        Do not include Rocket.Surgery.Extensions.Configuration as a package reference
-                            bool - Optional
-                            Default: false / (*) true
-
-  -fv|--fluentvalidation    Include FluentValidation in the dependencies
-                            bool - Optional
-                            Default: false / (*) true
-
-  --mediatr                 Include MediatR in the dependencies
-                            bool - Optional
-                            Default: false / (*) true
-
-  --no-dependencyinjection  Include Rocket.Surgery.Extensions.DependencyInjection as a package reference
-                            bool - Optional
-                            Default: false / (*) true
-
-  --logging                 Include Rocket.Surgery.Extensions.Logging as a package reference
-                            bool - Optional
-                            Default: false / (*) true
-
-  --serilog                 Include Rocket.Surgery.Extensions.Serilog as a package reference
-                            bool - Optional
-                            Default: false / (*) true
-
-  --webjobs                 Include Rocket.Surgery.Extensions.WebJobs as a package reference
-                            bool - Optional
-                            Default: false / (*) true
-                 */
             }
         }
     }

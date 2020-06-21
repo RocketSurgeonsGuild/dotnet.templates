@@ -10,17 +10,17 @@
     <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation" Version="6.3.1" />
     <PackageReference Include="Rocket.Surgery.Hosting" Version="9.1.1" />
     <PackageReference Include="Rocket.Surgery.Hosting.Serilog" Version="10.2.1" />
-    <!-- #if (UseNewtonsoftJson) -->
+    <!--#if (UseNewtonsoftJson) -->
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.5" />
     <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.3.1" />
     <PackageReference Include="Rocket.Surgery.AspNetCore.NewtonsoftJson" Version="0.3.2" />
-    <!-- #endif -->
-    <!-- #if (!SkipSwashBuckle) -->
+    <!--#endif -->
+    <!--#if (!SkipSwashBuckle) -->
     <PackageReference Include="Rocket.Surgery.AspNetCore.Swashbuckle" Version="8.0.2" />
-    <!-- #if (UseNewtonsoftJson) -->
+    <!--#if (UseNewtonsoftJson) -->
     <PackageReference Include="Rocket.Surgery.AspNetCore.Swashbuckle.NewtonsoftJson" Version="8.0.2" />
-    <!-- #endif -->
-    <!-- #endif -->
+    <!--#endif -->
+    <!--#endif -->
     <PackageReference Include="Rocket.Surgery.Extensions" Version="2.3.1" />
     <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.3.1" />
     <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.3.1" />
@@ -29,11 +29,11 @@
     <PackageReference Include="System.Interactive.Async" Version="4.1.1" />
     <PackageReference Include="System.Reactive" Version="4.4.1" />
     <PackageReference Include="System.Reactive.Observable.Aliases" Version="4.4.1" />
-    <!-- #if (UseAutofac) -->
+    <!--#if (UseAutofac) -->
     <PackageReference Include="Rocket.Surgery.Hosting.Autofac" Version="7.1.0" />
-    <!-- #endif -->
-    <!-- #if (UseDryIoc) -->
+    <!--#endif -->
+    <!--#if (UseDryIoc) -->
     <PackageReference Include="Rocket.Surgery.Hosting.DryIoc" Version="0.1.0-beta.1" />
-    <!-- #endif -->
+    <!--#endif -->
   </ItemGroup>
 </Project>

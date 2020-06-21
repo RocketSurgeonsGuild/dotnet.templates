@@ -4,39 +4,39 @@
     <TargetFrameworks>netstandard2.1;netstandard2.0</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <!-- #if (UseAutofac) -->
+    <!--#if (UseAutofac) -->
     <PackageReference Include="Rocket.Surgery.Extensions.Autofac" Version="7.1.0" />
-    <!-- #endif -->
-    <!-- #if (UseDryIoc) -->
+    <!--#endif -->
+    <!--#if (UseDryIoc) -->
     <PackageReference Include="Rocket.Surgery.Extensions.DryIoc" Version="0.1.0-beta.1" />
-    <!-- #endif -->
-    <!-- #if (UseAutoMapper) -->
+    <!--#endif -->
+    <!--#if (UseAutoMapper) -->
     <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.1.4" />
-    <!-- #endif -->
-    <!-- #if (UseFluentValidation) -->
+    <!--#endif -->
+    <!--#if (UseFluentValidation) -->
     <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Version="6.3.1" />
-    <!-- #endif -->
-    <!-- #if (UseMediatR) -->
+    <!--#endif -->
+    <!--#if (UseMediatR) -->
     <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Version="7.1.1" />
-    <!-- #endif -->
-    <!-- #if (UseSerilog) -->
+    <!--#endif -->
+    <!--#if (UseSerilog) -->
     <PackageReference Include="Rocket.Surgery.Extensions.Serilog" Version="10.2.1" />
-    <!-- #endif -->
-    <!-- #if (UseCommandLine) -->
+    <!--#endif -->
+    <!--#if (UseCommandLine) -->
     <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="9.1.1" />
-    <!-- #endif -->
-    <!-- #if (UseConfiguration) -->
+    <!--#endif -->
+    <!--#if (UseConfiguration) -->
     <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="9.1.1" />
-    <!-- #endif -->
-    <!-- #if (UseDependencyInjection) -->
+    <!--#endif -->
+    <!--#if (UseDependencyInjection) -->
     <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="9.1.1" />
-    <!-- #endif -->
-    <!-- #if (UseLogging) -->
+    <!--#endif -->
+    <!--#if (UseLogging) -->
     <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="9.1.1" />
-    <!-- #endif -->
-    <!-- #if (UseWebJobs) -->
+    <!--#endif -->
+    <!--#if (UseWebJobs) -->
     <PackageReference Include="Rocket.Surgery.Extensions.WebJobs" Version="9.1.1" />
-    <!-- #endif -->
+    <!--#endif -->
     <PackageReference Include="Rocket.Surgery.Extensions" Version="2.3.1" />
     <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.3.1" />
     <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.3.1" />
