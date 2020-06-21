@@ -1,9 +1,9 @@
-##if SkipSerilog
+#if SkipSerilog
 Logging:
     LogLevel:
         Default: 'Warning'
-##endif
-##if !SkipSerilog
+#endif
+#if !SkipSerilog
 Serilog:
     MinimumLevel:
         Default: 'Information'
@@ -12,5 +12,5 @@ Serilog:
             Microsoft.AspNetCore.Hosting.Diagnostics: 'Information'
             Microsoft.Hosting.Lifetime: 'Information'
             System: 'Warning'
-##endif
+#endif
 AllowedHosts: '*'

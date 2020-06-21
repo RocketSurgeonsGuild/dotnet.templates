@@ -1,11 +1,11 @@
-##if SkipSerilog
+#if SkipSerilog
 Logging:
     LogLevel:
         Default: 'Debug'
         System: 'Information'
         Microsoft: 'Information'
-##endif
-##if !SkipSerilog
+#endif
+#if !SkipSerilog
 Serilog:
     MinimumLevel:
         Default: Verbose
@@ -14,4 +14,4 @@ Serilog:
             Microsoft.AspNetCore.Hosting.Diagnostics: 'Debug'
             Microsoft.Hosting.Lifetime": 'Debug'
             System": 'Debug'
-##endif
+#endif
