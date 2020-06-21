@@ -1,26 +1,26 @@
 ﻿using Rocket.Surgery.Conventions;
-//#if autofac
+//#if UseAutofac
 using Rocket.Surgery.Extensions.Autofac;
 //#endif
-//#if dryioc
+//#if UseDryIoc
 using Rocket.Surgery.Extensions.DryIoc;
 //#endif
-//#if commandline
+//#if UseCommandLine
 using Rocket.Surgery.Extensions.CommandLine;
 //#endif
-//#if (!no-configuration)
+//#if (!SkipConfiguration)
 using Rocket.Surgery.Extensions.Configuration;
 //#endif
-//#if (!no-services)
+//#if (!SkipDependencyInjection)
 using Rocket.Surgery.Extensions.DependencyInjection;
 //#endif
-//#if logging
+//#if (!SkipLogging)
 using Rocket.Surgery.Extensions.Logging;
 //#endif
-//#if serilog
+//#if UseSerilog
 using Rocket.Surgery.Extensions.Serilog;
 //#endif
-//#if webjobs
+//#if UseWebJobs
 using Rocket.Surgery.Extensions.WebJobs;
 //#endif
 using Library;
@@ -31,48 +31,49 @@ namespace Library
 {
     public partial class LibraryConvention
     {
-        //#if autofac
+        //#if UseAutofac
         public void Register(IAutofacConventionContext context)
         {
 
         }
-        //#if dryioc
+        //#endif
+        //#if UseDryIoc
         public void Register(IDryIocConventionContext context)
         {
 
         }
         //#endif
-        //#if (!no-configuration)
+        //#if (!SkipConfiguration)
         public void Register(IConfigurationConventionContext context)
         {
 
         }
         //#endif
-        //#if (!no-services)
+        //#if (!SkipDependencyInjection)
         public void Register(IServiceConventionContext context)
         {
 
         }
         //#endif
-        //#if logging
+        //#if (!SkipLogging)
         public void Register(ILoggingConventionContext context)
         {
 
         }
         //#endif
-        //#if serilog
+        //#if UseSerilog
         public void Register(ISerilogConventionContext context)
         {
 
         }
         //#endif
-        //#if commandline
+        //#if UseCommandLine
         public void Register(ICommandLineConventionContext context)
         {
 
         }
         //#endif
-        //#if webjobs
+        //#if UseWebJobs
         public void Register(IWebJobsConventionContext context)
         {
 
@@ -81,28 +82,28 @@ namespace Library
     }
 
     #region Partial
-    //#if autofac
+    //#if UseAutofac
     public partial class LibraryConvention : IAutofacConvention { }
     //#endif
-    //#if dryioc
+    //#if UseDryIoc
     public partial class LibraryConvention : IDryIocConvention { }
     //#endif
-    //#if (!no-configuration)
+    //#if (!SkipConfiguration)
     public partial class LibraryConvention : IConfigurationConvention { }
     //#endif
-    //#if (!no-services)
+    //#if (!SkipDependencyInjection)
     public partial class LibraryConvention : IServiceConvention { }
     //#endif
-    //#if logging
+    //#if (!SkipLogging)
     public partial class LibraryConvention : ILoggingConvention { }
     //#endif
-    //#if serilog
+    //#if UseSerilog
     public partial class LibraryConvention : ISerilogConvention { }
     //#endif
-    //#if commandline
+    //#if UseCommandLine
     public partial class LibraryConvention : ICommandLineConvention { }
     //#endif
-    //#if webjobs
+    //#if UseWebJobs
     public partial class LibraryConvention : IWebJobsConvention { }
     //#endif
     #endregion

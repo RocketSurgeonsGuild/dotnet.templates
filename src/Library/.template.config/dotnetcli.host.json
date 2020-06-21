@@ -9,10 +9,6 @@
             "longName": "dryioc",
             "shortName": ""
         },
-        "SkipSwashBuckle": {
-            "longName": "no-swashbuckle",
-            "shortName": ""
-        },
         "UseNewtonsoftJson": {
             "longName": "newtonsoftjson",
             "shortName": "newtonsoft"
@@ -25,8 +21,16 @@
             "longName": "commandline",
             "shortName": "cl"
         },
-        "UseConfiguration": {
+        "SkipConfiguration": {
             "longName": "no-configuration",
+            "shortName": ""
+        },
+        "SkipLogging": {
+            "longName": "no-logging",
+            "shortName": ""
+        },
+        "SkipDependencyInjection": {
+            "longName": "no-di",
             "shortName": ""
         },
         "UseFluentValidation": {
@@ -35,14 +39,6 @@
         },
         "UseMediatR": {
             "longName": "mediatr",
-            "shortName": ""
-        },
-        "UseDependencyInjection": {
-            "longName": "no-dependencyinjection",
-            "shortName": ""
-        },
-        "UseLogging": {
-            "longName": "logging",
             "shortName": ""
         },
         "UseSerilog": {

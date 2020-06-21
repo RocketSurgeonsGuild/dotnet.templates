@@ -42,7 +42,7 @@ namespace Rocket.Surgery.Templates.Tests
             var test = (ITest)testMember.GetValue(outputHelper);
             _currentTest = test.DisplayName;
             using var sha1 = SHA1.Create();
-            var directory = Convert.ToBase64String(sha1.ComputeHash(Encoding.Default.GetBytes(_currentTest)));
+            var directory = Convert.ToBase64String(sha1.ComputeHash(Encoding.UTF8.GetBytes(_currentTest)));
             if (directory.Length > 12)
             {
                 directory = directory.Substring(0, 12);

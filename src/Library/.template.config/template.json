@@ -43,12 +43,26 @@
             "isRequired": false,
             "description": "Include Rocket.Surgery.Extensions.CommandLine as a package reference"
         },
-        "UseConfiguration": {
+        "SkipConfiguration": {
             "datatype": "bool",
             "defaultValue": "false",
             "type": "parameter",
             "isRequired": false,
             "description": "Do not include Rocket.Surgery.Extensions.Configuration as a package reference"
+        },
+        "SkipDependencyInjection": {
+            "datatype": "bool",
+            "defaultValue": "false",
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Do not include Rocket.Surgery.Extensions.DependencyInjection as a package reference"
+        },
+        "SkipLogging": {
+            "datatype": "bool",
+            "defaultValue": "false",
+            "type": "parameter",
+            "isRequired": false,
+            "description": "Do not include  Rocket.Surgery.Extensions.Logging as a package reference"
         },
         "UseFluentValidation": {
             "datatype": "bool",
@@ -63,20 +77,6 @@
             "type": "parameter",
             "isRequired": false,
             "description": "Include MediatR in the dependencies"
-        },
-        "UseDependencyInjection": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Include Rocket.Surgery.Extensions.DependencyInjection as a package reference"
-        },
-        "UseLogging": {
-            "datatype": "bool",
-            "defaultValue": "false",
-            "type": "parameter",
-            "isRequired": false,
-            "description": "Include Rocket.Surgery.Extensions.Logging as a package reference"
         },
         "UseSerilog": {
             "datatype": "bool",
