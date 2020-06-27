@@ -7,7 +7,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="9.1.1" />
-    <PackageReference Include="Rocket.Surgery.Extensions" Version="2.3.1" />
+    <PackageReference Include="Rocket.Surgery.Extensions" Version="2.4.0" />
     <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.3.1" />
     <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.3.1" />
     <PackageReference Include="System.Collections.Immutable" Version="1.7.1" />
