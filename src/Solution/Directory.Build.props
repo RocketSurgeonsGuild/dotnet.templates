@@ -5,6 +5,5 @@
         <Authors>David Driscoll,Rocket Surgeons Guild contributors</Authors>
         <LangVersion>8.0</LangVersion>
         <Nullable>enable</Nullable>
-        <LegacySupportPackagesProps>Packages.support.props</LegacySupportPackagesProps>
     </PropertyGroup>
 </Project>
