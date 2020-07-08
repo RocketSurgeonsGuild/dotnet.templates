@@ -7,7 +7,7 @@
     "shortName": "airframe.forms",
     "defaultName": "Mobile",
     "preferNameDirectory": true,
-    "sourceName": "Rocket.Surgery.Airframe.Forms",
+    "sourceName": "Mobile",
     "generatorVersions": "[1.0.0.0-*)",
     "tags": {
         "language": "C#",
