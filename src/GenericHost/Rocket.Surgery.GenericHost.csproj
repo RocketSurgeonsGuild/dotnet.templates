@@ -9,7 +9,7 @@
     <PackageReference Include="Rocket.Surgery.Conventions.Diagnostics" Version="9.1.1" />
     <PackageReference Include="Rocket.Surgery.Hosting" Version="9.1.1" />
     <PackageReference Include="Rocket.Surgery.Extensions" Version="2.5.0" />
-    <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.4.0" />
+    <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.5.0" />
     <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.5.0" />
     <PackageReference Include="System.Collections.Immutable" Version="1.7.1" />
     <PackageReference Include="System.Interactive" Version="4.1.1" />
