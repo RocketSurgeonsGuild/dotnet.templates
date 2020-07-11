@@ -3,6 +3,7 @@
         <PackageReference Include="Microsoft.NET.Test.Sdk" />
         <!-- #if (UseFakeItEasy) -->
         <PackageReference Include="Rocket.Surgery.Extensions.Testing.FakeItEasy" />
+        <PackageReference Include="Rocket.Surgery.Extensions.Testing.XUnit" />
         <!-- #endif -->
         <!-- #if (UseMoq)
         <PackageReference Include="Rocket.Surgery.Extensions.Testing.Moq" />
