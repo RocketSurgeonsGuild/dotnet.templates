@@ -16,7 +16,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="GitVersion.Tool" Version="5.3.7" ExcludeAssets="All" />
-    <PackageReference Include="ReportGenerator" Version="4.6.4" ExcludeAssets="All" />
+    <PackageReference Include="ReportGenerator" Version="4.6.5" ExcludeAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
