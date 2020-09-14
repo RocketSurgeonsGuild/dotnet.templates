@@ -32,7 +32,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="9.1.1" />
     <!--#endif -->
     <!--#if (UseLogging) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="9.1.1" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="10.0.0" />
     <!--#endif -->
     <!--#if (UseWebJobs) -->
     <PackageReference Include="Rocket.Surgery.Extensions.WebJobs" Version="9.1.1" />
