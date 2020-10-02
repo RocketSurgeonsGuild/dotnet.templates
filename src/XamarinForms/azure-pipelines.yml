@@ -41,7 +41,7 @@ jobs:
           vmImage: 'macOS-10.14'
           Configuration: $(Configuration)
           Verbosity: $(Verbosity)
-          GitHubPackages: true
+          GitHubPackages: false
           EnableReleaseNotes: false
           DotNetSdk:
               - '2.2.x'
