@@ -72,7 +72,7 @@ jobs:
         run: |
           dotnet nuke Install --skip
       - name: 🐿 Publish Coverage
-        uses: codecov/codecov-action@v1.0.13
+        uses: codecov/codecov-action@v1.0.14
         with:
           name: 'actions-${{ matrix.os }}'
       - name: 🏺 Publish logs
