@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Rocket.Surgery.Nuke" Version="0.14.0-beta.5" />
+    <PackageReference Include="Rocket.Surgery.Nuke" Version="0.14.1" />
     <PackageReference Include="JetBrains.ReSharper.CommandLineTools" Version="2020.2.4">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
