@@ -4,7 +4,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Nuke.Common" Version="5.0.0" />
+        <PackageReference Include="Nuke.Common" Version="5.0.1" />
     </ItemGroup>
     <Target Name="CopyTarget" AfterTargets="Build">
         <Copy SourceFiles="@(ItemsToCopy)" DestinationFolder="$(OutputPath)\template_feed\%(RecursiveDir)" />
