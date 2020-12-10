@@ -9,7 +9,7 @@
     <PackageReference Include="Rocket.Surgery.AspNetCore.Serilog" Version="10.2.1" />
     <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation" Version="6.3.1" />
     <PackageReference Include="Rocket.Surgery.Hosting" Version="9.1.1" />
-    <PackageReference Include="Rocket.Surgery.Hosting.Serilog" Version="10.2.1" />
+    <PackageReference Include="Rocket.Surgery.Hosting.Serilog" Version="11.0.0" />
     <!--#if (UseNewtonsoftJson) -->
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.5" />
     <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.3.1" />
