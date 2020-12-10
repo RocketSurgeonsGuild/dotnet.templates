@@ -11,7 +11,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.DryIoc" Version="0.1.0-beta.1" />
     <!--#endif -->
     <!--#if (UseAutoMapper) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.1.4" />
+    <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="8.0.0" />
     <!--#endif -->
     <!--#if (UseFluentValidation) -->
     <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Version="6.3.1" />
