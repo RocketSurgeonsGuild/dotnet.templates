@@ -6,7 +6,7 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Rocket.Surgery.Conventions.Diagnostics" Version="9.1.1" />
+    <PackageReference Include="Rocket.Surgery.Conventions.Diagnostics" Version="10.0.0" />
     <PackageReference Include="Rocket.Surgery.Hosting" Version="9.1.1" />
     <PackageReference Include="Rocket.Surgery.Extensions" Version="11.0.0" />
     <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="10.0.0" />
