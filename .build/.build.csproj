@@ -15,7 +15,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="GitVersion.Tool" Version="5.6.4" ExcludeAssets="All" />
+    <PackageReference Include="GitVersion.Tool" Version="5.6.5" ExcludeAssets="All" />
     <PackageReference Include="ReportGenerator" Version="4.8.5" ExcludeAssets="All" />
   </ItemGroup>
 
