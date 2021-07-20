@@ -3,7 +3,7 @@
   <ItemGroup>
     <PackageReference Include="Rocket.Surgery.Extensions.Testing" Version="6.0.0" />
     <PackageReference Include="Bogus" Version="33.0.2" />
-    <PackageReference Include="coverlet.collector" Version="3.0.3" />
+    <PackageReference Include="coverlet.collector" Version="3.1.0" />
     <PackageReference Include="FakeItEasy" Version="7.1.0" />
     <PackageReference Include="FakeItEasy.Analyzer.CSharp" Version="6.1.0" />
     <PackageReference Include="FluentAssertions" Version="5.10.3" />
