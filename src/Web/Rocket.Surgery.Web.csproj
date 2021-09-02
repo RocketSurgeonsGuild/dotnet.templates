@@ -17,7 +17,7 @@
     <PackageReference Include="Rocket.Surgery.AspNetCore.Swashbuckle.NewtonsoftJson" Version="8.0.2" />
     <!--#endif -->
     <!--#endif -->
-    <PackageReference Include="Rocket.Surgery.Extensions" Version="11.0.0" />
+    <PackageReference Include="Rocket.Surgery.Extensions" Version="11.2.0" />
     <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="10.0.0" />
     <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="10.0.0" />
     <PackageReference Include="System.Collections.Immutable" Version="5.0.0" />
