@@ -26,7 +26,7 @@
     <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Version="9.1.1" />
     <!--#endif -->
     <!--#if (UseConfiguration) -->
-    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="10.0.0" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="11.2.3" />
     <!--#endif -->
     <!--#if (UseDependencyInjection) -->
     <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="9.1.1" />
