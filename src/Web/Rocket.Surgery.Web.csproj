@@ -19,7 +19,7 @@
     <!--#endif -->
     <PackageReference Include="Rocket.Surgery.Extensions" Version="11.0.0" />
     <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="10.0.0" />
-    <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="10.0.0" />
+    <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="11.4.0" />
     <PackageReference Include="System.Collections.Immutable" Version="5.0.0" />
     <PackageReference Include="System.Interactive" Version="5.0.0" />
     <PackageReference Include="System.Interactive.Async" Version="4.1.1" />
