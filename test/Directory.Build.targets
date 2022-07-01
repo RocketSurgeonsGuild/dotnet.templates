@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project>
   <ItemGroup>
-    <PackageReference Include="Rocket.Surgery.Extensions.Testing" Version="6.0.0" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Testing" Version="7.1.2" />
     <PackageReference Include="Bogus" Version="34.0.1" />
     <PackageReference Include="coverlet.collector" Version="3.1.0" />
     <PackageReference Include="FakeItEasy" Version="7.2.0" />
