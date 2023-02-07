@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+        <GenerateErrorForMissingTargetingPacks>false</GenerateErrorForMissingTargetingPacks>
+        <AssemblyName>MultitargetUserInterface.Core.Tests</AssemblyName>
+        <RootNamespace>MultitargetUserInterface.Core.Tests</RootNamespace>
+    </PropertyGroup>
+
+</Project>
