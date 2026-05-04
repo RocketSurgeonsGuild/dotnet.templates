@@ -21,7 +21,7 @@
       ]
     },
     "nuke.globaltool": {
-      "version": "5.0.2",
+      "version": "10.1.0",
       "commands": [
         "nuke"
       ]
