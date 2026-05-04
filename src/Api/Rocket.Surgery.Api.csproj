@@ -5,7 +5,7 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Rocket.Surgery.AspNetCore" Version="0.3.2" />
+    <PackageReference Include="Rocket.Surgery.AspNetCore" Version="0.3.3" />
     <PackageReference Include="Rocket.Surgery.AspNetCore.Serilog" Version="10.2.1" />
     <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation" Version="6.3.1" />
     <PackageReference Include="Rocket.Surgery.Hosting" Version="9.1.1" />
