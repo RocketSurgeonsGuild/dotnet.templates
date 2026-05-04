@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project>
   <ItemGroup>
-    <PackageReference Include="Rocket.Surgery.Extensions.Testing" Version="6.0.0" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Testing" Version="8.0.18" />
     <PackageReference Include="Bogus" Version="34.0.1" />
     <PackageReference Include="coverlet.collector" Version="3.1.0" />
     <PackageReference Include="FakeItEasy" Version="7.2.0" />
@@ -9,8 +9,8 @@
     <PackageReference Include="FluentAssertions" Version="6.2.0" />
     <PackageReference Include="FluentAssertions.Analyzers" Version="0.13.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
-    <PackageReference Include="xunit" Version="2.4.1" />
-    <PackageReference Include="xunit.analyzers" Version="0.10.0" />
+    <PackageReference Include="xunit" Version="2.7.0" />
+    <PackageReference Include="xunit.analyzers" Version="1.11.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3" />
     <PackageReference Include="XunitXml.TestLogger" Version="3.0.62" />
   </ItemGroup>
